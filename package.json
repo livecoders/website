@@ -1,0 +1,24 @@
+{
+  "name": "live-coders-website",
+  "version": "1.0.0",
+  "description": "Website for the Live Coders Twitch Team",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livecoders/website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/livecoders/website/issues"
+  },
+  "dependencies": {
+    "gatsby": "^2.18.21",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
