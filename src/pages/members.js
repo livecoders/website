@@ -1,5 +1,5 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 
 const MembersPage = props => {
@@ -43,7 +43,9 @@ const MembersPage = props => {
                 border: "1px solid black"
               }}
             >
-              <h1>{person.frontmatter.username}</h1>
+              <Link to={`/members/${person.frontmatter.username}`}>
+                <h1>{person.frontmatter.username}</h1>
+              </Link>
               <Img
                 fluid={person.frontmatter.profile.childImageSharp.fluid}
                 style={{ maxWidth: 400 }}
