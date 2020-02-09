@@ -3,11 +3,15 @@ import { Link, graphql } from "gatsby";
 import Img from "gatsby-image";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
+import Header from "../components/header";
+import Footer from "../components/footer";
+
 const MemberPageTemplate = props => {
   let { frontmatter, body } = props.data.mdx;
 
   return (
     <div>
+      <Header />
       <Link to={"/members/"}>Back To Members Listing</Link>
       <h1>{frontmatter.username}</h1>
       <Img
@@ -38,8 +42,8 @@ const MemberPageTemplate = props => {
           ))}
         </ul>
       )}
-
       <MDXRenderer>{body}</MDXRenderer>
+      <Footer />
     </div>
   );
 };

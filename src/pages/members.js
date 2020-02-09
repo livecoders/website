@@ -1,6 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import Img from "gatsby-image";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 const MembersPage = props => {
   let data = useStaticQuery(graphql`
@@ -27,6 +29,7 @@ const MembersPage = props => {
 
   return (
     <React.Fragment>
+      <Header />
       <h1>Team Members</h1>
       <div
         style={{
@@ -61,6 +64,7 @@ const MembersPage = props => {
           );
         })}
       </div>
+      <Footer />
     </React.Fragment>
   );
 };

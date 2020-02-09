@@ -1,0 +1,22 @@
+.twoByThreeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.flex {
+  display: flex;
+}
+
+#statsFlex div {
+  flex: 1;
+}
+
+#statsFlex div p:first-child {
+  font-size: 2.5em;
+}
+
+#sponsorsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
