@@ -17,7 +17,14 @@
     "url": "https://github.com/livecoders/website/issues"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.5.3",
+    "@mdx-js/react": "^1.5.3",
     "gatsby": "^2.18.21",
+    "gatsby-image": "^2.2.39",
+    "gatsby-plugin-mdx": "^1.0.67",
+    "gatsby-plugin-sharp": "^2.3.13",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-sharp": "^2.3.12",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }
