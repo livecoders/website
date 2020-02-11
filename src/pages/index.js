@@ -7,13 +7,18 @@ import "../css/index.css";
 export default () => (
   <div>
     <Header />
-    <div id="hero">
+    <div
+      id="hero"
+      style={{ textAlign: "center", paddingTop: 100, paddingBottom: 100 }}
+    >
       <h1>Learn to Code by Watching Us</h1>
       <p>
         Be a part of a growing community of coders, developers, and
         technologists who love to stream their passions on Twitch.
       </p>
-      <a href="#">Join Us</a>
+      <a href="#" className="btn">
+        Join Us
+      </a>
     </div>
     <section id="missionStatement">
       <div>
@@ -25,7 +30,9 @@ export default () => (
           regardless of their background, education or personal
           identification/sexual orientation.
         </p>
-        <a href="#">Read More</a>
+        <a href="#" className="btn">
+          Read More
+        </a>
       </div>
     </section>
     <section>

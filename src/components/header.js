@@ -4,7 +4,7 @@ import Nav from "../components/nav";
 
 export default () => {
   return (
-    <header>
+    <header style={{ display: "flex", justifyContent: "space-between" }}>
       <img src={LogoImg} alt={"Live Coders Logo"} />
       <Nav />
     </header>

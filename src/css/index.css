@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .twoByThreeGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -7,12 +11,30 @@
   display: flex;
 }
 
+#statsFlex {
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
 #statsFlex div {
   flex: 1;
 }
 
 #statsFlex div p:first-child {
   font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #9248db;
+  padding: 10px 12px;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
 #sponsorsGrid {

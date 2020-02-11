@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 
+import "../css/nav.css";
+
 export default () => (
   <nav>
     <ul>
@@ -8,7 +10,7 @@ export default () => (
         <Link to={"/"}>Home</Link>
       </li>
       <li>
-        <Link to={"/members"}>Members</Link>
+        <Link to={"/members"}>Team Members</Link>
       </li>
       <li>
         <Link to={"/about"}>About</Link>

@@ -23,7 +23,9 @@ export default () => (
         You can find the team's page on Twitch at:
         https://twitch.tv/team/livecoders
       </p>
-      <a href="https://twitch.tv/team/livecoders">View Twitch Team Home Hub</a>
+      <a href="https://twitch.tv/team/livecoders" className="btn">
+        View Twitch Team Home Hub
+      </a>
     </section>
     <section>
       <h2>Qualifications to be a member</h2>
@@ -84,7 +86,9 @@ export default () => (
           </p>
         </div>
       </div>
-      <a href="#">Apply Today</a>
+      <a href="#" className="btn">
+        Apply Today
+      </a>
     </section>
     <Footer />
   </div>
