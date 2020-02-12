@@ -1,0 +1,28 @@
+footer {
+  margin-top: 64px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+footer div.footerLogo {
+  flex: 1;
+}
+
+footer div.footerLogo img {
+  width: 100px;
+}
+
+footer div.navigation div {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+footer div.navigation div a {
+  width: 32;
+  color: white;
+}
+
+footer div.navigation div a:first-child {
+  margin-right: 20px;
+}

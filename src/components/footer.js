@@ -5,34 +5,26 @@ import VertLogo from "../img/logo-vert.png";
 import GitHubLogo from "../img/github.svg";
 import TwitterLogo from "../img/twitter.svg";
 
+import "../css/footer.css";
+
 export default () => (
   <footer>
     <hr />
-    <div className={"flex"}>
-      <div style={{ flex: 1 }}>
-        <img src={VertLogo} style={{ width: 100 }} alt={"Live Coders Logo"} />
+    <section className="flex">
+      <div className="footerLogo">
+        <img src={VertLogo} alt={"Live Coders Logo"} />
       </div>
-      <div>
+      <div className="navigation">
         <Nav />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            marginRight: 20
-          }}
-        >
+        <div>
           <a href="https://github.com/livecoders">
-            <img
-              src={GitHubLogo}
-              style={{ width: 32, marginRight: 20 }}
-              alt={"GitHub Logo"}
-            />
+            <img src={GitHubLogo} alt={"GitHub Logo"} />
           </a>
           <a href="https://twitter.com/thelivecoders">
-            <img src={TwitterLogo} style={{ width: 32 }} alt={"Twitter Logo"} />
+            <img src={TwitterLogo} alt={"Twitter Logo"} />
           </a>
         </div>
       </div>
-    </div>
+    </section>
   </footer>
 );

@@ -2,15 +2,15 @@ import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
+import LiveCodersImg from "../img/livecoders-1.jpg";
+
 import "../css/index.css";
+import { Link } from "gatsby";
 
 export default () => (
   <div>
-    <Header />
-    <div
-      id="hero"
-      style={{ textAlign: "center", paddingTop: 100, paddingBottom: 100 }}
-    >
+    <div id="hero">
+      <Header />
       <h1>Learn to Code by Watching Us</h1>
       <p>
         Be a part of a growing community of coders, developers, and
@@ -21,6 +21,10 @@ export default () => (
       </a>
     </div>
     <section id="missionStatement">
+      <img
+        src={LiveCodersImg}
+        alt="Image of some of the Live Coders from TwitchCon NA 2019"
+      />
       <div>
         <h2>Mission Statement</h2>
         <p>
@@ -30,12 +34,12 @@ export default () => (
           regardless of their background, education or personal
           identification/sexual orientation.
         </p>
-        <a href="#" className="btn">
+        <Link to="/about" className="btn">
           Read More
-        </a>
+        </Link>
       </div>
     </section>
-    <section>
+    <section id="whyJoin">
       <h2>Why join the Live Coders?</h2>
       <div className="twoByThreeGrid">
         <div className="card">
@@ -100,7 +104,7 @@ export default () => (
         </div>
       </div>
     </section>
-    <section>
+    <section id="stats">
       <h2>This week's stats</h2>
       <div className="flex" id="statsFlex">
         <div>
@@ -121,7 +125,7 @@ export default () => (
         </div>
       </div>
     </section>
-    <section>
+    <section id="sponsors">
       <h2>Our Sponsors</h2>
       <div id="sponsorsGrid">
         <div>

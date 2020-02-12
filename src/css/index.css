@@ -1,10 +1,51 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+#hero {
+  background-image: url("../img/home-hero-background.png");
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+#hero h1 {
+  padding-top: 150px;
+}
+
+#missionStatement {
+  background-color: #2c1643;
+  display: flex;
+}
+
+#missionStatement img {
+  max-width: 900px;
+}
+
+#missionStatement div {
+  padding: 64px;
 }
 
 .twoByThreeGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+#whyJoin {
+  padding: 32px;
+  background-image: url("../img/why-join-live-coders-background.png");
+  background-size: cover;
+}
+
+#stats {
+  background-color: #2c1643;
+  padding: 40px;
 }
 
 .flex {
@@ -12,9 +53,8 @@ body {
 }
 
 #statsFlex {
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
 }
 
 #statsFlex div {
@@ -35,6 +75,11 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   display: inline-block;
+}
+
+#sponsors {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 #sponsorsGrid {
