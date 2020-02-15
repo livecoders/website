@@ -2,8 +2,8 @@ import React from "react";
 import Nav from "../components/nav";
 
 import VertLogo from "../img/logo-vert.png";
-import GitHubLogo from "../img/github.svg";
-import TwitterLogo from "../img/twitter.svg";
+import GitHubLogo from "../img/icons/github-square-brands.svg";
+import TwitterLogo from "../img/icons/twitter-square-brands.svg";
 
 import "../css/footer.css";
 
