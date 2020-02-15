@@ -1,10 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Press+Start+2P&display=swap");
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
   margin: 0;
   padding: 0;
   line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-family: "Press Start 2P";
+  text-transform: uppercase;
 }
 
 #hero {
@@ -29,6 +37,7 @@ body {
 
 #missionStatement div {
   padding: 64px;
+  max-width: 800px;
 }
 
 .twoByThreeGrid {
@@ -41,6 +50,17 @@ body {
   padding: 32px;
   background-image: url("../img/why-join-live-coders-background.png");
   background-size: cover;
+}
+
+#whyJoin .card .icon {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #9248db;
+  width: 80px;
+  display: inline-block;
+}
+
+#whyJoin .card .icon img {
+  width: 48px;
 }
 
 #stats {
@@ -59,19 +79,23 @@ body {
 
 #statsFlex div {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #statsFlex div p:first-child {
   font-size: 2.5em;
   margin-bottom: 20px;
+  font-family: "Press Start 2P";
 }
 
 .btn {
   background-color: #9248db;
-  padding: 10px 12px;
+  padding: 10px 24px;
   color: white;
   text-decoration: none;
-  border-radius: 12px;
+  border-radius: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
   display: inline-block;

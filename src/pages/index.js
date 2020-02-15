@@ -3,6 +3,12 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 
 import LiveCodersImg from "../img/livecoders-1.jpg";
+import ChatBubbleIcon from "../img/icons/comments-regular.svg";
+import HeartIcon from "../img/icons/heart-regular.svg";
+import KeyboardIcon from "../img/icons/keyboard-regular.svg";
+import EnvelopeIcon from "../img/icons/envelope-regular.svg";
+import IDBadgeIcon from "../img/icons/id-badge-regular.svg";
+import HandSpockIcon from "../img/icons/hand-spock-regular.svg";
 
 import "../css/index.css";
 import { Link } from "gatsby";
@@ -43,7 +49,9 @@ export default () => (
       <h2>Why join the Live Coders?</h2>
       <div className="twoByThreeGrid">
         <div className="card">
-          <span className="icon"></span>
+          <span className="icon">
+            <img src={ChatBubbleIcon} alt="Chat bubble" />
+          </span>
           <h3>Collaborate with other thought leaders in your industry</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
@@ -53,7 +61,9 @@ export default () => (
           </p>
         </div>
         <div className="card">
-          <span className="icon"></span>
+          <span className="icon">
+            <img src={HeartIcon} alt="Heart" />
+          </span>
           <h3>Team support with event promotions and raids</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
@@ -63,7 +73,9 @@ export default () => (
           </p>
         </div>
         <div className="card">
-          <span className="icon"></span>
+          <span className="icon">
+            <img src={KeyboardIcon} alt="Keyboard" />
+          </span>
           <h3>Access to other professionals for technial guidance</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
@@ -73,7 +85,9 @@ export default () => (
           </p>
         </div>
         <div className="card">
-          <span className="icon"></span>
+          <span className="icon">
+            <img src={EnvelopeIcon} alt="Envelope" />
+          </span>
           <h3>Invites to beta testing of features/software</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
@@ -83,7 +97,9 @@ export default () => (
           </p>
         </div>
         <div className="card">
-          <span className="icon"></span>
+          <span className="icon">
+            <img src={IDBadgeIcon} alt="ID Badge" />
+          </span>
           <h3>Updates on team events (conferences, booths, etc)</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
@@ -93,7 +109,9 @@ export default () => (
           </p>
         </div>
         <div className="card">
-          <span className="icon"></span>
+          <span className="icon">
+            <img src={HandSpockIcon} alt="Spock Hand" />
+          </span>
           <h3>Logos, swag, & branding resources</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
