@@ -2,7 +2,7 @@
 username: lannonbr
 twitter: lannonbr
 github: lannonbr
-profile: ../img/lannonbr.jpg
+profile: ../img/members/lannonbr.jpg
 sites:
   - https://lannonbr.com/
 tags:
