@@ -13,7 +13,7 @@ import TwitchIcon from "../img/icons/twitch-brands.svg";
 import "../css/about.css";
 
 export default () => (
-  <div>
+  <React.Fragment>
     <div className="head">
       <Header />
       <div>
@@ -126,5 +126,5 @@ export default () => (
       </div>
     </section>
     <Footer />
-  </div>
+  </React.Fragment>
 );

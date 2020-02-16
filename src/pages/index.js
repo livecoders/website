@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
@@ -11,10 +12,9 @@ import IDBadgeIcon from "../img/icons/id-badge-regular.svg";
 import HandSpockIcon from "../img/icons/hand-spock-regular.svg";
 
 import "../css/index.css";
-import { Link } from "gatsby";
 
 export default () => (
-  <div>
+  <React.Fragment>
     <div id="hero">
       <Header />
       <h1>Learn to Code by Watching Us</h1>
@@ -163,5 +163,5 @@ export default () => (
       </div>
     </section>
     <Footer />
-  </div>
+  </React.Fragment>
 );
