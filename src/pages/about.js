@@ -53,7 +53,7 @@ export default () => (
       <div className="twoByThreeGrid">
         <div className="card">
           <span className="icon">
-            <img src={TwitchIcon} alt="Twitch Logo" />
+            <img src={TwitchIcon} alt="" />
           </span>
           <h3>Be a Twitch Affiliate or Partner</h3>
           <p>
@@ -65,7 +65,7 @@ export default () => (
         </div>
         <div className="card">
           <span className="icon">
-            <img src={ChatBubbleIcon} alt="Chat Bubble" />
+            <img src={ChatBubbleIcon} alt="" />
           </span>
           <h3>During broadcasts, politely answer questions from viewers</h3>
           <p>
@@ -77,7 +77,7 @@ export default () => (
         </div>
         <div className="card">
           <span className="icon">
-            <img src={HeartIcon} alt="Heart" />
+            <img src={HeartIcon} alt="" />
           </span>
           <h3>Promote a positive, inclusive, and welcoming chat room</h3>
           <p>
@@ -89,7 +89,7 @@ export default () => (
         </div>
         <div className="card">
           <span className="icon">
-            <img src={UserIcon} alt="Person" />
+            <img src={UserIcon} alt="" />
           </span>
           <h3>Are a person, not a brand or company account</h3>
           <p>
@@ -101,7 +101,7 @@ export default () => (
         </div>
         <div className="card">
           <span className="icon">
-            <img src={KeyboardIcon} alt="Keyboard" />
+            <img src={KeyboardIcon} alt="" />
           </span>
           <h3>Regularly write code or make things with technology</h3>
           <p>

@@ -29,7 +29,7 @@ export default () => (
     <section id="missionStatement">
       <img
         src={LiveCodersImg}
-        alt="Image of some of the Live Coders from TwitchCon NA 2019"
+        alt="Some of the Live Coders from TwitchCon NA 2019"
       />
       <div>
         <h2>Mission Statement</h2>
@@ -50,7 +50,7 @@ export default () => (
       <div className="twoByThreeGrid">
         <div className="card">
           <span className="icon">
-            <img src={ChatBubbleIcon} alt="Chat bubble" />
+            <img src={ChatBubbleIcon} alt="" />
           </span>
           <h3>Collaborate with other thought leaders in your industry</h3>
           <p>
@@ -62,7 +62,7 @@ export default () => (
         </div>
         <div className="card">
           <span className="icon">
-            <img src={HeartIcon} alt="Heart" />
+            <img src={HeartIcon} alt="" />
           </span>
           <h3>Team support with event promotions and raids</h3>
           <p>
@@ -74,7 +74,7 @@ export default () => (
         </div>
         <div className="card">
           <span className="icon">
-            <img src={KeyboardIcon} alt="Keyboard" />
+            <img src={KeyboardIcon} alt="" />
           </span>
           <h3>Access to other professionals for technial guidance</h3>
           <p>
@@ -86,7 +86,7 @@ export default () => (
         </div>
         <div className="card">
           <span className="icon">
-            <img src={EnvelopeIcon} alt="Envelope" />
+            <img src={EnvelopeIcon} alt="" />
           </span>
           <h3>Invites to beta testing of features/software</h3>
           <p>
@@ -98,7 +98,7 @@ export default () => (
         </div>
         <div className="card">
           <span className="icon">
-            <img src={IDBadgeIcon} alt="ID Badge" />
+            <img src={IDBadgeIcon} alt="" />
           </span>
           <h3>Updates on team events (conferences, booths, etc)</h3>
           <p>
@@ -110,7 +110,7 @@ export default () => (
         </div>
         <div className="card">
           <span className="icon">
-            <img src={HandSpockIcon} alt="Spock Hand" />
+            <img src={HandSpockIcon} alt="" />
           </span>
           <h3>Logos, swag, & branding resources</h3>
           <p>
