@@ -1,0 +1,60 @@
+#memberHeader {
+  background-image: url("../img/team-member-profile-hero-background.png");
+  background-size: cover;
+  position: relative;
+}
+
+#memberHeader h1 {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+#memberHeader .gatsby-image-wrapper {
+  margin-left: 32px;
+  margin-right: 32px;
+  width: 400px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+  position: absolute;
+  top: 220px;
+  left: 0px;
+}
+
+#memberSocials {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  padding-top: 48px;
+  padding-bottom: 16px;
+  margin-left: 450px;
+}
+
+#memberSocials img {
+  width: 40px;
+}
+
+#memberSocials li:not(:last-child) {
+  margin-right: 20px;
+}
+
+#memberIntro {
+  display: flex;
+  min-height: 350px;
+  margin-left: 450px;
+}
+
+#memberIntro div:first-child {
+  flex-basis: 0;
+  flex-grow: 2;
+}
+
+#memberIntro div:last-child {
+  flex-basis: 0;
+  flex-grow: 3;
+}
+
+#memberMetadata {
+  background-image: url("../img/team-member-profile-details-background.png");
+  background-size: cover;
+  padding: 32px;
+}

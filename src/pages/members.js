@@ -48,38 +48,44 @@ const MembersPage = props => {
       </div>
       <div id="membersGrid">
         {data.allMdx.nodes.map(person => {
+          const {
+            username,
+            profile,
+            tags,
+            github,
+            twitter
+          } = person.frontmatter;
+
           return (
-            <div
-              className="member"
-              key={`person-${person.frontmatter.username}`}
-            >
-              <Link
-                to={`/members/${person.frontmatter.username}`}
-                className="memberName"
-              >
+            <div className="member" key={`person-${username}`}>
+              <Link to={`/members/${username}`} className="memberName">
                 <h2>{person.frontmatter.username}</h2>
               </Link>
               <Img
-                fluid={person.frontmatter.profile.childImageSharp.fluid}
+                fluid={profile.childImageSharp.fluid}
                 style={{ maxWidth: 400 }}
               />
               <div className="tags">
                 <ul>
-                  {person.frontmatter.tags.map(tag => (
+                  {tags.map(tag => (
                     <li key={`tag-${tag}`}>{tag}</li>
                   ))}
                 </ul>
               </div>
               <div className="socials">
-                <a href={`https://twitch.tv/${person.frontmatter.username}`}>
+                <a href={`https://twitch.tv/${username}`}>
                   <img src={TwitchLogo} alt="" />
                 </a>
-                <a href={`https://github.com/${person.frontmatter.github}`}>
-                  <img src={GitHubLogo} alt="" />
-                </a>
-                <a href={`https://twitter.com/${person.frontmatter.twitter}`}>
-                  <img src={TwitterLogo} alt="" />
-                </a>
+                {github && (
+                  <a href={`https://github.com/${github}`}>
+                    <img src={GitHubLogo} alt="" />
+                  </a>
+                )}
+                {twitter && (
+                  <a href={`https://twitter.com/${twitter}`}>
+                    <img src={TwitterLogo} alt="" />
+                  </a>
+                )}
               </div>
             </div>
           );
