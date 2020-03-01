@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
@@ -19,41 +19,44 @@ const MemberPageTemplate = props => {
     <div>
       <div id="memberHeader">
         <Header />
-        <h1>{frontmatter.username}</h1>
-        <ul id="memberSocials">
-          <li>
-            <a href={`https://twitch.tv/${frontmatter.username}`}>
-              <img src={TwitchLogo} alt="" />
-            </a>
-          </li>
-          {frontmatter.twitter && (
+        <div>
+          <h1>{frontmatter.username}</h1>
+          <ul id="memberSocials">
             <li>
-              <a href={`https://twitter.com/${frontmatter.twitter}`}>
-                <img src={TwitterLogo} alt="" />
+              <a href={`https://twitch.tv/${frontmatter.username}`}>
+                <img src={TwitchLogo} alt="" />
               </a>
             </li>
-          )}
-          {frontmatter.github && (
-            <li>
-              <a href={`https://github.com/${frontmatter.github}`}>
-                <img src={GitHubLogo} alt="" />
-              </a>
-            </li>
-          )}
-        </ul>
-        <Img
-          fluid={props.data.mdx.frontmatter.profile.childImageSharp.fluid}
-          style={{ position: "absolute" }}
-        />
+            {frontmatter.twitter && (
+              <li>
+                <a href={`https://twitter.com/${frontmatter.twitter}`}>
+                  <img src={TwitterLogo} alt="" />
+                </a>
+              </li>
+            )}
+            {frontmatter.github && (
+              <li>
+                <a href={`https://github.com/${frontmatter.github}`}>
+                  <img src={GitHubLogo} alt="" />
+                </a>
+              </li>
+            )}
+          </ul>
+        </div>
       </div>
       <section id="memberIntro">
-        <div>
+        <div className="shadowWrapper">
+          <Img
+            fluid={props.data.mdx.frontmatter.profile.childImageSharp.fluid}
+          />
+        </div>
+        <div id="memberIntroContent">
           <MDXRenderer>{body}</MDXRenderer>
         </div>
       </section>
       <section id="memberMetadata">
         {frontmatter.tags && (
-          <React.Fragment>
+          <div>
             <h3>Tags</h3>
             <hr />
             <ul>
@@ -61,11 +64,11 @@ const MemberPageTemplate = props => {
                 <li>{tag}</li>
               ))}
             </ul>
-          </React.Fragment>
+          </div>
         )}
 
         {frontmatter.schedule && (
-          <React.Fragment>
+          <div>
             <h3>Schedule</h3>
             <hr />
             <ul>
@@ -73,11 +76,11 @@ const MemberPageTemplate = props => {
                 <li>{entry}</li>
               ))}
             </ul>
-          </React.Fragment>
+          </div>
         )}
 
         {frontmatter.sites && (
-          <React.Fragment>
+          <div>
             <h3>Websites</h3>
             <hr />
             <ul>
@@ -87,7 +90,7 @@ const MemberPageTemplate = props => {
                 </li>
               ))}
             </ul>
-          </React.Fragment>
+          </div>
         )}
       </section>
       <Footer />

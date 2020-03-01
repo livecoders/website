@@ -61,10 +61,9 @@ const MembersPage = props => {
               <Link to={`/members/${username}`} className="memberName">
                 <h2>{person.frontmatter.username}</h2>
               </Link>
-              <Img
-                fluid={profile.childImageSharp.fluid}
-                style={{ maxWidth: 400 }}
-              />
+              <Link to={`/members/${username}`}>
+                <Img fluid={profile.childImageSharp.fluid} />
+              </Link>
               <div className="tags">
                 <ul>
                   {tags.map(tag => (
