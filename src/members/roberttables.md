@@ -2,9 +2,9 @@
 username: roberttables
 twitter: drpoindexter
 github: mtheoryx
-profile: ../img/roberttables.jpg
+profile: ../img/members/roberttables.jpg
 sites:
-  - https://drpoindexter.com/
+  - https://dpoindexter.com/
 tags:
   - AWS
   - Hardware

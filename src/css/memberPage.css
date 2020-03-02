@@ -1,0 +1,104 @@
+#memberHeader {
+  background-image: url("../img/team-member-profile-hero-background.png");
+  background-size: cover;
+  position: relative;
+}
+
+#memberHeader h1 {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+#memberSocials {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  padding-top: 48px;
+  padding-bottom: 16px;
+  margin-left: 450px;
+}
+
+#memberSocials img {
+  width: 40px;
+}
+
+#memberSocials li:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  #memberHeader div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #memberHeader h1 {
+    font-size: 24px;
+  }
+
+  #memberSocials {
+    margin: 0;
+    padding: 0;
+    margin-right: 32px;
+  }
+
+  #memberSocials img {
+    width: 24px;
+  }
+}
+
+#memberIntro {
+  display: flex;
+  min-height: 400px;
+}
+
+#memberIntro .shadowWrapper {
+  filter: drop-shadow(0px 4px 20px rebeccapurple);
+}
+
+#memberIntro .gatsby-image-wrapper {
+  margin-left: 32px;
+  height: 400px;
+  min-width: 400px;
+  width: 400px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+  margin-top: -120px;
+}
+
+#memberIntroContent {
+  margin: 0 32px;
+}
+
+@media (max-width: 768px) {
+  #memberIntro {
+    flex-direction: column;
+  }
+
+  #memberIntro .gatsby-image-wrapper {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: unset;
+    min-height: unset;
+    max-width: 400px;
+    max-height: 400px;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#memberMetadata {
+  background-image: url("../img/team-member-profile-details-background.png");
+  background-size: cover;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  #memberMetadata {
+    grid-template-columns: 1fr;
+  }
+}
