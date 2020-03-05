@@ -66,9 +66,7 @@ const MembersPage = props => {
               </Link>
               <div className="tags">
                 <ul>
-                  {tags.map(tag => (
-                    <li key={`tag-${tag}`}>{tag}</li>
-                  ))}
+                  {tags && tags.map(tag => <li key={`tag-${tag}`}>{tag}</li>)}
                 </ul>
               </div>
               <div className="socials">
