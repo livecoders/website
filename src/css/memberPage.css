@@ -97,6 +97,15 @@
   gap: 20px;
 }
 
+#memberMetadata a {
+  color: white;
+  text-decoration: none;
+}
+
+#memberMetadata a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   #memberMetadata {
     grid-template-columns: 1fr;
