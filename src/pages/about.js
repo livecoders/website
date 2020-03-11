@@ -41,7 +41,7 @@ export default () => (
           View Twitch Team Home Hub
         </a>
       </div>
-      <img src={LiveCodersImg} alt="Picture of some of the Live Coders" />
+      <img src={LiveCodersImg} alt="some of the Live Coders" />
     </section>
     <section id="qualifications">
       <h2>Qualifications to be a member</h2>
