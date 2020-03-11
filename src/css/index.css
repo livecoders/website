@@ -26,6 +26,13 @@ h2 {
   padding-top: 150px;
 }
 
+@media (max-width: 768px) {
+  #hero h1 {
+    padding-top: 50px;
+    font-size: 1.5em;
+  }
+}
+
 #missionStatement {
   background-color: #2c1643;
   display: flex;
@@ -33,6 +40,7 @@ h2 {
 
 #missionStatement img {
   max-width: 900px;
+  width: 100%;
 }
 
 #missionStatement div {
@@ -40,10 +48,26 @@ h2 {
   max-width: 800px;
 }
 
+@media (max-width: 768px) {
+  #missionStatement {
+    display: block;
+  }
+
+  #missionStatement div {
+    padding: 32px;
+  }
+}
+
 .twoByThreeGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .twoByThreeGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 #whyJoin {
@@ -90,6 +114,17 @@ h2 {
   font-family: "Press Start 2P";
 }
 
+@media (max-width: 768px) {
+  #statsFlex {
+    flex-direction: column;
+  }
+
+  #statsFlex div p:first-child {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+  }
+}
+
 .btn {
   background-color: #9248db;
   padding: 10px 24px;
@@ -110,4 +145,10 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+
+@media (max-width: 768px) {
+  #sponsorsGrid {
+    grid-template-columns: 1fr;
+  }
 }

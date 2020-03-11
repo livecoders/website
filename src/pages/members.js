@@ -37,14 +37,16 @@ const MembersPage = props => {
     <React.Fragment>
       <div id="membersHeader">
         <Header />
-        <h1>Team Members</h1>
-        <p>
-          Placeholder Text to explain about members and the variety of them.
-          They da bomb.
-        </p>
-        <Link to="/about" className="btn">
-          Learn about Membership
-        </Link>
+        <div>
+          <h1>Team Members</h1>
+          <p>
+            Placeholder Text to explain about members and the variety of them.
+            They da bomb.
+          </p>
+          <Link to="/about" className="btn">
+            Learn about Membership
+          </Link>
+        </div>
       </div>
       <div id="membersGrid">
         {data.allMdx.nodes.map(person => {

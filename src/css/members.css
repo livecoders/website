@@ -3,15 +3,14 @@
   background-size: cover;
 }
 
-#membersHeader h1 {
-  padding: 0 32px;
-}
-#membersHeader p {
-  padding: 0 32px;
-}
-#membersHeader .btn {
-  margin-left: 32px;
+#membersHeader div {
+  padding: 32px;
+  padding-bottom: 0;
   margin-bottom: 64px;
+}
+
+#membersHeader h1 {
+  margin: 0;
 }
 
 #membersGrid {
@@ -26,6 +25,7 @@
   border-radius: 8px;
   background-image: url("../img/card-background.png");
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .member img {

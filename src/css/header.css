@@ -1,5 +1,16 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 32px;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  header > a {
+    text-align: center;
+  }
 }
