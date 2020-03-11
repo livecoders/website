@@ -19,3 +19,13 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  nav ul li:last-of-type {
+    margin-right: 0;
+  }
+}
