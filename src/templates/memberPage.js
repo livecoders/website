@@ -13,7 +13,7 @@ import GitHubLogo from "../img/icons/github-square-brands.svg";
 import TwitterLogo from "../img/icons/twitter-square-brands.svg";
 
 const MemberPageTemplate = props => {
-  let { frontmatter, body } = props.data.mdx;
+  let { frontmatter, body, wordCount } = props.data.mdx;
 
   return (
     <div>
@@ -51,48 +51,58 @@ const MemberPageTemplate = props => {
           />
         </div>
         <div id="memberIntroContent">
-          <MDXRenderer>{body}</MDXRenderer>
+          {wordCount.words ? (
+            <MDXRenderer>{body}</MDXRenderer>
+          ) : (
+            <p>
+              This team member does not have a profile here yet. Feel free to go
+              visit their twitch channel by clicking the twitch logo next to
+              their picture above to learn about their stream.
+            </p>
+          )}
         </div>
       </section>
-      <section id="memberMetadata">
-        {frontmatter.tags && (
-          <div>
-            <h3>Tags</h3>
-            <hr />
-            <ul>
-              {frontmatter.tags.map(tag => (
-                <li>{tag}</li>
-              ))}
-            </ul>
-          </div>
-        )}
+      {(frontmatter.tags || frontmatter.schedule || frontmatter.sites) && (
+        <section id="memberMetadata">
+          {frontmatter.tags && (
+            <div>
+              <h3>Tags</h3>
+              <hr />
+              <ul>
+                {frontmatter.tags.map(tag => (
+                  <li>{tag}</li>
+                ))}
+              </ul>
+            </div>
+          )}
 
-        {frontmatter.schedule && (
-          <div>
-            <h3>Schedule</h3>
-            <hr />
-            <ul>
-              {frontmatter.schedule.map(entry => (
-                <li>{entry}</li>
-              ))}
-            </ul>
-          </div>
-        )}
+          {frontmatter.schedule && (
+            <div>
+              <h3>Schedule</h3>
+              <hr />
+              <ul>
+                {frontmatter.schedule.map(entry => (
+                  <li>{entry}</li>
+                ))}
+              </ul>
+            </div>
+          )}
 
-        {frontmatter.sites && (
-          <div>
-            <h3>Websites</h3>
-            <hr />
-            <ul>
-              {frontmatter.sites.map(site => (
-                <li>
-                  <a href={site}>{site}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </section>
+          {frontmatter.sites && (
+            <div>
+              <h3>Websites</h3>
+              <hr />
+              <ul>
+                {frontmatter.sites.map(site => (
+                  <li>
+                    <a href={site}>{site}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </section>
+      )}
       <Footer />
     </div>
   );
@@ -105,6 +115,9 @@ export const query = graphql`
     mdx(id: { eq: $id }) {
       id
       body
+      wordCount {
+        words
+      }
       frontmatter {
         username
         twitter
