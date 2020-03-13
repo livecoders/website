@@ -28,10 +28,10 @@ export default () => (
       <div>
         <h2>Who Are We?</h2>
         <p>
-          On the Live Video platform, Twitch, we are a group of broadcasters who
-          write code and make things while teaching viewers. We believe that
-          live video is an amazing opportunity to teach, and want to share our
-          expertise.
+          We are a group of developers and engineers who are also broadcasters.
+          We write code and make things while teaching viewers on Twitch. We
+          believe that live video is an amazing opportunity to teach, and want
+          to share our expertise
         </p>
         <p>
           You can find the team's page on Twitch at:
@@ -57,10 +57,8 @@ export default () => (
           </span>
           <h3>Be a Twitch Affiliate or Partner</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-            nobis corporis, ducimus quisquam adipisci commodi deserunt ab,
-            nesciunt architecto, voluptate mollitia aperiam voluptas magnam quod
-            non. Omnis neque enim veniam!
+            While Affiliate may seem daunting, we believe in you and are looking
+            forward to welcoming you to the team soon!
           </p>
         </div>
         <div className="card">
@@ -69,10 +67,9 @@ export default () => (
           </span>
           <h3>During broadcasts, politely answer questions from viewers</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-            nobis corporis, ducimus quisquam adipisci commodi deserunt ab,
-            nesciunt architecto, voluptate mollitia aperiam voluptas magnam quod
-            non. Omnis neque enim veniam!
+            We value education and continuous learning/improvement. We love
+            members who answer questions their viewers have, explain their
+            projects and even help their community members succeed.
           </p>
         </div>
         <div className="card">
@@ -81,10 +78,11 @@ export default () => (
           </span>
           <h3>Promote a positive, inclusive, and welcoming chat room</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-            nobis corporis, ducimus quisquam adipisci commodi deserunt ab,
-            nesciunt architecto, voluptate mollitia aperiam voluptas magnam quod
-            non. Omnis neque enim veniam!
+            Viewer interaction and community building is one of our core drives
+            for doing what we do. With that, we make sure that any potential
+            members put their community first! If you provide a welcoming,
+            educational and even fun environment for your viewers, you are sure
+            to be a great fit!
           </p>
         </div>
         <div className="card">
@@ -93,10 +91,9 @@ export default () => (
           </span>
           <h3>Are a person, not a brand or company account</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-            nobis corporis, ducimus quisquam adipisci commodi deserunt ab,
-            nesciunt architecto, voluptate mollitia aperiam voluptas magnam quod
-            non. Omnis neque enim veniam!
+            We are a team of individuals, and while some of us work for big
+            companies and brands, we still represent ourselves. We value the
+            same for new members.
           </p>
         </div>
         <div className="card">
@@ -105,16 +102,18 @@ export default () => (
           </span>
           <h3>Regularly write code or make things with technology</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-            nobis corporis, ducimus quisquam adipisci commodi deserunt ab,
-            nesciunt architecto, voluptate mollitia aperiam voluptas magnam quod
-            non. Omnis neque enim veniam!
+            While we love content such as gaming, just chatting and others, our
+            primary focus is development. With that, we value members who
+            regularly develop projects (games, websites, apps) or combine
+            hardware with technology.
           </p>
         </div>
       </div>
       <p>
-        Live coder team members will review and ensure that prospective channels
-        meet these requirements before admitting new memebers to the team
+        Once you have submitted your application, The Live Coders team members
+        will thoroughly review your application. Including your Twitch channel
+        and other social media, before deciding whether to approve the
+        application. Good luck!
       </p>
       <div className="flex">
         <a

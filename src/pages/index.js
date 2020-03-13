@@ -58,10 +58,9 @@ export default () => {
             </span>
             <h3>Collaborate with other thought leaders in your industry</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-              porro ratione reprehenderit sapiente ducimus facilis libero
-              praesentium et ipsum, dolore mollitia vitae eaque id aperiam
-              dolores debitis eligendi iure quae?
+              The Live Coders consists of many experienced and accomplished
+              members with diverse backgrounds, such as Design, Front-End,
+              Back-End, Stream Technologies and more!
             </p>
           </div>
           <div className="card">
@@ -70,10 +69,9 @@ export default () => {
             </span>
             <h3>Team support with event promotions and raids</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-              porro ratione reprehenderit sapiente ducimus facilis libero
-              praesentium et ipsum, dolore mollitia vitae eaque id aperiam
-              dolores debitis eligendi iure quae?
+              The Live Coders are proud to promote each other. We utilize
+              Discord and other social media to support each other and promote
+              various events which benefit members.
             </p>
           </div>
           <div className="card">
@@ -82,10 +80,10 @@ export default () => {
             </span>
             <h3>Access to other professionals for technial guidance</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-              porro ratione reprehenderit sapiente ducimus facilis libero
-              praesentium et ipsum, dolore mollitia vitae eaque id aperiam
-              dolores debitis eligendi iure quae?
+              We are so diverse in backgrounds, that nearly any technical
+              question you have will receive an answer in our very active
+              Discord server. We have channels for tech-help, project feedback,
+              discussions, and more!
             </p>
           </div>
           <div className="card">
@@ -94,10 +92,10 @@ export default () => {
             </span>
             <h3>Invites to beta testing of features/software</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-              porro ratione reprehenderit sapiente ducimus facilis libero
-              praesentium et ipsum, dolore mollitia vitae eaque id aperiam
-              dolores debitis eligendi iure quae?
+              Our members are always working on new projects, features, games,
+              and more. When they need beta testers, they prefer to start within
+              the team. This enables you to beta test various products/projects
+              and offer valuable feedback!
             </p>
           </div>
           <div className="card">
@@ -106,10 +104,10 @@ export default () => {
             </span>
             <h3>Updates on team events (conferences, booths, etc)</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-              porro ratione reprehenderit sapiente ducimus facilis libero
-              praesentium et ipsum, dolore mollitia vitae eaque id aperiam
-              dolores debitis eligendi iure quae?
+              We love putting on events, meeting up and discussing all things
+              streaming and technology related! We make sure to keep our team
+              members updated with the latest developments and build a welcoming
+              environment.
             </p>
           </div>
           <div className="card">
@@ -118,10 +116,10 @@ export default () => {
             </span>
             <h3>Logos, swag, & branding resources</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-              porro ratione reprehenderit sapiente ducimus facilis libero
-              praesentium et ipsum, dolore mollitia vitae eaque id aperiam
-              dolores debitis eligendi iure quae?
+              We love showing off our awesome team. You will have access to
+              branding resources such as logos, panels, wallpapers and more!
+              Furthermore, we spoil our members with various swag items, such as
+              our yearly jerseys (pictured above)!
             </p>
           </div>
         </div>

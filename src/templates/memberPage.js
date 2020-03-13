@@ -54,11 +54,20 @@ const MemberPageTemplate = props => {
           {wordCount.words ? (
             <MDXRenderer>{body}</MDXRenderer>
           ) : (
-            <p>
-              This team member does not have a profile here yet. Feel free to go
-              visit their twitch channel by clicking the twitch logo next to
-              their picture above to learn about their stream.
-            </p>
+            <React.Fragment>
+              <p>
+                Hi There! The team member you are interested in has not (yet)
+                provided their full profile information. Don't cry though! You
+                can simply click on the Twitch logo below their name (look above
+                their photo) and it will take you straight to the Twitch
+                profile!
+              </p>
+              <p>
+                If you come across one of these, feel free to remind the team
+                member to fill out their page here. They may have just
+                forgotten!
+              </p>
+            </React.Fragment>
           )}
         </div>
       </section>
