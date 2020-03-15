@@ -6,13 +6,18 @@ exports.createSchemaCustomization = ({ actions }) => {
 
   const typeDefs = `
     type MdxFrontmatter {
+      # Required fields
       username: String!
+      profile: File! # Relative Path to profile image
+
+      # Social Links (Your username for each platform)
       twitter: String
       github: String
-      youtube: String
       instagram: String
       devto: String
-      profile: File!
+      youtube: String # This is the full URL as not all channels have a vanity URL
+
+      # Misc fields
       sites: [String]
       tags: [String]
       schedule: [String]
