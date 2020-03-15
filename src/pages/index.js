@@ -148,27 +148,6 @@ export default () => {
           </div>
         </div>
       </section>
-      <section id="sponsors">
-        <h2>Our Sponsors</h2>
-        <div id="sponsorsGrid">
-          <div>
-            <p>Sponsor</p>
-            <hr />
-            <p>
-              Thanks to Sponsor for supporting us. Check their countent out for
-              X
-            </p>
-          </div>
-          <div>
-            <p>Sponsor</p>
-            <hr />
-            <p>
-              Thanks to Sponsor for supporting us. Check their countent out for
-              X
-            </p>
-          </div>
-        </div>
-      </section>
       <Footer />
     </React.Fragment>
   );
