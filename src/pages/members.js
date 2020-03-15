@@ -40,8 +40,9 @@ const MembersPage = props => {
         <div>
           <h1>Team Members</h1>
           <p>
-            Placeholder Text to explain about members and the variety of them.
-            They da bomb.
+            Our team members are incredibly varied in skills and background. We
+            probably have at least a couple of members who work in languages or
+            with tools you like!
           </p>
           <Link to="/about" className="btn">
             Learn about Membership
