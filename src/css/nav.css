@@ -1,5 +1,14 @@
+nav {
+  flex-grow: 1;
+}
+
+header nav {
+  border-bottom: 1px solid white;
+}
+
 nav ul {
   display: flex;
+  justify-content: flex-end;
   padding: 0;
   margin-top: 20px;
   margin-bottom: 20px;

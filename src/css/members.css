@@ -28,7 +28,7 @@
   overflow-x: hidden;
 }
 
-.member img {
+.member .gatsby-image-wrapper img {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 }
 
