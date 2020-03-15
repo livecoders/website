@@ -37,7 +37,7 @@ fetch(teamURL, {
 
     // write new pages for new members
     users.forEach(user => {
-      const markdownContent = `---\nname: ${
+      const markdownContent = `---\nusername: ${
         user.name
       }\nprofile: ../img/members/${user.name}.${user.logo
         .split(".")
