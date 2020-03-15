@@ -11,6 +11,9 @@ import "../css/memberPage.css";
 import TwitchLogo from "../img/icons/twitch-brands.svg";
 import GitHubLogo from "../img/icons/github-square-brands.svg";
 import TwitterLogo from "../img/icons/twitter-square-brands.svg";
+import DevtoLogo from "../img/icons/dev-brands.svg";
+import InstagramLogo from "../img/icons/instagram-brands.svg";
+import YouTubeLogo from "../img/icons/youtube-brands.svg";
 
 const MemberPageTemplate = props => {
   let { frontmatter, body, wordCount } = props.data.mdx;
@@ -38,6 +41,27 @@ const MemberPageTemplate = props => {
               <li>
                 <a href={`https://github.com/${frontmatter.github}`}>
                   <img src={GitHubLogo} alt="" />
+                </a>
+              </li>
+            )}
+            {frontmatter.devto && (
+              <li>
+                <a href={`https://dev.to/${frontmatter.devto}`}>
+                  <img src={DevtoLogo} alt="" />
+                </a>
+              </li>
+            )}
+            {frontmatter.instagram && (
+              <li>
+                <a href={`https://instagram.com/${frontmatter.instagram}`}>
+                  <img src={InstagramLogo} alt="" />
+                </a>
+              </li>
+            )}
+            {frontmatter.youtube && (
+              <li>
+                <a href={frontmatter.youtube}>
+                  <img src={YouTubeLogo} alt="" />
                 </a>
               </li>
             )}
@@ -131,6 +155,9 @@ export const query = graphql`
         username
         twitter
         github
+        devto
+        youtube
+        instagram
         tags
         schedule
         sites

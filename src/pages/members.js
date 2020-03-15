@@ -9,6 +9,9 @@ import "../css/members.css";
 import TwitchLogo from "../img/icons/twitch-brands.svg";
 import GitHubLogo from "../img/icons/github-square-brands.svg";
 import TwitterLogo from "../img/icons/twitter-square-brands.svg";
+import DevtoLogo from "../img/icons/dev-brands.svg";
+import InstagramLogo from "../img/icons/instagram-brands.svg";
+import YouTubeLogo from "../img/icons/youtube-brands.svg";
 
 const MembersPage = props => {
   let data = useStaticQuery(graphql`
@@ -20,6 +23,9 @@ const MembersPage = props => {
             twitter
             github
             tags
+            devto
+            instagram
+            youtube
             profile {
               childImageSharp {
                 fluid(maxWidth: 400) {
@@ -56,7 +62,10 @@ const MembersPage = props => {
             profile,
             tags,
             github,
-            twitter
+            twitter,
+            devto,
+            instagram,
+            youtube
           } = person.frontmatter;
 
           return (
@@ -84,6 +93,21 @@ const MembersPage = props => {
                 {twitter && (
                   <a href={`https://twitter.com/${twitter}`}>
                     <img src={TwitterLogo} alt="" />
+                  </a>
+                )}
+                {devto && (
+                  <a href={`https://dev.to/${devto}`}>
+                    <img src={DevtoLogo} alt="" />
+                  </a>
+                )}
+                {instagram && (
+                  <a href={`https://instagram.com/${instagram}`}>
+                    <img src={InstagramLogo} alt="" />
+                  </a>
+                )}
+                {youtube && (
+                  <a href={youtube}>
+                    <img src={YouTubeLogo} alt="" />
                   </a>
                 )}
               </div>

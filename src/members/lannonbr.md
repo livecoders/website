@@ -3,6 +3,7 @@ username: lannonbr
 twitter: lannonbr
 github: lannonbr
 profile: ../img/members/lannonbr.jpg
+devto: lannonbr
 sites:
   - https://lannonbr.com/
 tags:
