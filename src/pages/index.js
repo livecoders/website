@@ -26,7 +26,10 @@ export default () => {
           Be a part of a growing community of coders, developers, and
           technologists who love to stream their passions on Twitch.
         </p>
-        <a href="#" className="btn">
+        <a
+          href="https://github.com/livecoders/Home/issues/new?assignees=csharpfritz&labels=application&template=application.md&title=Application+for+Membership"
+          className="btn"
+        >
           Join Us
         </a>
       </div>
