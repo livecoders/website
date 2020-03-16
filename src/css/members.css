@@ -48,14 +48,15 @@
 .member .tags ul {
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
   padding: 0;
   margin-bottom: 48px;
 }
 
 .member .tags ul li {
   color: white;
-  background-color: #2c1643;
-  margin: 0 10px;
+  background-color: #492472;
+  margin: 5px 10px;
   padding: 0px 3px;
 }
 
