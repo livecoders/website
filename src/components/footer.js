@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import Nav from "../components/nav";
 
 import VertLogo from "../img/logo-vert.png";
@@ -24,6 +25,19 @@ export default () => (
             <img src={TwitterLogo} alt={"Twitter Logo"} />
           </a>
         </div>
+        <Link
+          to="/coc/"
+          style={{
+            textAlign: "right",
+            marginRight: 20,
+            color: "#e4e4e4",
+            textDecoration: "none",
+            marginTop: 20,
+            fontWeight: 400
+          }}
+        >
+          Code of Conduct
+        </Link>
       </div>
     </section>
   </footer>

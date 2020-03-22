@@ -13,6 +13,13 @@ footer div.footerLogo img {
   width: 100px;
 }
 
+footer div.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: 800;
+}
+
 footer div.navigation div {
   display: flex;
   justify-content: flex-end;
@@ -20,6 +27,7 @@ footer div.navigation div {
 }
 footer div.navigation div a {
   width: 32px;
+  height: 32px;
   color: white;
 }
 

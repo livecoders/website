@@ -152,3 +152,11 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
+#codeOfConduct {
+  margin: 32px;
+}
+
+#codeOfConduct a {
+  color: white;
+}
