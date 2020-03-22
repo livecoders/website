@@ -30,10 +30,10 @@ export default () => (
       <div>
         <h2>Who Are We?</h2>
         <p>
-          We are a group of developers and engineers who are also broadcasters.
-          We write code and make things while teaching viewers on Twitch. We
-          believe that live video is an amazing opportunity to teach, and want
-          to share our expertise
+          We are a group of technologists who are also broadcasters. We write
+          code and make things while teaching viewers on Twitch. We believe that
+          live video is an amazing opportunity to teach, and want to share our
+          expertise
         </p>
         <p>
           You can find the team's page on Twitch at:
