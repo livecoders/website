@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "../components/header";
 import Footer from "../components/footer";
+import SEO from "../components/seo";
 
 import LiveCodersImg from "../img/livecoders-2.jpg";
 import ChatBubbleIcon from "../img/icons/comments-regular.svg";
@@ -14,6 +15,7 @@ import "../css/about.css";
 
 export default () => (
   <React.Fragment>
+    <SEO title="About | The Live Coders" />
     <div className="head">
       <Header />
       <div>

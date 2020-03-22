@@ -2,9 +2,11 @@ import React from "react";
 
 import Header from "../components/header";
 import Footer from "../components/footer";
+import SEO from "../components/seo";
 
 export default () => (
   <React.Fragment>
+    <SEO title="Code of Conduct | The Live Coders" />
     <div className="head">
       <Header />
       <div>

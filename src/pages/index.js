@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import SEO from "../components/seo";
 import useLiveCoderStats from "../hooks/useLiveCoderStats";
 
 import LiveCodersImg from "../img/livecoders-1.jpg";
@@ -19,6 +20,7 @@ export default () => {
 
   return (
     <React.Fragment>
+      <SEO title="The Live Coders" />
       <div id="hero">
         <Header />
         <h1>Learn to Code by Watching Us</h1>

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import SEO from "../components/seo";
 
 import "../css/members.css";
 
@@ -41,6 +42,7 @@ const MembersPage = props => {
 
   return (
     <React.Fragment>
+      <SEO title="Team Members | The Live Coders" />
       <div id="membersHeader">
         <Header />
         <div>

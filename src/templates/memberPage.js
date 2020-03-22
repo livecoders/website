@@ -5,6 +5,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 
 import Header from "../components/header";
 import Footer from "../components/footer";
+import SEO from "../components/seo";
 
 import "../css/memberPage.css";
 
@@ -20,6 +21,7 @@ const MemberPageTemplate = props => {
 
   return (
     <div>
+      <SEO title={`${frontmatter.username} | The Live Coders`} />
       <div id="memberHeader">
         <Header />
         <div>
