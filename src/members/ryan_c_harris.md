@@ -6,11 +6,11 @@ youtube: https://www.youtube.com/user/harrisryan1
 schedule:
   - Fridays 5PM - 7PM ET
 tags:
-  - React
-  - JavaScript
-  - Gatsby
-  - Node
-  - Serverless
+  - react
+  - javascript
+  - gatsby
+  - node
+  - serverless
 sites:
   - https://ryanharris.dev
 ---
