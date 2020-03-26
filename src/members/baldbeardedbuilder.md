@@ -5,9 +5,9 @@ twitter: baldbeardbuild
 instagram: baldbeardedbuilder
 youtube: https://www.youtube.com/c/baldbeardedbuilder
 schedule:
-  - Tuesdays 2am - 5PM ET
-  - Wednesdays 2am - 5PM ET
-  - Thursdays 2am - 5PM ET
+  - Tuesdays 2PM - 5PM ET
+  - Wednesdays 2PM - 5PM ET
+  - Thursdays 2PM - 5PM ET
 tags:
   - C#
   - JavaScript
