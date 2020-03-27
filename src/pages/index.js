@@ -12,6 +12,7 @@ import KeyboardIcon from "../img/icons/keyboard-regular.svg";
 import EnvelopeIcon from "../img/icons/envelope-regular.svg";
 import IDBadgeIcon from "../img/icons/id-badge-regular.svg";
 import HandSpockIcon from "../img/icons/hand-spock-regular.svg";
+import FaunaLogo from "../img/fauna-logo.png";
 
 import "../css/index.css";
 
@@ -147,6 +148,21 @@ export default () => {
           <div>
             <p>{stats.totalMinutes.toLocaleString()}</p>
             <p>Total Minutes</p>
+          </div>
+        </div>
+      </section>
+      <section id="sponsors">
+        <h2>Our Sponsors</h2>
+        <div id="sponsorsGrid">
+          <div>
+            <a href="https://fauna.com/">
+              <img src={FaunaLogo} alt="" style={{ width: 200 }} />
+            </a>
+            <hr style={{ marginTop: 0 }} />
+            <p>
+              FaunaDB: The database built for serverless, featuring native
+              GraphQL
+            </p>
           </div>
         </div>
       </section>

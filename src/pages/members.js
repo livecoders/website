@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import Header from "../components/header";
@@ -15,6 +15,12 @@ import InstagramLogo from "../img/icons/instagram-brands.svg";
 import YouTubeLogo from "../img/icons/youtube-brands.svg";
 
 const MembersPage = props => {
+  const [filter, setFilter] = useState("");
+
+  const handleChange = evt => {
+    setFilter(evt.target.value);
+  };
+
   let data = useStaticQuery(graphql`
     {
       allMdx(sort: { fields: frontmatter___username, order: ASC }) {
@@ -55,67 +61,80 @@ const MembersPage = props => {
           <Link to="/about" className="btn">
             Learn about Membership
           </Link>
+          <h3>Filter</h3>
+          <input
+            type="text"
+            onChange={handleChange}
+            placeholder="Search for members"
+            className="filterInput"
+          />
         </div>
       </div>
       <div id="membersGrid">
-        {data.allMdx.nodes.map(person => {
-          const {
-            username,
-            profile,
-            tags,
-            github,
-            twitter,
-            devto,
-            instagram,
-            youtube
-          } = person.frontmatter;
+        {data.allMdx.nodes
+          .filter(person => {
+            if (filter === "") return true;
 
-          return (
-            <div className="member" key={`person-${username}`}>
-              <Link to={`/members/${username}`} className="memberName">
-                <h2>{person.frontmatter.username}</h2>
-              </Link>
-              <Link to={`/members/${username}`}>
-                <Img fluid={profile.childImageSharp.fluid} />
-              </Link>
-              <div className="tags">
-                <ul>
-                  {tags && tags.map(tag => <li key={`tag-${tag}`}>{tag}</li>)}
-                </ul>
+            return person.frontmatter.username.includes(filter);
+          })
+          .map(person => {
+            const {
+              username,
+              profile,
+              tags,
+              github,
+              twitter,
+              devto,
+              instagram,
+              youtube
+            } = person.frontmatter;
+
+            return (
+              <div className="member" key={`person-${username}`}>
+                <Link to={`/members/${username}`} className="memberName">
+                  <h2>{person.frontmatter.username}</h2>
+                </Link>
+                <Link to={`/members/${username}`}>
+                  <Img fluid={profile.childImageSharp.fluid} />
+                </Link>
+                <div className="tags">
+                  <ul>
+                    {tags && tags.map(tag => <li key={`tag-${tag}`}>{tag}</li>)}
+                  </ul>
+                </div>
+                <div className="socials">
+                  <a href={`https://twitch.tv/${username}`}>
+                    <img src={TwitchLogo} alt="" />
+                  </a>
+                  {github && (
+                    <a href={`https://github.com/${github}`}>
+                      <img src={GitHubLogo} alt="" />
+                    </a>
+                  )}
+                  {twitter && (
+                    <a href={`https://twitter.com/${twitter}`}>
+                      <img src={TwitterLogo} alt="" />
+                    </a>
+                  )}
+                  {devto && (
+                    <a href={`https://dev.to/${devto}`}>
+                      <img src={DevtoLogo} alt="" />
+                    </a>
+                  )}
+                  {instagram && (
+                    <a href={`https://instagram.com/${instagram}`}>
+                      <img src={InstagramLogo} alt="" />
+                    </a>
+                  )}
+                  {youtube && (
+                    <a href={youtube}>
+                      <img src={YouTubeLogo} alt="" />
+                    </a>
+                  )}
+                </div>
               </div>
-              <div className="socials">
-                <a href={`https://twitch.tv/${username}`}>
-                  <img src={TwitchLogo} alt="" />
-                </a>
-                {github && (
-                  <a href={`https://github.com/${github}`}>
-                    <img src={GitHubLogo} alt="" />
-                  </a>
-                )}
-                {twitter && (
-                  <a href={`https://twitter.com/${twitter}`}>
-                    <img src={TwitterLogo} alt="" />
-                  </a>
-                )}
-                {devto && (
-                  <a href={`https://dev.to/${devto}`}>
-                    <img src={DevtoLogo} alt="" />
-                  </a>
-                )}
-                {instagram && (
-                  <a href={`https://instagram.com/${instagram}`}>
-                    <img src={InstagramLogo} alt="" />
-                  </a>
-                )}
-                {youtube && (
-                  <a href={youtube}>
-                    <img src={YouTubeLogo} alt="" />
-                  </a>
-                )}
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
       <Footer />
     </React.Fragment>
