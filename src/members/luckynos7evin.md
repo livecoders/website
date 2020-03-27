@@ -9,9 +9,11 @@ schedule:
   - Thursdays 9pm - 12AM BST/GMT
 tags:
   - C#
-  - Vue
-  - Twitch Development
-  - Discord Development
+  - Vue.js
+  - Twitch Dev
+  - Discord Dev
+  - Azure
+  - AWS
 sites:
   - https://andymorrell.net
 ---
