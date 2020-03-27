@@ -9,10 +9,12 @@ import "../css/members.css";
 
 import TwitchLogo from "../img/icons/twitch-brands.svg";
 import GitHubLogo from "../img/icons/github-square-brands.svg";
+import BitbucketLogo from "../img/icons/bitbucket-brands.svg";
 import TwitterLogo from "../img/icons/twitter-square-brands.svg";
 import DevtoLogo from "../img/icons/dev-brands.svg";
 import InstagramLogo from "../img/icons/instagram-brands.svg";
 import YouTubeLogo from "../img/icons/youtube-brands.svg";
+import LinkedInLogo from "../img/icons/linkedin-in-brands.svg";
 
 const MembersPage = props => {
   const [filter, setFilter] = useState("");
@@ -33,6 +35,8 @@ const MembersPage = props => {
             devto
             instagram
             youtube
+            linkedin
+            bitbucket
             profile {
               childImageSharp {
                 fluid(maxWidth: 400) {
@@ -86,7 +90,9 @@ const MembersPage = props => {
               twitter,
               devto,
               instagram,
-              youtube
+              youtube,
+              linkedin,
+              bitbucket
             } = person.frontmatter;
 
             return (
@@ -111,6 +117,15 @@ const MembersPage = props => {
                       <img src={GitHubLogo} alt="" />
                     </a>
                   )}
+                  {bitbucket && (
+                    <a
+                      href={`https://bitbucket.com/${bitbucket}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={BitbucketLogo} alt="" />
+                    </a>
+                  )}
                   {twitter && (
                     <a href={`https://twitter.com/${twitter}`}>
                       <img src={TwitterLogo} alt="" />
@@ -129,6 +144,15 @@ const MembersPage = props => {
                   {youtube && (
                     <a href={youtube}>
                       <img src={YouTubeLogo} alt="" />
+                    </a>
+                  )}
+                  {linkedin && (
+                    <a
+                      href={`https://linkedin.com/in/${linkedin}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={LinkedInLogo} alt="LinkedIn Account" />
                     </a>
                   )}
                 </div>

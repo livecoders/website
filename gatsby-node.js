@@ -17,6 +17,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       devto: String
       youtube: String # This is the full URL as not all channels have a vanity URL
       linkedin: String
+      bitbucket: String
 
       # Misc fields
       sites: [String]
