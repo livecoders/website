@@ -1,6 +1,8 @@
 ---
 username: ryan_c_harris
 profile: ../img/members/ryan_c_harris.png
+devto: ryan_c_harris
+github: ryancharris
 twitter: ryan_c_harris
 youtube: https://www.youtube.com/user/harrisryan1
 schedule:
