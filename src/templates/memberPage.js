@@ -15,6 +15,7 @@ import TwitterLogo from "../img/icons/twitter-square-brands.svg";
 import DevtoLogo from "../img/icons/dev-brands.svg";
 import InstagramLogo from "../img/icons/instagram-brands.svg";
 import YouTubeLogo from "../img/icons/youtube-brands.svg";
+import LinkedInLogo from "../img/icons/linkedin-in-brands.svg";
 
 const MemberPageTemplate = props => {
   let { frontmatter, body, wordCount } = props.data.mdx;
@@ -64,6 +65,13 @@ const MemberPageTemplate = props => {
               <li>
                 <a href={frontmatter.youtube}>
                   <img src={YouTubeLogo} alt="" />
+                </a>
+              </li>
+            )}
+            {frontmatter.linkedin && (
+              <li>
+              <a href={`https://linkedin.com/in/${frontmatter.linkedin}`}>
+                  <img src={LinkedInLogo} alt="LinkedIn Account" />
                 </a>
               </li>
             )}
@@ -160,6 +168,7 @@ export const query = graphql`
         devto
         youtube
         instagram
+        linkedin
         tags
         schedule
         sites

@@ -3,6 +3,7 @@ username: maryjostaebler
 profile: ../img/members/maryjostaebler.png
 twitter: maryjostaebler
 instagram: maryjostaebler
+linkedin: maryjostaebler
 tags:
  - C#
  - Angular
