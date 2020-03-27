@@ -29,48 +29,76 @@ const MemberPageTemplate = props => {
           <h1>{frontmatter.username}</h1>
           <ul id="memberSocials">
             <li>
-              <a href={`https://twitch.tv/${frontmatter.username}`}>
+              <a
+                href={`https://twitch.tv/${frontmatter.username}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={TwitchLogo} alt="" />
               </a>
             </li>
             {frontmatter.twitter && (
               <li>
-                <a href={`https://twitter.com/${frontmatter.twitter}`}>
+                <a
+                  href={`https://twitter.com/${frontmatter.twitter}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={TwitterLogo} alt="" />
                 </a>
               </li>
             )}
             {frontmatter.github && (
               <li>
-                <a href={`https://github.com/${frontmatter.github}`}>
+                <a
+                  href={`https://github.com/${frontmatter.github}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={GitHubLogo} alt="" />
                 </a>
               </li>
             )}
             {frontmatter.devto && (
               <li>
-                <a href={`https://dev.to/${frontmatter.devto}`}>
+                <a
+                  href={`https://dev.to/${frontmatter.devto}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={DevtoLogo} alt="" />
                 </a>
               </li>
             )}
             {frontmatter.instagram && (
               <li>
-                <a href={`https://instagram.com/${frontmatter.instagram}`}>
+                <a
+                  href={`https://instagram.com/${frontmatter.instagram}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={InstagramLogo} alt="" />
                 </a>
               </li>
             )}
             {frontmatter.youtube && (
               <li>
-                <a href={frontmatter.youtube}>
+                <a
+                  href={frontmatter.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={YouTubeLogo} alt="" />
                 </a>
               </li>
             )}
             {frontmatter.linkedin && (
               <li>
-              <a href={`https://linkedin.com/in/${frontmatter.linkedin}`}>
+                <a
+                  href={`https://linkedin.com/in/${frontmatter.linkedin}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={LinkedInLogo} alt="LinkedIn Account" />
                 </a>
               </li>

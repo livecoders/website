@@ -30,7 +30,7 @@
 @media (max-width: 768px) {
   #memberHeader div {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   #memberHeader h1 {
@@ -41,6 +41,8 @@
     margin: 0;
     padding: 0;
     margin-right: 32px;
+    margin-left: 32px;
+    margin-bottom: 16px;
   }
 
   #memberSocials img {
