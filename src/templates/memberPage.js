@@ -11,6 +11,7 @@ import "../css/memberPage.css";
 
 import TwitchLogo from "../img/icons/twitch-brands.svg";
 import GitHubLogo from "../img/icons/github-square-brands.svg";
+import BitbucketLogo from "../img/icons/bitbucket-brands.svg";
 import TwitterLogo from "../img/icons/twitter-square-brands.svg";
 import DevtoLogo from "../img/icons/dev-brands.svg";
 import InstagramLogo from "../img/icons/instagram-brands.svg";
@@ -56,6 +57,17 @@ const MemberPageTemplate = props => {
                   rel="noopener noreferrer"
                 >
                   <img src={GitHubLogo} alt="" />
+                </a>
+              </li>
+            )}
+            {frontmatter.bitbucket && (
+              <li>
+                <a
+                  href={`https://bitbucket.com/${frontmatter.bitbucket}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={BitbucketLogo} alt="" />
                 </a>
               </li>
             )}
@@ -193,6 +205,7 @@ export const query = graphql`
         username
         twitter
         github
+        bitbucket
         devto
         youtube
         instagram
