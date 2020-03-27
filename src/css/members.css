@@ -13,9 +13,21 @@
   margin: 0;
 }
 
+#membersHeader .filterInput {
+  display: block;
+  width: 100%;
+  height: 48px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 20px;
+}
+
 #membersGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   margin: 10px;
   gap: 20px;
 }
