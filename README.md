@@ -46,6 +46,7 @@ Then you can add even more content in the frontmatter. None of the following are
   - instagram
   - devto
   - github
+  - linkedin
   - youtube (needs a full URL as a custom URL requires 100 subs or more on YT)
 - schedule: an array of strings for when you stream. Feel free to add text including scheduled streams that you do on a frequent basis
 - tags: an array of things you do. This includes programming languages, frameworks, spoken languages, etc
