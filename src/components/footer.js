@@ -18,10 +18,18 @@ export default () => (
       <div className="navigation">
         <Nav />
         <div>
-          <a href="https://github.com/livecoders">
+          <a
+            href="https://github.com/livecoders"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={GitHubLogo} alt={"GitHub Logo"} />
           </a>
-          <a href="https://twitter.com/thelivecoders">
+          <a
+            href="https://twitter.com/thelivecoders"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={TwitterLogo} alt={"Twitter Logo"} />
           </a>
         </div>
