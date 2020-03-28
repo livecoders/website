@@ -3,11 +3,11 @@ username: adronhall
 profile: ../img/members/adronhall.jpeg
 twitter: adron
 instagram: adron
-youtube: https://www.youtube.com/
+youtube: https://www.youtube.com/c/ThrashingCode
 schedule:
-  - Tuesday 3:33pm
-  - Wednesday 3:33pm
-  - Friday 3:33pm
+  - Tuesday 3:33pm Pacific
+  - Wednesday 3:33pm Pacific
+  - Friday 3:33pm Pacific
 tags:
   - JavaScript/Node.js
   - C#
