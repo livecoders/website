@@ -15,7 +15,7 @@ export default () => {
           borderBottom: "3px solid rgb(32, 3, 62)",
           padding: "10px 0px",
           textAlign: "center",
-          marginBottom: 0
+          margin: 0
         }}
       >
         Tune in to The Live Coders Conference. Coming April 9th.{" "}
