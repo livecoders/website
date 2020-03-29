@@ -25,7 +25,7 @@ const MembersPage = props => {
 
   let data = useStaticQuery(graphql`
     {
-      allMdx(sort: { fields: frontmatter___username, order: ASC }) {
+      allMdx {
         nodes {
           frontmatter {
             username
