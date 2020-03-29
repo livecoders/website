@@ -50,6 +50,15 @@ const MembersPage = props => {
     }
   `);
 
+  let members = data.allMdx.nodes;
+
+  members = members.sort((a, b) => {
+    return (
+      a.frontmatter.username.toLowerCase() >
+      b.frontmatter.username.toLowerCase()
+    );
+  });
+
   return (
     <React.Fragment>
       <SEO title="Team Members | The Live Coders" />
@@ -75,7 +84,7 @@ const MembersPage = props => {
         </div>
       </div>
       <div id="membersGrid">
-        {data.allMdx.nodes
+        {members
           .filter(person => {
             if (filter === "") return true;
 
