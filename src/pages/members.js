@@ -108,10 +108,13 @@ const MembersPage = props => {
 
             return (
               <div className="member" key={`person-${username}`}>
-                <Link to={`/members/${username}`} className="memberName">
+                <Link
+                  to={`/members/${username.toLowerCase()}`}
+                  className="memberName"
+                >
                   <h2>{person.frontmatter.username}</h2>
                 </Link>
-                <Link to={`/members/${username}`}>
+                <Link to={`/members/${username.toLowerCase()}`}>
                   <Img fluid={profile.childImageSharp.fluid} />
                 </Link>
                 <div className="tags">
