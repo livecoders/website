@@ -150,6 +150,15 @@ export default () => {
             <p>Total Minutes</p>
           </div>
         </div>
+        <p>
+          These stats were collected from the{" "}
+          <a
+            href="https://livecoders-heatmap.netlify.com"
+            style={{ color: "white" }}
+          >
+            Live Coders Heatmap
+          </a>
+        </p>
       </section>
       <section id="sponsors">
         <h2>Our Sponsors</h2>
