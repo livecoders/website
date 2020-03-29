@@ -79,7 +79,9 @@ const MembersPage = props => {
           .filter(person => {
             if (filter === "") return true;
 
-            return person.frontmatter.username.includes(filter);
+            return person.frontmatter.username
+              .toLowerCase()
+              .includes(filter.toLowerCase());
           })
           .map(person => {
             const {
