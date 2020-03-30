@@ -4,7 +4,7 @@ profile: ../img/members/mrdemonwolf.png
 twitter: mrdemonwolf
 instagram: mrdemonwolf
 github: mrdemonwolf
-youtube: mrdemonwolf
+youtube: https://www.youtube.com/mrdemonwolf
 tags:
   - NodeJS
   - MongoDB
