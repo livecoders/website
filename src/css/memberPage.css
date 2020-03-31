@@ -21,6 +21,7 @@
 
 #memberSocials img {
   width: 40px;
+  filter: invert(50%) sepia(87%) saturate(1477%) hue-rotate(230deg) brightness(95%) contrast(98%);
 }
 
 #memberSocials li:not(:last-child) {
@@ -108,8 +109,33 @@
   text-decoration: underline;
 }
 
+
+#memberMetadata .tags ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#memberMetadata .tags ul li {
+  color: white;
+  background-color: #492472;
+  margin: 5px 5px;
+  padding: 3px 4px;
+  border-radius:3px;
+  font-weight:100;
+  text-transform:uppercase;
+  font-size:12px;
+}
+
 @media (max-width: 768px) {
   #memberMetadata {
     grid-template-columns: 1fr;
   }
+}
+
+
+#memberSchedule ul,#memberWebsites ul {
+  list-style-type: none;
+  padding: 0;
 }
