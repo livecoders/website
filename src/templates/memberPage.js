@@ -148,7 +148,7 @@ const MemberPageTemplate = props => {
       {(frontmatter.tags || frontmatter.schedule || frontmatter.sites) && (
         <section id="memberMetadata">
           {frontmatter.tags && (
-            <div>
+            <div className="tags">
               <h3>Tags</h3>
               <hr />
               <ul>
@@ -160,7 +160,7 @@ const MemberPageTemplate = props => {
           )}
 
           {frontmatter.schedule && (
-            <div>
+            <div id="memberSchedule">
               <h3>Schedule</h3>
               <hr />
               <ul>
@@ -172,7 +172,7 @@ const MemberPageTemplate = props => {
           )}
 
           {frontmatter.sites && (
-            <div>
+            <div id="memberWebsites">
               <h3>Websites</h3>
               <hr />
               <ul>
