@@ -114,8 +114,10 @@ const MembersPage = props => {
                 >
                   <h2>{person.frontmatter.username}</h2>
                 </Link>
-                <Link to={`/members/${username.toLowerCase()}`}>
+                <Link className="member-image" to={`/members/${username.toLowerCase()}`}>
                   <Img fluid={profile.childImageSharp.fluid} />
+                  <div  className="inner-glow"></div>
+                  <div  className="inner-glow-top"></div>
                 </Link>
                 <div className="tags">
                   <ul>
