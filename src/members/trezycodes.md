@@ -9,7 +9,6 @@ github: trezy
 instagram: trezycodes
 linkedin: trezy
 twitter: TrezyCodes
-youtube: https://www.youtube.com/c/baldbeardedbuilder
 
 # Other
 schedule:
