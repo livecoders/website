@@ -18,7 +18,7 @@ export default () => {
           margin: 0
         }}
       >
-        Tune in to The Live Coders Conference. Coming April 9th.{" "}
+        Tune in to The Live Coders Conference. Live Now!{" "}
         <a style={{ color: "white " }} href="https://conf.livecoders.dev/">
           Learn More
         </a>
