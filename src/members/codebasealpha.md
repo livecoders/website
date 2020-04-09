@@ -16,5 +16,5 @@ tags:
   - .NET Core
   - Visual Studio
 sites:
-  - https://jcodebasealpha.dev  
+  - https://codebasealpha.dev  
 ---
