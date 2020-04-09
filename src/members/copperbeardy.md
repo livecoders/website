@@ -5,18 +5,15 @@ twitter: copperbeardy
 linkedin: davindavies
 devto: copperbeardy
 youtube: https://www.youtube.com/user/davindaviesdavnet78
+schedule:
+  - Mon 1pm to 3pm BST
+  - Tue 1pm to 3pm BST
+  - Mon through Fri 8am to 9am BST
+tags:
+  - C#
+  - Asp.net core 
+  - Twilio quest
 ---
-schedule
-  mon: 1pm to 3pm BST
-  tue: 1pm to 3pm BST
-  
-  mon-fri: 8am to 9am BST
----
-Tags
-  -- C#
-  -- Asp.net core 
-  -- Twilio quest
---
 
 Started playing around with computers and devices in the olden days or the early 1980s to those that were not there.
 
