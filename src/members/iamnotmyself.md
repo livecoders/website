@@ -24,4 +24,4 @@ Bobby is a passionate engineer with an interest in learning/teaching new technol
 
 His experience ranges from building line of business applications for financial professionals with Russell Investments and Milliman to large distributed social content apps with [Cheezeburger.com](https://www.cheezburger.com/) and [Steller.co](https://steller.co/).
 
-He currently works at [Auth0](https://steller.co/) in the Product Education department teaching people about identity and access management.
+He currently works at [Auth0](https://auth0.com/) in the Product Education department teaching people about identity and access management.
