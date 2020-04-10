@@ -1,6 +1,6 @@
 ---
 username: iamnotmyself
-profile: ../img/members/iamnotmyself.png
+profile: ../img/members/iamnotmyself.jpg
 twitter: notmyself
 linkedin: notmyself74
 github: notmyself
