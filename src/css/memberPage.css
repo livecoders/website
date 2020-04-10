@@ -21,7 +21,8 @@
 
 #memberSocials img {
   width: 40px;
-  filter: invert(50%) sepia(87%) saturate(1477%) hue-rotate(230deg) brightness(95%) contrast(98%);
+  filter: invert(50%) sepia(87%) saturate(1477%) hue-rotate(230deg)
+    brightness(95%) contrast(98%);
 }
 
 #memberSocials li:not(:last-child) {
@@ -73,6 +74,11 @@
   margin: 0 32px;
 }
 
+#memberIntroContent a {
+  color: white;
+  font-style: italic;
+}
+
 @media (max-width: 768px) {
   #memberIntro {
     flex-direction: column;
@@ -109,7 +115,6 @@
   text-decoration: underline;
 }
 
-
 #memberMetadata .tags ul {
   display: flex;
   list-style-type: none;
@@ -122,10 +127,10 @@
   background-color: #492472;
   margin: 5px 5px;
   padding: 3px 4px;
-  border-radius:3px;
-  font-weight:100;
-  text-transform:uppercase;
-  font-size:12px;
+  border-radius: 3px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 @media (max-width: 768px) {
@@ -134,8 +139,8 @@
   }
 }
 
-
-#memberSchedule ul,#memberWebsites ul {
+#memberSchedule ul,
+#memberWebsites ul {
   list-style-type: none;
   padding: 0;
 }
