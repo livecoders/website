@@ -84,7 +84,7 @@ export default () => {
             <span className="icon">
               <img src={KeyboardIcon} alt="" />
             </span>
-            <h3>Access to other professionals for technial guidance</h3>
+            <h3>Access to other professionals for technical guidance</h3>
             <p>
               We are so diverse in backgrounds, that nearly any technical
               question you have will receive an answer in our very active
