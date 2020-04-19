@@ -6,13 +6,13 @@ export default () => {
     streamersLive: 0,
     totalDays: 0,
     totalHours: 0,
-    totalMinutes: 0
+    totalMinutes: 0,
   });
 
   useEffect(() => {
-    fetch("https://livecoders-heatmap.netlify.com/data.json")
-      .then(resp => resp.json())
-      .then(data => {
+    fetch("https://livecoders-heatmap.netlify.app/data.json")
+      .then((resp) => resp.json())
+      .then((data) => {
         /* 
         The structure of the json is an object where keys are the usernames and
         the values are stream objects. By writing Object.entries, I can reduce so
@@ -25,7 +25,7 @@ export default () => {
           }, [])
           .filter(
             /* Now filter down so it grabs all streams that end during this week */
-            stream =>
+            (stream) =>
               differenceInSeconds(
                 parse(
                   stream.endTime,
@@ -41,14 +41,14 @@ export default () => {
         let totalHours = Math.floor(totalMinutes / 60);
         let totalDays = Math.floor(totalHours / 24);
 
-        let amtStreamers = [...new Set(data.map(stream => stream.streamer))]
+        let amtStreamers = [...new Set(data.map((stream) => stream.streamer))]
           .length;
 
         setStats({
           streamersLive: amtStreamers,
           totalDays,
           totalHours,
-          totalMinutes
+          totalMinutes,
         });
       });
   }, []);

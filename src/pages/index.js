@@ -153,7 +153,7 @@ export default () => {
         <p>
           These stats were collected from the{" "}
           <a
-            href="https://livecoders-heatmap.netlify.com"
+            href="https://livecoders-heatmap.netlify.app"
             style={{ color: "white" }}
           >
             Live Coders Heatmap
