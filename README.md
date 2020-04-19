@@ -1,6 +1,6 @@
 # livecoders/website
 
-Website for the Live Coders Twitch Team
+Website for the Live Coders Twitch Team.
 
 ## Setup Instructions
 
