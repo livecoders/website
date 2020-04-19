@@ -4,7 +4,7 @@ Website for the Live Coders Twitch Team
 
 ## Setup Instructions
 
-The site is built with GatsbyJS. Make sure NodeJS is installed before working on the site.
+The site is built with [GatsbyJS](https://www.gatsbyjs.org/). Make sure NodeJS is installed before working on the site.
 
 Clone down the repository and install the dependencies
 
