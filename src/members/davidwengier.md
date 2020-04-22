@@ -1,6 +1,6 @@
 ---
 username: davidwengier
-profile: ../img/members/davidwengier.png
+profile: ../img/members/davidwengier.jpg
 twitter: davidwengier
 github: davidwengier
 devto: davidwengier
