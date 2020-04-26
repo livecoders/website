@@ -5,6 +5,7 @@ import Nav from "../components/nav"
 import VertLogo from "../img/logo-vert.png"
 import GitHubLogo from "../img/icons/github-square-brands.svg"
 import TwitterLogo from "../img/icons/twitter-square-brands.svg"
+import TwitchLogo from "../img/icons/twitch-brands.svg"
 
 import "../css/footer.css"
 
@@ -16,7 +17,7 @@ export default () => (
         <img src={VertLogo} alt={"Live Coders Logo"} />
       </div>
       <div className="navigation">
-        <Nav />
+        <Nav isFooter={true} />
         <div>
           <a
             href="https://github.com/livecoders"
@@ -31,6 +32,13 @@ export default () => (
             rel="noopener noreferrer"
           >
             <img src={TwitterLogo} alt={"Twitter Logo"} />
+          </a>
+          <a
+            href="https://www.twitch.tv/team/livecoders"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={TwitchLogo} alt={"Twitch Logo"} />
           </a>
         </div>
         <Link

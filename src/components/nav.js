@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import "../css/nav.css"
 
-export default () => (
+export default ({ isFooter }) => (
   <nav>
     <ul>
       <li>
@@ -15,6 +15,17 @@ export default () => (
       <li>
         <Link to={"/about"}>About</Link>
       </li>
+      {!isFooter && (
+        <li>
+          <a
+            href="https://www.twitch.tv/team/livecoders"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitch
+          </a>
+        </li>
+      )}
     </ul>
   </nav>
 )
