@@ -27,11 +27,10 @@ I make constant references to my lawn. I call people whippersnappers.
 
 I follow two rules:
 
-* Do nothing but the needful.
+- Do nothing but the needful.
 
-* Trust nothing, and Mr. T.
+- Trust nothing, and Mr. T.
 
-Mr. T is trustworthy. When you see Mr. T, you know what yer gonna get.  Other than that, trust nothing.
+Mr. T is trustworthy. When you see Mr. T, you know what yer gonna get. Other than that, trust nothing.
 
 Oh, and I write unfinished games on stream. The stream is the product, not the games. Occasionally, one get shipped, but usually not completely finished.
-      

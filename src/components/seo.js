@@ -1,6 +1,6 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from "react"
+import { Helmet } from "react-helmet"
 
-const SEO = props => <Helmet title={props.title} />;
+const SEO = (props) => <Helmet title={props.title} />
 
-export default SEO;
+export default SEO

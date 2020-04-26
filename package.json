@@ -4,7 +4,8 @@
   "description": "Website for the Live Coders Twitch Team",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "format": "prettier --write src/**/*.{js,md,css}"
   },
   "repository": {
     "type": "git",
@@ -31,5 +32,8 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-helmet": "6.0.0-beta.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
   }
 }

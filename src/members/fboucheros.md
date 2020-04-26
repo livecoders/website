@@ -22,9 +22,10 @@ sites:
   - https://frankysnotes.com
   - http://www.cloudenfrancais.com
 ---
-Frank Boucher, was born on the French side of this wide Canadian county. Passionate about the Cloud he started sharing with a first blog in French, and shortly after, a second one in English. 
 
-Since then, he created the “Cloud 5 minutes” show. Where every second week, a new episode that answers a different technical question, is published both in French and English [cloud5mins.com](http://cloud5mins.com/). 
+Frank Boucher, was born on the French side of this wide Canadian county. Passionate about the Cloud he started sharing with a first blog in French, and shortly after, a second one in English.
+
+Since then, he created the “Cloud 5 minutes” show. Where every second week, a new episode that answers a different technical question, is published both in French and English [cloud5mins.com](http://cloud5mins.com/).
 
 He loves streaming to try different things, new technology and build open-source projects with the community.
 

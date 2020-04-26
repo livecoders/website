@@ -1,27 +1,27 @@
-import React, { useState } from "react";
-import { useStaticQuery, graphql, Link } from "gatsby";
-import Img from "gatsby-image";
-import Header from "../components/header";
-import Footer from "../components/footer";
-import SEO from "../components/seo";
+import React, { useState } from "react"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import Img from "gatsby-image"
+import Header from "../components/header"
+import Footer from "../components/footer"
+import SEO from "../components/seo"
 
-import "../css/members.css";
+import "../css/members.css"
 
-import TwitchLogo from "../img/icons/twitch-brands.svg";
-import GitHubLogo from "../img/icons/github-square-brands.svg";
-import BitbucketLogo from "../img/icons/bitbucket-brands.svg";
-import TwitterLogo from "../img/icons/twitter-square-brands.svg";
-import DevtoLogo from "../img/icons/dev-brands.svg";
-import InstagramLogo from "../img/icons/instagram-brands.svg";
-import YouTubeLogo from "../img/icons/youtube-brands.svg";
-import LinkedInLogo from "../img/icons/linkedin-in-brands.svg";
+import TwitchLogo from "../img/icons/twitch-brands.svg"
+import GitHubLogo from "../img/icons/github-square-brands.svg"
+import BitbucketLogo from "../img/icons/bitbucket-brands.svg"
+import TwitterLogo from "../img/icons/twitter-square-brands.svg"
+import DevtoLogo from "../img/icons/dev-brands.svg"
+import InstagramLogo from "../img/icons/instagram-brands.svg"
+import YouTubeLogo from "../img/icons/youtube-brands.svg"
+import LinkedInLogo from "../img/icons/linkedin-in-brands.svg"
 
-const MembersPage = props => {
-  const [filter, setFilter] = useState("");
+const MembersPage = (props) => {
+  const [filter, setFilter] = useState("")
 
-  const handleChange = evt => {
-    setFilter(evt.target.value);
-  };
+  const handleChange = (evt) => {
+    setFilter(evt.target.value)
+  }
 
   let data = useStaticQuery(graphql`
     {
@@ -48,16 +48,16 @@ const MembersPage = props => {
         }
       }
     }
-  `);
+  `)
 
-  let members = data.allMdx.nodes;
+  let members = data.allMdx.nodes
 
   members = members.sort((a, b) => {
     return (
       a.frontmatter.username.toLowerCase() >
       b.frontmatter.username.toLowerCase()
-    );
-  });
+    )
+  })
 
   return (
     <React.Fragment>
@@ -85,14 +85,14 @@ const MembersPage = props => {
       </div>
       <div id="membersGrid">
         {members
-          .filter(person => {
-            if (filter === "") return true;
+          .filter((person) => {
+            if (filter === "") return true
 
             return person.frontmatter.username
               .toLowerCase()
-              .includes(filter.toLowerCase());
+              .includes(filter.toLowerCase())
           })
-          .map(person => {
+          .map((person) => {
             const {
               username,
               profile,
@@ -103,8 +103,8 @@ const MembersPage = props => {
               instagram,
               youtube,
               linkedin,
-              bitbucket
-            } = person.frontmatter;
+              bitbucket,
+            } = person.frontmatter
 
             return (
               <div className="member" key={`person-${username}`}>
@@ -114,14 +114,18 @@ const MembersPage = props => {
                 >
                   <h2>{person.frontmatter.username}</h2>
                 </Link>
-                <Link className="member-image" to={`/members/${username.toLowerCase()}`}>
+                <Link
+                  className="member-image"
+                  to={`/members/${username.toLowerCase()}`}
+                >
                   <Img fluid={profile.childImageSharp.fluid} />
-                  <div  className="inner-glow"></div>
-                  <div  className="inner-glow-top"></div>
+                  <div className="inner-glow"></div>
+                  <div className="inner-glow-top"></div>
                 </Link>
                 <div className="tags">
                   <ul>
-                    {tags && tags.map(tag => <li key={`tag-${tag}`}>{tag}</li>)}
+                    {tags &&
+                      tags.map((tag) => <li key={`tag-${tag}`}>{tag}</li>)}
                   </ul>
                 </div>
                 <div className="socials">
@@ -173,12 +177,12 @@ const MembersPage = props => {
                   )}
                 </div>
               </div>
-            );
+            )
           })}
       </div>
       <Footer />
     </React.Fragment>
-  );
-};
+  )
+}
 
-export default MembersPage;
+export default MembersPage

@@ -1,23 +1,23 @@
-import React from "react";
-import { Link } from "gatsby";
-import Header from "../components/header";
-import Footer from "../components/footer";
-import SEO from "../components/seo";
-import useLiveCoderStats from "../hooks/useLiveCoderStats";
+import React from "react"
+import { Link } from "gatsby"
+import Header from "../components/header"
+import Footer from "../components/footer"
+import SEO from "../components/seo"
+import useLiveCoderStats from "../hooks/useLiveCoderStats"
 
-import LiveCodersImg from "../img/livecoders-1.jpg";
-import ChatBubbleIcon from "../img/icons/comments-regular.svg";
-import HeartIcon from "../img/icons/heart-regular.svg";
-import KeyboardIcon from "../img/icons/keyboard-regular.svg";
-import EnvelopeIcon from "../img/icons/envelope-regular.svg";
-import IDBadgeIcon from "../img/icons/id-badge-regular.svg";
-import HandSpockIcon from "../img/icons/hand-spock-regular.svg";
-import FaunaLogo from "../img/fauna-logo.png";
+import LiveCodersImg from "../img/livecoders-1.jpg"
+import ChatBubbleIcon from "../img/icons/comments-regular.svg"
+import HeartIcon from "../img/icons/heart-regular.svg"
+import KeyboardIcon from "../img/icons/keyboard-regular.svg"
+import EnvelopeIcon from "../img/icons/envelope-regular.svg"
+import IDBadgeIcon from "../img/icons/id-badge-regular.svg"
+import HandSpockIcon from "../img/icons/hand-spock-regular.svg"
+import FaunaLogo from "../img/fauna-logo.png"
 
-import "../css/index.css";
+import "../css/index.css"
 
 export default () => {
-  const stats = useLiveCoderStats();
+  const stats = useLiveCoderStats()
 
   return (
     <React.Fragment>
@@ -177,5 +177,5 @@ export default () => {
       </section>
       <Footer />
     </React.Fragment>
-  );
-};
+  )
+}

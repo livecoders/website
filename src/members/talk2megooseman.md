@@ -18,4 +18,5 @@ tags:
   - Twitch API
   - Twitch Extension
 ---
+
 Erik (Gooseman) Guzman jumped into the software development industry back in 2010 right after graduating from college with a Bachelor’s degree in Computer Science. In his early years he worked as a Java application developer, but after being introduced to Ruby on Rails and web application development he transitioned to becoming a full stack web developer. Now that he has grown in experience, he has devoted more of his time to mentoring and knowledge sharing by leveraging platforms such as Twitch.

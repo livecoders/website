@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from "react"
+import { Link } from "gatsby"
 
-import "../css/nav.css";
+import "../css/nav.css"
 
 export default () => (
   <nav>
@@ -17,4 +17,4 @@ export default () => (
       </li>
     </ul>
   </nav>
-);
+)

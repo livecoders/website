@@ -6,10 +6,10 @@ github: mbcrump
 instagram: mbcrump
 devto: mbcrump
 youtube: https://youtube.com/c/mbcrump
-sites: 
-    - https://michaelcrump.net
-    - https://aconvowith.me
-    - http://azuredev.tips
+sites:
+  - https://michaelcrump.net
+  - https://aconvowith.me
+  - http://azuredev.tips
 tags:
   - Azure
   - C#

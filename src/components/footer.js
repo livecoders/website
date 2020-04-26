@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "gatsby";
-import Nav from "../components/nav";
+import React from "react"
+import { Link } from "gatsby"
+import Nav from "../components/nav"
 
-import VertLogo from "../img/logo-vert.png";
-import GitHubLogo from "../img/icons/github-square-brands.svg";
-import TwitterLogo from "../img/icons/twitter-square-brands.svg";
+import VertLogo from "../img/logo-vert.png"
+import GitHubLogo from "../img/icons/github-square-brands.svg"
+import TwitterLogo from "../img/icons/twitter-square-brands.svg"
 
-import "../css/footer.css";
+import "../css/footer.css"
 
 export default () => (
   <footer>
@@ -41,7 +41,7 @@ export default () => (
             color: "#e4e4e4",
             textDecoration: "none",
             marginTop: 20,
-            fontWeight: 400
+            fontWeight: 400,
           }}
         >
           Code of Conduct
@@ -49,4 +49,4 @@ export default () => (
       </div>
     </section>
   </footer>
-);
+)
