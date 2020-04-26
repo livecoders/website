@@ -18,6 +18,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       youtube: String # This is the full URL as not all channels have a vanity URL
       linkedin: String
       bitbucket: String
+      stackoverflow: String # Just the ID
 
       # Misc fields
       sites: [String]
@@ -37,7 +38,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: "slug",
-      value: value
+      value: value,
     });
   }
 };
@@ -64,11 +65,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const memberPages = queryResult.data.allMdx.nodes;
 
-  memberPages.forEach(node => {
+  memberPages.forEach((node) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve("./src/templates/memberPage.js"),
-      context: { id: node.id }
+      context: { id: node.id },
     });
   });
 };

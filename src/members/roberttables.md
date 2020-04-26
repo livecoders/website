@@ -2,6 +2,7 @@
 username: roberttables
 twitter: drpoindexter
 github: mtheoyx
+stackoverflow: 7233527
 profile: ../img/members/roberttables.jpg
 sites:
   - https://www.dpoindexter.com/
