@@ -1,14 +1,14 @@
-const { createFilePath } = require("gatsby-source-filesystem");
-const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem")
+const path = require("path")
 
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
+  const { createTypes } = actions
 
   const typeDefs = `
     type MdxFrontmatter {
       # Required fields
       username: String!
-      profile: File! # Relative Path to profile image
+      profile: File! @fileByRelativePath
 
       # Social Links (Your username for each platform)
       twitter: String
@@ -25,26 +25,26 @@ exports.createSchemaCustomization = ({ actions }) => {
       tags: [String]
       schedule: [String]
     }
-  `;
+  `
 
-  createTypes(typeDefs);
-};
+  createTypes(typeDefs)
+}
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
+  const { createNodeField } = actions
 
   if (node.internal.type === `Mdx`) {
-    const value = createFilePath({ node, getNode });
+    const value = createFilePath({ node, getNode })
     createNodeField({
       node,
       name: "slug",
       value: value,
-    });
+    })
   }
-};
+}
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
 
   const queryResult = await graphql(`
     {
@@ -57,19 +57,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }
       }
     }
-  `);
+  `)
 
   if (queryResult.errors) {
-    reporter.panicOnBuild('Error with Loading "createPages" query');
+    reporter.panicOnBuild('Error with Loading "createPages" query')
   }
 
-  const memberPages = queryResult.data.allMdx.nodes;
+  const memberPages = queryResult.data.allMdx.nodes
 
   memberPages.forEach((node) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve("./src/templates/memberPage.js"),
       context: { id: node.id },
-    });
-  });
-};
+    })
+  })
+}
