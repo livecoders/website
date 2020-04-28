@@ -11,7 +11,8 @@ schedule:
 tags:
   - Java
   - English
-sites: https://codefx.org
+sites:
+  - https://codefx.org
 ---
 
 Nicolai (aka nipafx) is a Java enthusiast with a passion for learning and sharing.
