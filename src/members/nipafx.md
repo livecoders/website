@@ -2,6 +2,7 @@
 username: nipafx
 twitter: nipafx
 github: CodeFX-org
+stackoverflow: 2525313
 youtube: https://youtube.com/codefx
 profile: ../img/members/nipafx.jpeg
 schedule:
