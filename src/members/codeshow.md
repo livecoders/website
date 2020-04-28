@@ -6,8 +6,8 @@ github: rochacbruno
 instagram: codeshowbr
 devto: rochacbruno
 youtube: https://youtube.com/CodeShowBR
-sites: 
-    - https://codeshow.com.br
+sites:
+  - https://codeshow.com.br
 tags:
   - Python
   - Rust
@@ -26,7 +26,8 @@ Hi, I'm Bruno Rocha, I work as a Software Engineer in Test Automation at Red Hat
 ## [Join and learn with me!](https://twitch.tv/codeshow)
 
 ### Personal Bio
-![Bruno Rocha](https://panels-images.twitch.tv/panel-474048953-image-fa393bb0-ea55-4fe9-baea-f61108b7fc8e)  
+
+![Bruno Rocha](https://panels-images.twitch.tv/panel-474048953-image-fa393bb0-ea55-4fe9-baea-f61108b7fc8e)
 
 Born and raised in São Paulo, Brazil, working remotely switching between Brazil and Portugal.
 

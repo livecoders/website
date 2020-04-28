@@ -23,6 +23,7 @@ tags:
 sites:
   - https://jeffreyfritz.com
 ---
+
 Jeffrey T. Fritz – or simply “Fritz” is a Program Manager for Microsoft on the ASP.NET and .NET Community Outreach teams.
 
 During the day, and on my stream, I write .NET code for websites and applications. I hope you join me to learn more about .NET, .NET Core, and Visual Studio.

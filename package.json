@@ -4,7 +4,8 @@
   "description": "Website for the Live Coders Twitch Team",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "format": "prettier --write src/**/*.{js,md,css}"
   },
   "repository": {
     "type": "git",
@@ -17,19 +18,22 @@
     "url": "https://github.com/livecoders/website/issues"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.5.7",
-    "@mdx-js/react": "^1.5.7",
-    "date-fns": "^2.11.0",
-    "gatsby": "^2.19.43",
-    "gatsby-image": "^2.2.43",
-    "gatsby-plugin-google-analytics": "^2.2.2",
-    "gatsby-plugin-mdx": "^1.0.82",
-    "gatsby-plugin-react-helmet": "^3.2.0",
-    "gatsby-plugin-sharp": "^2.4.12",
-    "gatsby-source-filesystem": "^2.1.55",
-    "gatsby-transformer-sharp": "^2.3.18",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-helmet": "6.0.0-beta.2"
+    "@mdx-js/mdx": "^1.5.9",
+    "@mdx-js/react": "^1.5.9",
+    "date-fns": "^2.12.0",
+    "gatsby": "^2.20.36",
+    "gatsby-image": "^2.3.5",
+    "gatsby-plugin-google-analytics": "^2.2.5",
+    "gatsby-plugin-mdx": "^1.1.11",
+    "gatsby-plugin-react-helmet": "^3.2.5",
+    "gatsby-plugin-sharp": "^2.5.7",
+    "gatsby-source-filesystem": "^2.2.5",
+    "gatsby-transformer-sharp": "^2.4.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "6.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
   }
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap");
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -7,14 +7,14 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  font-weight:200;
+  font-weight: 200;
 }
 
 h1,
 h2 {
   font-family: "Press Start 2P";
   text-transform: uppercase;
-  font-weight:400;
+  font-weight: 400;
 }
 
 #hero {

@@ -42,29 +42,35 @@
 }
 
 .member a.member-image {
-  position:relative;
-  display:block;
+  position: relative;
+  display: block;
 }
 .member .gatsby-image-wrapper img {
-  clip-path: polygon(0% 0%, 100% 0%, 100.86% 87.99%, 68.03% 97.70%, -0.86% 82.25%);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100.86% 87.99%,
+    68.03% 97.7%,
+    -0.86% 82.25%
+  );
 }
 
 .member .inner-glow {
-  position:absolute;
-  width:100%;
-  height:100%;
-  bottom:5px;
-  background-image:url("../img/innerglow.svg");
-  background-size:cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 5px;
+  background-image: url("../img/innerglow.svg");
+  background-size: cover;
   background-position: center bottom;
 }
 .member .inner-glow-top {
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  background-image:url("../img/innerglow-top.svg");
-  background-size:cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: url("../img/innerglow-top.svg");
+  background-size: cover;
   background-position: center top;
 }
 
@@ -96,10 +102,10 @@
   background-color: #492472;
   margin: 5px 5px;
   padding: 3px 4px;
-  border-radius:3px;
-  font-weight:100;
-  text-transform:uppercase;
-  font-size:12px;
+  border-radius: 3px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .member .socials {
@@ -111,7 +117,8 @@
 
 .member .socials img {
   width: 24px;
-  filter: invert(50%) sepia(87%) saturate(1477%) hue-rotate(230deg) brightness(95%) contrast(98%);
+  filter: invert(50%) sepia(87%) saturate(1477%) hue-rotate(230deg)
+    brightness(95%) contrast(98%);
 }
 
 .member .socials a:not(:last-child) {

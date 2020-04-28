@@ -20,7 +20,8 @@ tags:
 sites:
   - https://iamnotmyself.com/
 ---
-Bobby is a passionate engineer with an interest in learning/teaching new technologies, open source software and engaging the greater software development community. 
+
+Bobby is a passionate engineer with an interest in learning/teaching new technologies, open source software and engaging the greater software development community.
 
 His experience ranges from building line of business applications for financial professionals with Russell Investments and Milliman to large distributed social content apps with [Cheezeburger.com](https://www.cheezburger.com/) and [Steller.co](https://steller.co/).
 
