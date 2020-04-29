@@ -5,13 +5,13 @@ github: brob
 linkedin: bryanlrobinson
 profile: ../img/members/bryanlrobinson.png
 tags:
-    - CSS
-    - JavaScript
-    - Design
-    - Jamstack
-sites: 
-    - https://bryanlrobinson.com
-    - https://thatsmyjamstack.com
+  - CSS
+  - JavaScript
+  - Design
+  - Jamstack
+sites:
+  - https://bryanlrobinson.com
+  - https://thatsmyjamstack.com
 ---
 
 Bryan has been creating hand-crafted experiences on the web his entire career. His experience spans from large content-driven news sites to boutique designs for small to medium businesses.
