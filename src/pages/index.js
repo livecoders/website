@@ -13,6 +13,7 @@ import EnvelopeIcon from "../img/icons/envelope-regular.svg"
 import IDBadgeIcon from "../img/icons/id-badge-regular.svg"
 import HandSpockIcon from "../img/icons/hand-spock-regular.svg"
 import FaunaLogo from "../img/fauna-logo.png"
+import ManningLogo from "../img/manning-logo.png"
 
 import "../css/index.css"
 
@@ -164,13 +165,24 @@ export default () => {
         <h2>Our Sponsors</h2>
         <div id="sponsorsGrid">
           <div>
-            <a href="https://fauna.com/">
-              <img src={FaunaLogo} alt="" style={{ width: 200 }} />
+            <a href="https://fauna.com/" style={{ height: 90 }}>
+              <img src={FaunaLogo} alt="" style={{ width: 200, height: 90 }} />
             </a>
             <hr style={{ marginTop: 0 }} />
             <p>
               FaunaDB: The database built for serverless, featuring native
               GraphQL
+            </p>
+          </div>
+          <div>
+            <a href="https://manning.com" style={{ height: 90 }}>
+              <img src={ManningLogo} alt="" style={{ width: 200, marginTop: 30, marginBottom: 30 }} />
+            </a>
+            <hr style={{ marginTop: 0 }} />
+            <p>
+              Manning Publications: independent publisher of computer books and video courses 
+              for software developers, engineers, architects, system administrators, managers 
+              and all who are professionally involved with the computer business.
             </p>
           </div>
         </div>
