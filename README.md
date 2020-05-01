@@ -37,7 +37,7 @@ profile: ../img/members/csharpfritz.png
 ---
 ```
 
-The username is used for the URL, the header, and the username to your twitch page. The profile is a relative path to where the profile image is located. All images are initally pulled from Twitch, but you can add your own image / update it whenever you wish (Just remember to update filename / extension if it changes).
+The username is used for the URL, the header, and the username to your twitch page. The profile is a relative path to where the profile image is located. All images are initally pulled from Twitch, but you can add your own image / update it whenever you wish (Remember to update filename / extension if it changes).
 
 Then you can add even more content in the frontmatter. None of the following are required but include:
 
@@ -51,7 +51,7 @@ Then you can add even more content in the frontmatter. None of the following are
   - youtube (needs a full URL as a custom URL requires 100 subs or more on YT)
 - schedule: an array of strings for when you stream. Feel free to add text including scheduled streams that you do on a frequent basis
 - tags: an array of things you do. This includes programming languages, frameworks, spoken languages, etc
-- sites: an array of additional sites you wish to showcase on your page. Limit this to just the URL
+- sites: an array of additional sites you wish to showcase on your page. Limit this to only the URL
 
 And after the frontmatter section, add a paragraph or two talking about what you do / what you do on your stream. You can use either 1st or 3rd person here.
 
