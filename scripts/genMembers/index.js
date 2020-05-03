@@ -4,7 +4,7 @@ const fs = require("fs")
 const path = require("path")
 
 const clientId = process.env.TWITCH_CLIENT_ID
-const clientId = process.env.TWITCH_CLIENT_SECRET
+const clientSecret = process.env.TWITCH_CLIENT_SECRET
 const team = "livecoders"
 
 let teamURL = `https://api.twitch.tv/kraken/teams/${team}`
