@@ -5,7 +5,7 @@ twitter: 1kevgriff
 instagram: 1kevgriff
 youtube: https://www.youtube.com/c/swiftkick
 github: 1kevgriff
-stackoverflow: 1kevgriff
+stackoverflow: 1226
 linkedin: 1kevgriff
 tags:
   - C#
