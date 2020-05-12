@@ -20,6 +20,19 @@ footer div.navigation {
   font-weight: 800;
 }
 
+footer div.navigation > a,
+footer div.navigation span > a {
+  color: #e4e4e4;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 400;
+}
+
+footer div.navigation > a:hover,
+footer div.navigation span > a:hover {
+  text-decoration: underline;
+}
+
 footer div.navigation div {
   display: flex;
   justify-content: flex-end;

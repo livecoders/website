@@ -46,14 +46,21 @@ export default () => (
           style={{
             textAlign: "right",
             marginRight: 20,
-            color: "#e4e4e4",
-            textDecoration: "none",
             marginTop: 20,
-            fontWeight: 400,
           }}
         >
           Code of Conduct
         </Link>
+        <span
+          style={{
+            textAlign: "right",
+            marginRight: 20,
+            fontWeight: 400,
+          }}
+        >
+          Icons provided by{" "}
+          <a href="https://fontawesome.com/license/free">Font Awesome</a>
+        </span>
       </div>
     </section>
   </footer>
