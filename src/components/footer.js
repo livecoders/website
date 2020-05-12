@@ -58,7 +58,7 @@ export default () => (
             fontWeight: 400,
           }}
         >
-          Icons provided by{" "}
+          Icons by{" "}
           <a href="https://fontawesome.com/license/free">Font Awesome</a>
         </span>
       </div>
