@@ -1,5 +1,5 @@
 #membersHeader {
-  background-image: url("../img/team-members-hero-background.png");
+  background-image: url("../img/team-members-hero-background.jpg");
   background-size: cover;
 }
 
@@ -36,7 +36,7 @@
 .member {
   border: 5px solid white;
   border-radius: 8px;
-  background-image: url("../img/card-background.png");
+  background-image: url("../img/card-background.jpg");
   background-size: cover;
   overflow-x: hidden;
 }

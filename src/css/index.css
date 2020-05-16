@@ -18,7 +18,7 @@ h2 {
 }
 
 #hero {
-  background-image: url("../img/home-hero-background.png");
+  background-image: url("../img/home-hero-background.jpg");
   background-size: cover;
   text-align: center;
   padding-bottom: 150px;
@@ -74,7 +74,7 @@ h2 {
 
 #whyJoin {
   padding: 32px;
-  background-image: url("../img/why-join-live-coders-background.png");
+  background-image: url("../img/why-join-live-coders-background.jpg");
   background-size: cover;
 }
 

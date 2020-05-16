@@ -1,5 +1,5 @@
 #memberHeader {
-  background-image: url("../img/team-member-profile-hero-background.png");
+  background-image: url("../img/team-member-profile-hero-background.jpg");
   background-size: cover;
   position: relative;
 }
@@ -98,7 +98,7 @@
 }
 
 #memberMetadata {
-  background-image: url("../img/team-member-profile-details-background.png");
+  background-image: url("../img/team-member-profile-details-background.jpg");
   background-size: cover;
   padding: 32px;
   display: grid;
