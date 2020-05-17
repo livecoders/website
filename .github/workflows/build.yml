@@ -25,7 +25,7 @@ jobs:
           cd scripts/genOGImages
           npm install
           npm run build
-          node gen-opengrap-images.js
+          node gen-opengraph-images.js
       - name: Upload files
         uses: actions/upload-artifact@v2
         with:
