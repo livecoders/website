@@ -25,7 +25,9 @@ async function genOpengraphImage(page, name, imageBase64) {
     `,
   })
 
-  await page.addScriptTag({ content: ogReactComponentScript })
+  await page.addScriptTag({
+    content: ogReactComponentScript,
+  })
 
   if (!fs.existsSync(path.join(__dirname, "dist", "members"))) {
     fs.mkdirSync(path.join(__dirname, "dist", "members"))
@@ -71,15 +73,14 @@ async function run() {
   )
 
   for (let member of members) {
-    await genOpengraphImage(
-      page,
-      member.split(".")[0],
-      Buffer.from(
-        fs.readFileSync(
-          path.join(__dirname, "..", "..", "src", "img", "members", member)
-        )
-      ).toString("base64")
-    )
+    let memberName = member.split(".")[0]
+    let memberImageBase64 = Buffer.from(
+      fs.readFileSync(
+        path.join(__dirname, "..", "..", "src", "img", "members", member)
+      )
+    ).toString("base64")
+
+    await genOpengraphImage(page, memberName, memberImageBase64)
   }
 
   await browser.close()
