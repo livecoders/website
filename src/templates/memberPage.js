@@ -24,7 +24,10 @@ const MemberPageTemplate = (props) => {
 
   return (
     <div>
-      <SEO title={`${frontmatter.username} | The Live Coders`} />
+      <SEO
+        title={`${frontmatter.username} | The Live Coders`}
+        ogImage={`${frontmatter.username.toLowerCase()}.jpg`}
+      />
       <div id="memberHeader">
         <Header />
         <div>
