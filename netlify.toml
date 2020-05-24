@@ -45,9 +45,15 @@
   to = "https://twitch.tv/baldbeardedbuilder"
   status = 301
   force = true
-  
+
 [[redirects]]
   from = "https://conf.livecoders.dev"
   to = "https://captcalli.github.io/LiveCodersConf/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://heatmap.livecoders.dev"
+  to = "https://livecoders-heatmap.netlify.app/"
   status = 301
   force = true
