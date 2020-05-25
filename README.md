@@ -4,7 +4,7 @@ Website for the Live Coders Twitch Team.
 
 ## Setup Instructions
 
-The site is built with [GatsbyJS][]. Make sure [NodeJS][] is installed before working on the site.
+The site is built with [Gatsby][]. Make sure [NodeJS][] is installed before working on the site.
 
 Clone down the repository and install the dependencies
 
@@ -81,5 +81,5 @@ Jeffrey T. Fritz – or simply “Fritz” is a Program Manager for Microsoft on
 ```
 
 <!-- Reference link definitions -->
-[GatsbyJS]: http://gatsbyjs.org/ "A NodeJS based static website generator"
+[Gatsby]: http://gatsbyjs.org/ "A NodeJS based static website generator"
 [NodeJS]: https://nodejs.org "Download and install NodeJS for yout platform"
