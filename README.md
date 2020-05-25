@@ -4,11 +4,11 @@ Website for the Live Coders Twitch Team.
 
 ## Setup Instructions
 
-The site is built with GatsbyJS. Make sure NodeJS is installed before working on the site.
+The site is built with [Gatsby][]. Make sure [Node.js][] is installed before working on the site.
 
 Clone down the repository and install the dependencies
 
-```
+```shell
 git clone https://github.com/livecoders/website.git LCWebsite
 cd LCWebsite
 npm install
@@ -16,7 +16,7 @@ npm install
 
 Then, to start up a development server, run the `develop` node command.
 
-```
+```shell
 npm run develop
 ```
 
@@ -79,3 +79,7 @@ sites:
 
 Jeffrey T. Fritz – or simply “Fritz” is a Program Manager for Microsoft on the ASP.NET and .NET Community Outreach teams...
 ```
+
+<!-- Reference link definitions -->
+[Gatsby]: http://gatsbyjs.org/ "A NodeJS based static website generator"
+[Node.js]: https://nodejs.org "Download and install NodeJS for yout platform"
