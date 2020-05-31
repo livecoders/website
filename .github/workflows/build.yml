@@ -35,6 +35,7 @@ jobs:
     needs: [gen-og-images, gatsby-build]
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: get public dir
         uses: actions/download-artifact@v2
         with:
