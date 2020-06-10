@@ -11,6 +11,31 @@
   margin: 0;
 }
 
+section#mascots
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 10px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+}
+
+
 section#whoAreWe {
   display: flex;
   background-color: #2c1643;
@@ -23,6 +48,12 @@ section#whoAreWe div {
 section#whoAreWe img {
   max-width: 900px;
   width: 100%;
+}
+
+.mascotSingle {
+  float: left;
+  width: 350px;
+  height: 350px;
 }
 
 @media (max-width: 768px) {

@@ -1,7 +1,7 @@
 ---
 username: ramblinggeek
 profile: ../img/members/ramblinggeek.png
-twitter: regeekuk
+twitter: rgeekuk
 instagram: ramblinggeek
 github: RamblingGeekUK
 youtube: http://youtube.com/ramblinggeekuk
