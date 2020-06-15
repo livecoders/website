@@ -43,11 +43,13 @@ export default () => {
         <div>
           <h2>Mission Statement</h2>
           <p>
-            Our purpose is to support streamers who are also
-            Coders/Developers/Technologists. We provide a positive and
-            encouraging environment for team members to grow professionally and
-            personally regardless of their background, education or personal
-            identification/sexual orientation.
+            The Live Coders Team's purpose is to support Coders/Developers/Technologists who are also Content Creators. 
+            We provide a positive and encouraging environment for team members to grow professionally and personally. 
+            We encourage innovation and creativity for all team members through discussions and collaborations between
+            team members. We foster a learning environment by providing valuable feedback on content creation, technical
+            writing and presentations. 
+            We welcome team members from any background and all walks of life, regardless of gender/sexual orientation, 
+            location, or education level.
           </p>
           <Link to="/about" className="btn">
             Read More
