@@ -17,12 +17,34 @@ import ManningLogo from "../img/manning-logo.png"
 
 import "../css/index.css"
 
+import styled from "styled-components"
+
+const EventWrapper = styled.div`
+  background-color: #663399;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(66, 33, 99, 1);
+
+  a {
+    color: #fee8ff;
+  }
+`
+
 export default () => {
   const stats = useLiveCoderStats()
 
   return (
     <React.Fragment>
       <SEO title="The Live Coders" />
+      <EventWrapper>
+        <a
+          href="https://atndesign.github.io/Live-coders-conference/"
+          target="_blank"
+        >
+          The Live Coders Conference | June 2020 | #LCConf2020
+        </a>
+      </EventWrapper>
       <div id="hero">
         <Header />
         <h1>Learn to Code by Watching Us</h1>
@@ -45,13 +67,16 @@ export default () => {
         <div>
           <h2>Mission Statement</h2>
           <p>
-            The Live Coders Team's purpose is to support Coders/Developers/Technologists who are also Content Creators. 
-            We provide a positive and encouraging environment for team members to grow professionally and personally. 
-            We encourage innovation and creativity for all team members through discussions and collaborations between
-            team members. We foster a learning environment by providing valuable feedback on content creation, technical
-            writing and presentations. 
-            We welcome team members from any background and all walks of life, regardless of gender/sexual orientation, 
-            location, or education level.
+            The Live Coders Team's purpose is to support
+            Coders/Developers/Technologists who are also Content Creators. We
+            provide a positive and encouraging environment for team members to
+            grow professionally and personally. We encourage innovation and
+            creativity for all team members through discussions and
+            collaborations between team members. We foster a learning
+            environment by providing valuable feedback on content creation,
+            technical writing and presentations. We welcome team members from
+            any background and all walks of life, regardless of gender/sexual
+            orientation, location, or education level.
           </p>
           <Link to="/about" className="btn">
             Read More
@@ -178,13 +203,18 @@ export default () => {
           </div>
           <div>
             <a href="https://manning.com" style={{ height: 90 }}>
-              <img src={ManningLogo} alt="" style={{ width: 200, marginTop: 30, marginBottom: 30 }} />
+              <img
+                src={ManningLogo}
+                alt=""
+                style={{ width: 200, marginTop: 30, marginBottom: 30 }}
+              />
             </a>
             <hr style={{ marginTop: 0 }} />
             <p>
-              Manning Publications: independent publisher of computer books and video courses 
-              for software developers, engineers, architects, system administrators, managers 
-              and all who are professionally involved with the computer business.
+              Manning Publications: independent publisher of computer books and
+              video courses for software developers, engineers, architects,
+              system administrators, managers and all who are professionally
+              involved with the computer business.
             </p>
           </div>
         </div>
