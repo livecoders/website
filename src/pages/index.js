@@ -41,6 +41,7 @@ export default () => {
         <a
           href="https://atndesign.github.io/Live-coders-conference/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           The Live Coders Conference | June 2020 | #LCConf2020
         </a>
