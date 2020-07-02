@@ -10,7 +10,7 @@ sites:
   - https://ted.dev
   - https://tdd.cards
 schedule:
-  - Monday thru Friday: 10:30am-4:00pm (Pacific Time) | 17:30-21:00 GMT
+  - "Monday thru Friday: 10:30am-4:00pm (Pacific Time) | 17:30-21:00 GMT"
 tags:
   - Java
   - Unit Testing
