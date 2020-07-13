@@ -1,5 +1,6 @@
 ---
 username: crazy4pi314
+<<<<<<< HEAD
 youtube: https://www.youtube.com/SarahKaiser314
 github: crazy4pi314
 devto: crazy4pi314
@@ -30,3 +31,7 @@ Join me on Twitch on Tuesdays to AMA about quantum computing, and work with me o
 Also, drop by [qsharp.community](https://qsharp.community), and learn how to develop for quantum technologies with a welcome and friendly community.
 
 When not at the keyboard I love laser cutting everything (safe), writing [books about engineering](amazon.com/author/sckaiser) for kids and adults, as well as playing with my pup, [Chewie](https://twitter.com/chewieborka).
+=======
+profile: ../img/members/crazy4pi314.png
+---
+>>>>>>> 18b9fc754555a7ff60acde7d82db60c843f28f97
