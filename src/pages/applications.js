@@ -22,7 +22,7 @@ export default () => (
         <h1>Apply to be part of the team</h1>
       </div>
     </div>
-    <section id="qualifications">
+    <section id="criteria">
       <div>
         <h2>Qualifications</h2>
         <p>We want to ensure that broadcasters on the team are makers who have made a commitment 
@@ -48,22 +48,26 @@ export default () => (
       </div>
     </section>
     <section id="why">
-      <h2>Why this page exists</h2>
-      <p>
-        After a year and a half The Live Coders has grown from the initial intake to 160+ members. That's 
-        almost 10 new members per month. With that, we want to be more open about the application process
-        and make what we do more transparent to all. This makes sure you get correct and timely feedback 
-        on your application. 
-        We are improving the process continuously and this page is a step in that direction.  
-      </p>
+      <div>
+        <h2>Why this page exists</h2>
+        <p>
+          After a year and a half The Live Coders has grown from the initial intake to 190+ members. That's 
+          almost 10 new members per month. With that, we want to be more open about the application process
+          and make what we do more transparent to all. This makes sure you get correct and timely feedback 
+          on your application. 
+          We are improving the process continuously and this page is a step in that direction.  
+        </p>
+      </div>
     </section>
     <section id="faq">
-      <h2>Frequent Questions</h2>
-      <p>
-        We want to ensure that broadcasters on the team are makers who have made
-        a commitment to broadcast on the Twitch platform with a positive and
-        welcoming atmosphere. Members and prospective members:
-      </p>
+      <div>
+        <h2>Frequent Questions</h2>
+        <p>
+          We want to ensure that broadcasters on the team are makers who have made
+          a commitment to broadcast on the Twitch platform with a positive and
+          welcoming atmosphere. Members and prospective members:
+        </p>
+      </div>
     </section>
     <Footer />
   </React.Fragment>

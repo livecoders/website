@@ -13,7 +13,7 @@ export default ({ isFooter }) => (
         <Link to={"/members"}>Team Members</Link>
       </li>
       <li>
-        <Link to={"/applications"}>Applications</Link>
+        <Link to={"/applications"}>Join Us</Link>
       </li>
       <li>
         <Link to={"/about"}>About</Link>
