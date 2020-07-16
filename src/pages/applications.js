@@ -20,6 +20,13 @@ export default () => (
       <Header />
       <div>
         <h1>Apply to be part of the team</h1>
+
+        <a 
+          href="https://github.com/livecoders/Home/issues/new?assignees=csharpfritz&labels=application&template=application.md&title=Application+for+Membership"
+          className="btn"
+        >
+          Apply Now
+        </a>
       </div>
     </div>
     <section id="criteria">
@@ -42,9 +49,25 @@ export default () => (
     <section id="process">
       <div>
         <h2>The Process</h2>
-        <p>Live coder team members will review and ensure that prospective channels meet these requirements 
-          before admitting new members to the team. Reviews are conducted at the end of each month. 
-          Please don't be discouraged if it takes some time for feedback.</p>
+        <p>
+          <ul>
+            <li>Hit the Apply Now button at the top of this page</li>
+            <li>Fill in the GitHub issue to the best of your ability</li>
+            <li>The Live Coders get alerted of your application</li>
+            <li>Any team member can give their opinions on your stream and community.</li>
+            <li>Taking all member opinions, the minimum criteria and looking closely at your VoDs 
+              or live streams, we review your application.</li>
+            <li>A decision is made and confirmed by at least one other Live Coder</li>
+            <li>You the applicant are told if you are successful at becoming a Full team member, 
+              an Intern member in the nurture program or rejected.</li>
+            <li>REJECTION: There have only ever been 3 Rejections in the past if the broadcaster 
+              meets the minimum criteria.</li>
+            <li>FULL TEAM MEMBERSHIP: Invited tot he Twitch Team, Full Access to the discord server, 
+              access to all the perks of being in the community</li>
+            <li>INTERN MEMBERSHIP: You didn't quite make the minimum criteria, however we saw 
+              something we could nurture into moving into a Full Team position.</li>
+          </ul>
+        </p>
       </div>
     </section>
     <section id="why">
@@ -62,11 +85,19 @@ export default () => (
     <section id="faq">
       <div>
         <h2>Frequent Questions</h2>
-        <p>
-          We want to ensure that broadcasters on the team are makers who have made
-          a commitment to broadcast on the Twitch platform with a positive and
-          welcoming atmosphere. Members and prospective members:
-        </p>
+        <h3>I haven't heard from you and my application is taking a long time. WHY?</h3>
+        <p>We are aiming to look at applications on a 2 week cycle at this time. It was previously 
+          monthly and we missed some. If we don't get back to you please feel free to comment on your GitHub issue.</p>
+        <h3>I meet the minimum criteria, why wasn't I accepted?</h3>
+        <p>Some of the criteria is looked is opinion based, like "polite and inviting" for example. 
+          This is why we need at least two opinions on each application. If you don't quite hit the criteria,
+           we are now inviting you to a nurture program, which give you access to team members and allows you to grow.</p>
+        <h3>What is the Nurture Program</h3>
+        <p>During the first run through of applications since Live Coders Conference 2, it became 
+          apparent that there were a lot of broadcasters in the "not quite there" category. We saw the 
+          potential and didn't want to flat out reject half of the applicants. Therefore the Nurture Program was created.
+          This gives a slightly limited membership into the Live Coders as an "Intern". You are able to ask questions, get advice and grow
+          your stream and community with the help of the Team.</p>
       </div>
     </section>
     <Footer />
