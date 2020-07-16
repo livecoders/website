@@ -17,35 +17,12 @@ import ManningLogo from "../img/manning-logo.png"
 
 import "../css/index.css"
 
-import styled from "styled-components"
-
-const EventWrapper = styled.div`
-  background-color: #663399;
-  padding: 10px;
-  text-align: center;
-  font-weight: 700;
-  border-bottom: 1px solid rgba(66, 33, 99, 1);
-
-  a {
-    color: #fee8ff;
-  }
-`
-
 export default () => {
   const stats = useLiveCoderStats()
 
   return (
     <React.Fragment>
       <SEO title="The Live Coders" />
-      {/* <EventWrapper>
-        <a
-          href="https://atndesign.github.io/Live-coders-conference/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          The Live Coders Conference | June 2020 | #LCConf2020
-        </a>
-      </EventWrapper> */}
       <div id="hero">
         <Header />
         <h1>Learn to Code by Watching Us</h1>

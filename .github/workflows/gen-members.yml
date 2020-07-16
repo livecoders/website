@@ -26,7 +26,7 @@ jobs:
           git config user.email "<>"
 
           git pull origin master
-          git add src/members/*
+          git add src/members/* src/img/members/*
           git commit -m "Add new members" && echo "::set-output name=new_members::true" || echo "::set-output name=new_members::false"
           git push origin master
   build-site:
