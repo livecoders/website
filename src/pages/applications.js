@@ -65,7 +65,7 @@ export default () => (
             <li>FULL TEAM MEMBERSHIP: Invited to the Twitch Team, Full Access to the discord server, 
               access to all the perks of being in the community</li>
             <li>NURTURE PROGRAM MEMBERSHIP: You didn't quite make the minimum criteria, however we saw 
-              something we could nurture into moving into a Full Team position.</li>
+              something we could nurture into moving into a Full Team position.</li> 
           </ul>
         </p>
       </div>
@@ -97,7 +97,7 @@ export default () => (
           apparent that there were a lot of broadcasters in the "not quite there" category. We saw the 
           potential and didn't want to flat out reject half of the applicants. Therefore the Nurture Program was created.
           This gives a slightly limited membership into the Live Coders as an "Intern". You are able to ask questions, get advice and grow
-          your stream and community with the help of the Team.</p>
+          your stream and community with the help of the Team .</p>
       </div>
     </section>
     <Footer />
