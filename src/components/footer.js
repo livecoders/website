@@ -6,6 +6,7 @@ import VertLogo from "../img/logo-vert.png"
 import GitHubLogo from "../img/icons/github-square-brands.svg"
 import TwitterLogo from "../img/icons/twitter-square-brands.svg"
 import TwitchLogo from "../img/icons/twitch-brands.svg"
+import YouTubeLogo from "../img/icons/youtube-brands.svg"
 
 import "../css/footer.css"
 
@@ -39,6 +40,13 @@ export default () => (
             rel="noopener noreferrer"
           >
             <img src={TwitchLogo} alt={"Twitch Logo"} />
+          </a>
+          <a
+            href="https://www.youtube.com/thelivecoders"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={YouTubeLogo} alt={"YouTube Logo"} />
           </a>
         </div>
         <Link
