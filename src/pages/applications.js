@@ -59,12 +59,12 @@ export default () => (
               or live streams, we review your application.</li>
             <li>A decision is made and confirmed by at least one other Live Coder</li>
             <li>You the applicant are told if you are successful at becoming a Full team member, 
-              an Intern member in the nurture program or rejected.</li>
+              an "Intern" in the Nurture Program or rejected.</li>
             <li>REJECTION: There have only ever been 3 Rejections in the past if the broadcaster 
               meets the minimum criteria.</li>
-            <li>FULL TEAM MEMBERSHIP: Invited tot he Twitch Team, Full Access to the discord server, 
+            <li>FULL TEAM MEMBERSHIP: Invited to the Twitch Team, Full Access to the discord server, 
               access to all the perks of being in the community</li>
-            <li>INTERN MEMBERSHIP: You didn't quite make the minimum criteria, however we saw 
+            <li>NURTURE PROGRAM MEMBERSHIP: You didn't quite make the minimum criteria, however we saw 
               something we could nurture into moving into a Full Team position.</li>
           </ul>
         </p>
@@ -89,9 +89,9 @@ export default () => (
         <p>We are aiming to look at applications on a 2 week cycle at this time. It was previously 
           monthly and we missed some. If we don't get back to you please feel free to comment on your GitHub issue.</p>
         <h3>I meet the minimum criteria, why wasn't I accepted?</h3>
-        <p>Some of the criteria is looked is opinion based, like "polite and inviting" for example. 
+        <p>Some of the criteria we look into is opinion based, like "polite and inviting" for example. 
           This is why we need at least two opinions on each application. If you don't quite hit the criteria,
-           we are now inviting you to a nurture program, which give you access to team members and allows you to grow.</p>
+          we are now inviting you to a nurture program, which give you access to team members and allows you to grow.</p>
         <h3>What is the Nurture Program</h3>
         <p>During the first run through of applications since Live Coders Conference 2, it became 
           apparent that there were a lot of broadcasters in the "not quite there" category. We saw the 
