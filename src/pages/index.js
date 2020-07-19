@@ -23,7 +23,6 @@ export default () => {
   return (
     <React.Fragment>
       <SEO title="The Live Coders" />
-
       <div id="hero">
         <Header />
         <h1>Learn to Code by Watching Us</h1>
@@ -31,12 +30,7 @@ export default () => {
           Be a part of a growing community of coders, developers, and
           technologists who love to stream their passions on Twitch.
         </p>
-        <a
-          href="https://github.com/livecoders/Home/issues/new?assignees=csharpfritz&labels=application&template=application.md&title=Application+for+Membership"
-          className="btn"
-        >
-          Join Us
-        </a>
+        <Link className="btn" to={"/applications"}>Join Us</Link>
       </div>
       <section id="missionStatement">
         <img
