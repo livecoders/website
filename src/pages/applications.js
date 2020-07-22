@@ -3,14 +3,6 @@ import React from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import SEO from "../components/seo"
-
-import LiveCodersImg from "../img/livecoders-2.jpg"
-import ChatBubbleIcon from "../img/icons/comments-regular.svg"
-import HeartIcon from "../img/icons/heart-regular.svg"
-import KeyboardIcon from "../img/icons/keyboard-regular.svg"
-import UserIcon from "../img/icons/user-regular.svg"
-import TwitchIcon from "../img/icons/twitch-brands.svg"
-
 import "../css/applications.css"
 
 export default () => (
