@@ -19,8 +19,6 @@ schedule:
   - Saturdays at 14:00 BRT
 ---
 
-![Bruno Rocha](https://raw.githubusercontent.com/rochacbruno/rochacbruno/master/img/redhat_avatar2.png)
-
 [I stream live coding Python and Rust](https://twitch.tv/codeshow)
 
 # Hello World
