@@ -5,8 +5,8 @@ twitter: coreylweathers
 instagram: coreylweathers
 github: coreylweathers
 schedule:
- - File > Newbie: Wednesdays 1pm - 3pm EDT
- - Corey Codes: Thursdays 1pm - 3pm EDT
+ - 'File > Newbie: Wednesdays 1pm - 3pm EDT'
+ - 'Corey Codes: Thursdays 1pm - 3pm EDT'
 tags:
  - csharp
  - blazor
