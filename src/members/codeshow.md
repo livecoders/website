@@ -1,6 +1,6 @@
 ---
 username: codeshow
-profile: https://raw.githubusercontent.com/rochacbruno/rochacbruno/master/img/redhat_avatar2.png
+profile: ../img/members/codeshow.png
 twitter: rochacbruno
 github: rochacbruno
 instagram: codeshowbr
