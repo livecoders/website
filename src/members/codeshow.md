@@ -14,34 +14,25 @@ tags:
   - Linux
   - Flask
 schedule:
-  - Tuesday at 9:30pm BRT
-  - Thursdays at 9:30pm BRT
-  - Saturdays at a random time
+  - Tuesday at a random time.
+  - Thursdays at 21:30 BRT
+  - Saturdays at 14:00 BRT
 ---
 
-# About
+[I stream live coding Python and Rust](https://twitch.tv/codeshow)
 
-Hi, I'm Bruno Rocha, I work as a Software Engineer in Test Automation at Red Hat, I am a long time open source contributor and member of Python Software Foundation. I code mostly in Python maintaining some libraries I created but I am also Learning Rust language and using my stream audience to help me on this learning.
+# Hello World
 
-## [Join and learn with me!](https://twitch.tv/codeshow)
+My name is Bruno Rocha I work  with computers since 1998. 
+I am passionate about tech education and open-source software.
 
-### Personal Bio
+I am from São Paulo, Brazil and I currently work remotely 
+as a programmer on Red Hat for the Ansible Project.
 
-![Bruno Rocha](https://panels-images.twitch.tv/panel-474048953-image-fa393bb0-ea55-4fe9-baea-f61108b7fc8e)
+I code mainly on Python, Bash, JS, Lua, and Rust.
 
-Born and raised in São Paulo, Brazil, working remotely switching between Brazil and Portugal.
+I am married to the wonderful [@KarlaMag](https://twitch.tv/karlamag) and we have 
+an awesome kid called [Erik](https://instagram.com/erikices).
 
-I code since the year 2001 and I have experience on many languages and technologies, the last 10 years I focused on Python for backend, API devlopment, data engineering and test automation.
+Read my full bio [In English](https://github.com/rochacbruno/rochacbruno/blob/master/HISTORY.md) and [In Portuguese](https://github.com/rochacbruno/rochacbruno/blob/master/HISTORY_ptbr.md)
 
-I also like to contribute to open-source and communities, I have been part of Python Brazil Community for many years and I am also fellow member of Python Software Foundation since 2012 and recently I am getting involved on Rust Language community.
-
-- I am married <3 with [@karlamag](https://twitch.tv/karlamag)
-- I have a little [toddler boy](https://instagram.com/erikices)
-- I love animals and currently I take care of 2 cats at my apartment and more 7 rescued animals under my caring.
-- I am vegetarian since I was born
-- I am vegan since 2003
-- I like to cook
-- I am learning to bake breads
-- I like to ride road vintage bicycles (Eroica)
-- I had a Heavy Metal band when I was younger
-- I listen to all the flavours of Metal
