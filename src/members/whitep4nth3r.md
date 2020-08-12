@@ -28,4 +28,4 @@ And because of this, I firmly believe that anyone from anywhere should have acce
 
 I'm coding live, I'm building a community, and I'm offering a platform to build confidence, share ideas, and most importantly - learn.
 
-## You can do anything.
+## Build stuff, learn things, love what you do.

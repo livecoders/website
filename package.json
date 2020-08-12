@@ -24,6 +24,7 @@
     "date-fns": "^2.15.0",
     "gatsby": "^2.24.4",
     "gatsby-image": "^2.4.13",
+    "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-google-analytics": "^2.3.11",
     "gatsby-plugin-mdx": "^1.2.27",
     "gatsby-plugin-react-helmet": "^3.3.10",
