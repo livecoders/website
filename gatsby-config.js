@@ -23,5 +23,33 @@ module.exports = {
         anonymize: true,
       },
     },
+    {
+    resolve: `gatsby-plugin-favicon`,
+    options: {
+      logo: `${__dirname}/src/img/favicon.png`,
+      appName: 'The Live Coders',
+      appDescription: null,
+      developerName: null,
+      developerURL: null,
+      dir: 'auto',
+      lang: 'en-GB',
+      background: '#9148db',
+      theme_color: `#9148db`,
+      display: 'standalone',
+      orientation: 'any',
+      start_url: '/',
+      version: '1.0',
+      icons: {
+        android: true,
+        appleIcon: true,
+        appleStartup: true,
+        coast: false,
+        favicons: true,
+        firefox: true,
+        yandex: false,
+        windows: false
+      }
+    }
+  }
   ],
 }
