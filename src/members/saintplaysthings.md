@@ -5,8 +5,8 @@ schedule:
   - Tuesday 5PM BST -> 8PM BST 
   - Saturday 11AM BST -> 2PM BST
 tags:
-  -JS
-  -html
+  - JS
+  - html
 sites:
   - https://disstreamchat.com
 ---
