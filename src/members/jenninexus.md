@@ -13,7 +13,7 @@ tags:
   - gameplay (various games)
 sites:
   - https://jenninexus.com
-  - https://martiangames.com (design)
+  - https://martiangames.com
 ---
 
 ### Hi there, Jenni here - Technical artist, game dev, streamer.
@@ -21,6 +21,7 @@ sites:
 Nice to meet you. I'm a long-time gamer who has a passion for learning 3d modeling for graphic designs and game art, and Unity for making games. Usually I'm streaming in the Creative or Science & Tech sections but I make sure to take time to have fun and play both high and low-budget games.
 
 ### Interests
+
 - C# in Unity
 - Blender 3d
 - HTML, CSS, JS
@@ -28,19 +29,28 @@ Nice to meet you. I'm a long-time gamer who has a passion for learning 3d modeli
 - Channel design
 - Voice acting
 - Collaborating
+
 ---
+
 ### 💻 Twitch
+
 - [Twitch.tv/JenniNexus](https://twitch.tv/jenninexus)
 - [Live Coders](https://livecoders.dev/members/jenninexus/)
+
 ---
+
 ### 📺 YouTube Playlists
+
 - [Devlogs](https://www.youtube.com/playlist?list=PL9QBjNDhgNwRsznW8e3-KVmwfEuwvr7Yi)
 - [Voice Acting](https://www.youtube.com/playlist?list=PL9QBjNDhgNwQbaceJmfZzc3x4L80gvh8J)
 - [3d, game art & vfx](https://www.youtube.com/playlist?list=PL9QBjNDhgNwQL08lHI_h-CJ281WitOzYp)
 - [Favorite tutorials](https://www.youtube.com/c/JenniNexus/playlists?view=50&sort=dd&shelf_id=25)
 - [jenninexus.com/youtube](https://jenninexus.com/youtube)
+
 ---
+
 ### 🎥 Latest YouTube videos
+
 <!-- YOUTUBE:START -->
 - [🌈 Daily ☕️ Coffee + chat](https://www.youtube.com/watch?v=JIOQAeKVhjk)
 - [☕️ Coffee n chat](https://www.youtube.com/watch?v=BJRtrF9PfaY)
@@ -48,14 +58,17 @@ Nice to meet you. I'm a long-time gamer who has a passion for learning 3d modeli
 - [BICYCLE in BLOCKBENCH Let's make a Minecraft mod](https://www.youtube.com/watch?v=-ntscMP42OQ)
 - [DAVINCI RESOLVE for NOOBS ( the basics)](https://www.youtube.com/watch?v=-1HFuFAuy2w)
 <!-- YOUTUBE:END -->
+
 ---
+
 ### ✏️ Latest Blog posts
+
 <!-- BLOG-POST-LIST:START -->
 - [Tank Off](https://dev.to/jenninexus/tank-off-1pib)
 - [Holiday madness](https://dev.to/jenninexus/holiday-madness-b46)
 <!-- BLOG-POST-LIST:END -->
 
-<br>
+<br />
 Thx for stopping by :)
 
 
