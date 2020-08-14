@@ -13,9 +13,12 @@ schedule:
 tags:
   - C#
   - JavaScript
+  - TypeScript
   - Vue.js
   - Azure
-  - Server-less
+  - Serverless
+  - Family Friendly
+  - Beginner Friendly
 sites:
   - https://baldbeardedbuilder.com
 ---
