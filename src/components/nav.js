@@ -18,6 +18,9 @@ export default ({ isFooter }) => (
       <li>
         <Link to={"/about"}>About</Link>
       </li>
+      <li>
+        <Link to={"/olivecody"}>Olive and Cody</Link>
+      </li>
       {!isFooter && (
         <li>
           <a
