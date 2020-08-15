@@ -9,10 +9,8 @@ linkedin: jeffreytfritz
 profile: ../img/members/csharpfritz.png
 schedule:
   - Sundays 10am - 12PM ET
-  - Tuesdays 10am - 12PM ET
-  - Wednesdays 10am - 12PM ET
+  - Tuesdays 9am - 1PM ET
   - Thursdays 10am - 12PM ET
-  - Fridays 10am - 12PM ET
 tags:
   - C#
   - ASP.NET Core
