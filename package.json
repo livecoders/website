@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Website for the Live Coders Twitch Team",
   "scripts": {
+    "d": "gatsby develop",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
