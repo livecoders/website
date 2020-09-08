@@ -3,7 +3,11 @@
 # First Steps
 
 1. Install Projects
-   - Make the existing one work and run local with live reload, then more
+   - Fork the website, run `npm i` within the root folder and run `npm run d`. This will run a Gatsby server at port `8000`.
+
+## NOTE
+
+You can also open a collab session with someone who has the fork already installed, and access their local server apart from viewing their terminal and code.
 
 # To-DO
 
