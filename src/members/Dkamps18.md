@@ -1,6 +1,6 @@
 ---
-username: dannykampsgamez
-profile: ../img/members/dannykampsgamez.png
+username: Dkamps18
+profile: ../img/members/dkamps18.png
 twitter: Dkamps18
 instagram: Dkamps18
 github : Dkamps18
