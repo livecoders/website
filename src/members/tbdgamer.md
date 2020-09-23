@@ -8,12 +8,19 @@ schedule:
   - Tuesday 8pm - 11pm ET
   - Thursday 8pm - 11pm ET
 tags:
-  - csharp
+  - c#
+  - .NET
+  - xamarin
+  - web development
   - angular
+  - blazor
 sites:
   - https://tbdgamer.stream
 ---
 
-My name is Terry, I love software development. More importantly, I love getting better at software development. I've been a developer for 20 years, and my stream focus is on using that knowledge and experience and accepting that I don't know a whole load of stuff.
+I'm Terry, I've been a professional developer for over 20 years and love what I do. I stream to be able to share my experience, thoughts and opinions on software development. I love actively engaging with chat on all subjects and am happily "squirelled". 
 
-I pick up new to me technologies, I discuss my opinions and thoughts on building software, building teams and growing on our software development journey. I've yet to find the one project that will truly grab my attention, so each stream can be a different application, a different problem.
+On stream, we've developed my channel bot from scratch, worked on a project together, and more recently we've been working on a project for tracking my games collection using Xamarin Forms, Auth0 and ASP.NET Core Web API. I'm always open to new technologies, and love learning. 
+
+Throughout the course of the stream, we'll divert to discussion, exploration and share the journey together. 
+
