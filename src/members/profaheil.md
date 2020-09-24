@@ -3,12 +3,12 @@ username: profaheil
 profile: ../img/members/profaheil.png
 twitter: aheil
 instagram: aheil
-youtube: https://prof.aheil.de/yt 
+youtube: https://prof.aheil.de/yt
 github: aheil
 linkedin: aheil
 schedule:
-  - Mondays 10:30 am - 1:30 PM CEST: Office Hours
-  - Fridays 10:30 am - 1:30 PM CEST: Live Coding
+  - Mondays 10:30 am - 1:30 PM CEST - Office Hours
+  - Fridays 10:30 am - 1:30 PM CEST - Live Coding
 tags:
   - C#
   - Ansible
