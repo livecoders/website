@@ -6,13 +6,17 @@ instagram: _clarkio
 github: clarkio
 devto: clarkio
 youtube: https://youtube.com/clarkio
+linkedin: brianclarkdev
 schedule:
   - Thursday 10am ET
   - Friday 12:30pm ET
 tags:
+  - VS Code
   - Node.js
   - JavaScript
   - TypeScript
+  - Python
+  - Beginner Friendly
 sites:
   - https://clarkio.com
 ---
