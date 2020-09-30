@@ -4,7 +4,7 @@ Website for the Live Coders Twitch Team.
 
 ## Setup Instructions
 
-The site is built with [Gatsby][]. Make sure [Node.js][] is installed before working on the site.
+This site is built with [Gatsby][]. Make sure [Node.js][] is installed before working on the site.
 
 Clone down the repository and install the dependencies
 
@@ -20,7 +20,7 @@ Then, to start up a development server, run the `develop` node command.
 npm run develop
 ```
 
-The site will be spun up on port 8000 and if you update any page, the site will reload automatically.
+The site will be spun up on port 8000 and if you update any page, the site will redirected automatically.
 
 ## Member Page docs
 
