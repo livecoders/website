@@ -1,4 +1,4 @@
-# livecoders/website
+# livecoders/website an amazing project
 
 Website for the Live Coders Twitch Team.
 
@@ -59,7 +59,9 @@ So a full example may look like the following:
 
 ```markdown
 ---
+
 username: csharpfritz
+
 profile: ../img/members/csharpfritz.png
 twitter: csharpfritz
 instagram: csharpfritz
