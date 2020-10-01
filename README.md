@@ -2,7 +2,8 @@
 
 Website for the Live Coders Twitch Team.
 
-## Setup Instructions
+## Setup Instructions for live coder
+
 
 The site is built with [Gatsby][]. Make sure [Node.js][] is installed before working on the site.
 
