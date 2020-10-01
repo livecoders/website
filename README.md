@@ -1,4 +1,4 @@
-# livecoders/website
+# Livecoders / Website
 
 Website for the Live Coders Twitch Team.
 
