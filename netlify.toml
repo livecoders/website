@@ -57,3 +57,9 @@
   to = "https://livecoders-heatmap.netlify.app/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://jerseys.livecoders.dev"
+  to = "https://customesports.com/product-category/team-store/the-live-coders/"
+  status = 301
+  force = true
