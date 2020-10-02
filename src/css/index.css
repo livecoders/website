@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto|Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap");
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -7,16 +7,18 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  font-weight: 200;
 }
 
 h1,
 h2 {
   font-family: "Press Start 2P";
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 #hero {
-  background-image: url("../img/home-hero-background.png");
+  background-image: url("../img/home-hero-background.jpg");
   background-size: cover;
   text-align: center;
   padding-bottom: 150px;
@@ -34,25 +36,36 @@ h2 {
 }
 
 #missionStatement {
-  background-color: #2c1643;
   display: flex;
+  background-image: url("../img/livecoders-collage.png");
+  background-size: cover;
+  position: relative;
 }
 
-#missionStatement img {
-  max-width: 900px;
+.missionStatement__overlay {
+  background-color: rgba(44, 22, 67, 0.4);
   width: 100%;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
 }
 
-#missionStatement div {
+.missionStatement__container {
   padding: 64px;
+  width: 100%;
+  background-color: rgba(44, 22, 67, 0.9);
   max-width: 800px;
+  margin: auto;
+  z-index: 2;
+}
+
+.missionStatement__copy {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }
 
 @media (max-width: 768px) {
-  #missionStatement {
-    display: block;
-  }
-
   #missionStatement div {
     padding: 32px;
   }
@@ -72,7 +85,7 @@ h2 {
 
 #whyJoin {
   padding: 32px;
-  background-image: url("../img/why-join-live-coders-background.png");
+  background-image: url("../img/why-join-live-coders-background.jpg");
   background-size: cover;
 }
 
@@ -127,13 +140,14 @@ h2 {
 
 .btn {
   background-color: #9248db;
-  padding: 10px 24px;
+  padding: 10px 20px;
   color: white;
   text-decoration: none;
   border-radius: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 #sponsors {

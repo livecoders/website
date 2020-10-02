@@ -3,7 +3,7 @@ on:
   push:
     branches: [master]
 jobs:
-  build:
+  gatsby-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -11,6 +11,41 @@ jobs:
         run: npm install
       - name: Build Site
         run: npm run build
+      - name: Upload public dir as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: public-dir
+          path: public/
+  gen-og-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build files
+        run: |
+          cd scripts/genOGImages
+          npm install
+          npm run build
+          node gen-opengraph-images.js
+      - name: Upload files
+        uses: actions/upload-artifact@v2
+        with:
+          name: og-images
+          path: scripts/genOGImages/dist/members/
+  deploy-build:
+    needs: [gen-og-images, gatsby-build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: get public dir
+        uses: actions/download-artifact@v2
+        with:
+          name: public-dir
+          path: public
+      - name: get og-images dir
+        uses: actions/download-artifact@v2
+        with:
+          name: og-images
+          path: public/og/members/
       - name: Deploy Site
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

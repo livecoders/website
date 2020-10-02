@@ -20,6 +20,19 @@ footer div.navigation {
   font-weight: 800;
 }
 
+footer div.navigation > a,
+footer div.navigation span > a {
+  color: #e4e4e4;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 400;
+}
+
+footer div.navigation > a:hover,
+footer div.navigation span > a:hover {
+  text-decoration: underline;
+}
+
 footer div.navigation div {
   display: flex;
   justify-content: flex-end;
@@ -31,6 +44,11 @@ footer div.navigation div a {
   color: white;
 }
 
-footer div.navigation div a:first-child {
+footer div.navigation div a {
   margin-right: 20px;
+}
+
+footer div.navigation div a:last-child {
+  margin-right: 0;
+  padding-top: 2px;
 }

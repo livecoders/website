@@ -1,29 +1,33 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Img from "gatsby-image";
-import { MDXRenderer } from "gatsby-plugin-mdx";
+import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import Header from "../components/header";
-import Footer from "../components/footer";
-import SEO from "../components/seo";
+import Header from "../components/header"
+import Footer from "../components/footer"
+import SEO from "../components/seo"
 
-import "../css/memberPage.css";
+import "../css/memberPage.css"
 
-import TwitchLogo from "../img/icons/twitch-brands.svg";
-import GitHubLogo from "../img/icons/github-square-brands.svg";
-import BitbucketLogo from "../img/icons/bitbucket-brands.svg";
-import TwitterLogo from "../img/icons/twitter-square-brands.svg";
-import DevtoLogo from "../img/icons/dev-brands.svg";
-import InstagramLogo from "../img/icons/instagram-brands.svg";
-import YouTubeLogo from "../img/icons/youtube-brands.svg";
-import LinkedInLogo from "../img/icons/linkedin-in-brands.svg";
+import TwitchLogo from "../img/icons/twitch-brands.svg"
+import GitHubLogo from "../img/icons/github-square-brands.svg"
+import BitbucketLogo from "../img/icons/bitbucket-brands.svg"
+import TwitterLogo from "../img/icons/twitter-square-brands.svg"
+import DevtoLogo from "../img/icons/dev-brands.svg"
+import InstagramLogo from "../img/icons/instagram-brands.svg"
+import YouTubeLogo from "../img/icons/youtube-brands.svg"
+import LinkedInLogo from "../img/icons/linkedin-in-brands.svg"
+import StackOverflowLogo from "../img/icons/stack-overflow-brands.svg"
 
-const MemberPageTemplate = props => {
-  let { frontmatter, body, wordCount } = props.data.mdx;
+const MemberPageTemplate = (props) => {
+  let { frontmatter, body, wordCount } = props.data.mdx
 
   return (
     <div>
-      <SEO title={`${frontmatter.username} | The Live Coders`} />
+      <SEO
+        title={`${frontmatter.username} | The Live Coders`}
+        ogImage={`${frontmatter.username.toLowerCase()}.jpg`}
+      />
       <div id="memberHeader">
         <Header />
         <div>
@@ -115,6 +119,17 @@ const MemberPageTemplate = props => {
                 </a>
               </li>
             )}
+            {frontmatter.stackoverflow && (
+              <li>
+                <a
+                  href={`https://stackoverflow.com/users/${frontmatter.stackoverflow}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={StackOverflowLogo} alt="StackOverflow Account" />
+                </a>
+              </li>
+            )}
           </ul>
         </div>
       </div>
@@ -148,11 +163,11 @@ const MemberPageTemplate = props => {
       {(frontmatter.tags || frontmatter.schedule || frontmatter.sites) && (
         <section id="memberMetadata">
           {frontmatter.tags && (
-            <div>
+            <div className="tags">
               <h3>Tags</h3>
               <hr />
               <ul>
-                {frontmatter.tags.map(tag => (
+                {frontmatter.tags.map((tag) => (
                   <li>{tag}</li>
                 ))}
               </ul>
@@ -160,11 +175,11 @@ const MemberPageTemplate = props => {
           )}
 
           {frontmatter.schedule && (
-            <div>
+            <div id="memberSchedule">
               <h3>Schedule</h3>
               <hr />
               <ul>
-                {frontmatter.schedule.map(entry => (
+                {frontmatter.schedule.map((entry) => (
                   <li>{entry}</li>
                 ))}
               </ul>
@@ -172,11 +187,11 @@ const MemberPageTemplate = props => {
           )}
 
           {frontmatter.sites && (
-            <div>
+            <div id="memberWebsites">
               <h3>Websites</h3>
               <hr />
               <ul>
-                {frontmatter.sites.map(site => (
+                {frontmatter.sites.map((site) => (
                   <li>
                     <a href={site}>{site}</a>
                   </li>
@@ -188,10 +203,10 @@ const MemberPageTemplate = props => {
       )}
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default MemberPageTemplate;
+export default MemberPageTemplate
 
 export const query = graphql`
   query MemberPageQuery($id: String) {
@@ -210,6 +225,7 @@ export const query = graphql`
         youtube
         instagram
         linkedin
+        stackoverflow
         tags
         schedule
         sites
@@ -223,4 +239,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

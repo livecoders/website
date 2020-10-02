@@ -2,52 +2,64 @@
   from = "https://csharpfritz.livecoders.dev"
   to = "https://twitch.tv/csharpfritz"
   status = 301
-  force = false
+  force = true
 
 [[redirects]]
   from = "https://jitterted.livecoders.dev"
   to = "https://twitch.tv/jitterted"
   status = 301
-  force = false
+  force = true
 
 [[redirects]]
   from = "https://luckynos7evin.livecoders.dev"
   to = "https://twitch.tv/luckynos7evin"
   status = 301
-  force = false
+  force = true
 
 [[redirects]]
   from = "https://seekaplayer.livecoders.dev"
   to = "https://twitch.tv/seekaplayer"
   status = 301
-  force = false
+  force = true
 
 [[redirects]]
   from = "https://codebasealpha.livecoders.dev"
   to = "https://twitch.tv/codebasealpha"
   status = 301
-  force = false
+  force = true
 
 [[redirects]]
   from = "https://ramblinggeek.livecoders.dev"
   to = "https://twitch.tv/ramblinggeek"
   status = 301
-  force = false
+  force = true
 
 [[redirects]]
   from = "https://notmyself.livecoders.dev"
   to = "https://twitch.tv/iamnotmyself"
   status = 301
-  force = false
+  force = true
 
 [[redirects]]
   from = "https://baldbeardedbuilder.livecoders.dev"
   to = "https://twitch.tv/baldbeardedbuilder"
   status = 301
-  force = false
-  
+  force = true
+
 [[redirects]]
   from = "https://conf.livecoders.dev"
-  to = "https://captcalli.github.io/LiveCodersConf/"
+  to = "https://atndesign.github.io/Live-coders-conference/"
   status = 301
-  force = false
+  force = true
+
+[[redirects]]
+  from = "https://heatmap.livecoders.dev"
+  to = "https://livecoders-heatmap.netlify.app/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://jerseys.livecoders.dev"
+  to = "https://customesports.com/product-category/team-store/the-live-coders/"
+  status = 301
+  force = true

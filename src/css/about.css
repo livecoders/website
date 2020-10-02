@@ -1,5 +1,5 @@
 .head {
-  background-image: url("../img/about-team-heo-background.png");
+  background-image: url("../img/about-team-heo-background.jpg");
   background-size: cover;
 }
 
@@ -33,7 +33,7 @@ section#whoAreWe img {
 
 section#qualifications {
   padding: 32px;
-  background-image: url("../img/why-join-live-coders-background.png");
+  background-image: url("../img/why-join-live-coders-background.jpg");
   background-size: cover;
 }
 
