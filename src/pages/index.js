@@ -33,6 +33,14 @@ export default () => {
         <Link className="btn" to={"/applications"}>
           Join Us
         </Link>
+        <a
+          className="btn"
+          href="https://www.twitch.tv/team/livecoders"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Watch Us
+        </a>
       </div>
       <main>
         <section id="missionStatement">

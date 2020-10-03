@@ -23,7 +23,9 @@ h2 {
   text-align: center;
   padding-bottom: 150px;
 }
-
+#hero .btn {
+  margin: 1.5em 0.5em 0;
+}
 #hero h1 {
   padding-top: 150px;
 }
@@ -149,7 +151,10 @@ h2 {
   display: inline-block;
   text-transform: uppercase;
 }
-
+.btn:hover {
+  transition: 0.8s;
+  background-color: #8241c4;
+}
 #sponsors {
   padding-left: 32px;
   padding-right: 32px;
