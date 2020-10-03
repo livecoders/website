@@ -18,9 +18,12 @@ import LinkedInLogo from "../img/icons/linkedin-in-brands.svg"
 
 const MembersPage = (props) => {
   const [filter, setFilter] = useState("")
-
+  const [filterTag,setFilterTag] = useState("")
   const handleChange = (evt) => {
     setFilter(evt.target.value)
+  }
+  const tagClick = (evt) => {
+    setFilterTag( filterTag !== evt.target.innerText ? evt.target.innerText : "")
   }
 
   let data = useStaticQuery(graphql`
@@ -59,6 +62,24 @@ const MembersPage = (props) => {
     )
   })
 
+
+  let filterableTags = []
+  
+  //Grab all tags from members
+  members.forEach(element => {
+    if(element.frontmatter.tags)
+      filterableTags = [].concat(filterableTags,element.frontmatter.tags.map(tag => tag.toLowerCase()))
+  })
+
+  filterableTags = filterableTags
+    .filter((item, index) => filterableTags.indexOf(item) === index) //filter duplicates
+    .filter((item, index) => filterableTags.reduce((tag,i) => tag + (i.toLowerCase() === item.toLowerCase()),0) > 3) //only thoses with 3 or more members
+    
+  
+  filterableTags = filterableTags.sort((a, b) => {
+    return (a.toLowerCase() > b.toLowerCase())
+  })
+
   return (
     <React.Fragment>
       <SEO title="Team Members | The Live Coders" />
@@ -81,16 +102,24 @@ const MembersPage = (props) => {
             placeholder="Search for members"
             className="filterInput"
           />
+
+        <div className="search-tags">
+              {filterableTags &&
+                filterableTags.map((tag) => <button key={`all-tag-${tag}`} className={filterTag === tag.toUpperCase() ? 'tag-selected' : ``} onClick={tagClick}>{tag}</button>)}
+          </div>
         </div>
       </div>
       <div id="membersGrid">
         {members
           .filter((person) => {
-            if (filter === "") return true
-
-            return person.frontmatter.username
-              .toLowerCase()
-              .includes(filter.toLowerCase())
+            if (filter === "" && filterTag === "")  return true
+            
+            //Match on input text
+            let usernameMatch =  person.frontmatter.username.toLowerCase().includes(filter.toLowerCase())
+            let tagMatch = person.frontmatter.tags !== null && person.frontmatter.tags !== undefined && person.frontmatter.tags.filter((tag) => { return tag.toLowerCase().includes(filter.toLowerCase())}).length > 0
+            //Match on tag clicked
+            let tagSelected = person.frontmatter.tags !== null && person.frontmatter.tags !== undefined && person.frontmatter.tags.filter((tag) => { return tag.toUpperCase() === filterTag}).length > 0
+            return (usernameMatch || tagMatch || filter === "") && (tagSelected || filterTag === "")
           })
           .map((person) => {
             const {
@@ -123,10 +152,8 @@ const MembersPage = (props) => {
                   <div className="inner-glow-top"></div>
                 </Link>
                 <div className="tags">
-                  <ul>
                     {tags &&
-                      tags.map((tag) => <li key={`tag-${tag}`}>{tag}</li>)}
-                  </ul>
+                      tags.filter((item, index) => tags.indexOf(item) === index).map((tag) => <button className={filterTag === tag.toUpperCase() ? 'tag-selected' : ``} key={`tag-${tag}`} onClick={tagClick}>{tag}</button>)}
                 </div>
                 <div className="socials">
                   <a href={`https://twitch.tv/${username}`}>
