@@ -88,7 +88,7 @@
   font-size: 16px;
 }
 
-.member .tags ul {
+.member .tags, .search-tags {
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
@@ -97,15 +97,20 @@
   margin: 20px 16px 48px 16px;
 }
 
-.member .tags ul li {
+.member .tags button, .search-tags button {
   color: white;
   background-color: #492472;
   margin: 5px 5px;
   padding: 3px 4px;
   border-radius: 3px;
-  font-weight: 100;
+  font-weight: 200;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.8em;
+  cursor: pointer;
+  border:0;
+}
+.member .tags button:hover, .search-tags button:hover, .member button.tag-selected , .search-tags button.tag-selected {
+  background-color: #9765ce;
 }
 
 .member .socials {
