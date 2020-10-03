@@ -49,23 +49,10 @@ export default () => (
             <img src={YouTubeLogo} alt={"YouTube Logo"} />
           </a>
         </div>
-        <Link
-          to="/coc/"
-          style={{
-            textAlign: "right",
-            marginRight: 20,
-            marginTop: 20,
-          }}
-        >
+        <Link to="/coc/" className="foot-coc">
           Code of Conduct
         </Link>
-        <span
-          style={{
-            textAlign: "right",
-            marginRight: 20,
-            fontWeight: 400,
-          }}
-        >
+        <span className="f-awesome-attribute">
           Icons by{" "}
           <a href="https://fontawesome.com/license/free">Font Awesome</a>
         </span>
