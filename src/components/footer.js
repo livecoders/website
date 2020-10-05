@@ -28,7 +28,10 @@ export default () => (
         <hr />
         <section className="flex">
           <div className="footerLogo">
-            <Img fixed={data.logo.childImageSharp.fixed} alt={"Live Coders Logo"}/>
+            <Img
+              fixed={data.logo.childImageSharp.fixed}
+              alt={"Live Coders Logo"}
+            />
           </div>
           <div className="navigation">
             <Nav isFooter={true} />
