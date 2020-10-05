@@ -4,7 +4,7 @@ twitter: nipafx
 github: nipafx
 stackoverflow: 2525313
 youtube: https://youtube.com/nipafx
-profile: ../img/members/nipafx.jpg
+profile: ../img/members/nicolai.jpg
 schedule:
   - Tuesdays 1700 UTC
 tags:
