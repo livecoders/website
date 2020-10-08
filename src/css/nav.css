@@ -29,12 +29,32 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 855px) {
   nav ul {
     justify-content: center;
   }
 
   nav ul li:last-of-type {
     margin-right: 0;
+  }
+}
+@media (max-width: 637px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-right: 0;
+  }
+  nav ul li a {
+    display: block;
+    padding: 0.5em 0;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 1em;
   }
 }

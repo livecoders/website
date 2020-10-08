@@ -1,0 +1,89 @@
+name: Gen Members Pages
+on:
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  run-gen-members:
+    runs-on: ubuntu-latest
+    outputs:
+      new_members: ${{ steps.commit.outputs.new_members }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Gen new pages
+        env:
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+        run: |
+          cd scripts/genMembers
+          npm install
+          node index.js
+      - name: Commit new pages & build site
+        id: commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
+          git pull origin master
+          git add src/members/* src/img/members/*
+          git commit -m "Add new members" && echo "::set-output name=new_members::true" || echo "::set-output name=new_members::false"
+          git push origin master
+  build-site:
+    runs-on: ubuntu-latest
+    if: contains(needs.run-gen-members.outputs.new_members, true)
+    needs: [run-gen-members]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: build site
+        run: |
+          npm install
+          npm run build
+      - name: Upload public dir as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: public-dir
+          path: public/
+  gen-og-images:
+    runs-on: ubuntu-latest
+    if: contains(needs.run-gen-members.outputs.new_members, true)
+    needs: [run-gen-members]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Build files
+        run: |
+          cd scripts/genOGImages
+          npm install
+          npm run build
+          node gen-opengraph-images.js
+      - name: Upload files
+        uses: actions/upload-artifact@v2
+        with:
+          name: og-images
+          path: scripts/genOGImages/dist/members/
+  deploy-site:
+    needs: [gen-og-images, build-site]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: get public dir
+        uses: actions/download-artifact@v2
+        with:
+          name: public-dir
+          path: public
+      - name: get og-images dir
+        uses: actions/download-artifact@v2
+        with:
+          name: og-images
+          path: public/og/members/
+      - name: Deploy Site
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        run: npx netlify-cli deploy --dir=public --prod

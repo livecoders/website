@@ -5,7 +5,7 @@ header {
   padding-bottom: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 855px) {
   header {
     flex-direction: column;
   }
