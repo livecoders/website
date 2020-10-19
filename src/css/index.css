@@ -35,6 +35,11 @@ h2 {
     padding-top: 50px;
     font-size: 1.5em;
   }
+  .missionStatement__overlay {
+    width: auto;
+    left: 0;
+    right: 0;
+  }
 }
 
 #missionStatement {
@@ -178,4 +183,11 @@ h2 {
 
 #codeOfConduct a {
   color: white;
+}
+@media (max-width: 768px) {
+  .missionStatement__overlay {
+    width: auto;
+    left: 0;
+    right: 0;
+  }
 }
