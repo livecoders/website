@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@jlengstorf/get-twitch-oauth": "^1.0.0",
+    "ansi-colors": "^4.1.1",
     "dotenv": "^8.2.0",
     "node-fetch": "^2.6.1"
   }
