@@ -7,10 +7,10 @@ jobs:
   run-gen-members:
     runs-on: ubuntu-latest
     outputs:
-      new_members: ${{ steps.commit.outputs.new_members }}
+      members_updated: ${{ steps.commit.outputs.members_updated }}
     steps:
       - uses: actions/checkout@v2
-      - name: Gen new pages
+      - name: Update member list
         env:
           TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
@@ -18,7 +18,7 @@ jobs:
           cd scripts/genMembers
           npm install
           node index.js
-      - name: Commit new pages & build site
+      - name: Commit changes & build site
         id: commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -27,12 +27,12 @@ jobs:
           git config user.email "<>"
 
           git pull origin master
-          git add src/members/* src/img/members/*
-          git commit -m "Add new members" && echo "::set-output name=new_members::true" || echo "::set-output name=new_members::false"
+          git add .
+          git commit -m "Updating members" && echo "::set-output name=members_updated::true" || echo "::set-output name=members_updated::false"
           git push origin master
   build-site:
     runs-on: ubuntu-latest
-    if: contains(needs.run-gen-members.outputs.new_members, true)
+    if: contains(needs.run-gen-members.outputs.members_updated, true)
     needs: [run-gen-members]
     steps:
       - uses: actions/checkout@v2
@@ -49,7 +49,7 @@ jobs:
           path: public/
   gen-og-images:
     runs-on: ubuntu-latest
-    if: contains(needs.run-gen-members.outputs.new_members, true)
+    if: contains(needs.run-gen-members.outputs.members_updated, true)
     needs: [run-gen-members]
     steps:
       - uses: actions/checkout@v2
