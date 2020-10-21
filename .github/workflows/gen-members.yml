@@ -18,6 +18,11 @@ jobs:
           cd scripts/genMembers
           npm install
           node index.js
+      - name: Recreate mission statement collage
+        run: |
+          cd scripts/genMissionStatementImage
+          npm install
+          node index.js
       - name: Commit changes & build site
         id: commit
         env:
