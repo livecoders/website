@@ -103,12 +103,12 @@ getTwitchAccessToken({ client_id: clientId, client_secret: clientSecret }).then(
          
           // remove members
           nonMembers.forEach((file) => {
+            const filePath = path.join(__dirname, "..", "..", "src", "members", `${file}.md`)
             
-            console.log(c.red(file))
+            console.log(`${c.red(file)}: ${filePath}`)
             
             // remove markdown file
-            fs.unlinkSync(path.join(__dirname, "..", "..", "src", "members", `${file}.md`))
-            
+            fs.unlinkSync(filePath)
           })
           
           // get all images for members to remove
