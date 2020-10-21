@@ -117,7 +117,7 @@ getTwitchAccessToken({ client_id: clientId, client_secret: clientSecret }).then(
                           .filter((fileName) => nonMembers.find((fn) => fn === fileName.split(".").shift()))
           
           imagesToRemove.forEach((file) => {
-            fs.unlinkSync(path.join(__dirname, "..", "..", "src", "members", file))
+            fs.unlinkSync(path.join(__dirname, "..", "..", "src", "img", "members", file))
           })
         }
       })
