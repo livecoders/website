@@ -4,3 +4,4 @@ public
 .env
 .idea
 **/.DS_Store
+**/scratch.js
