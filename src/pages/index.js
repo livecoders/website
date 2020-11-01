@@ -4,8 +4,6 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import SEO from "../components/seo"
 import useLiveCoderStats from "../hooks/useLiveCoderStats"
-
-import LiveCodersImg from "../img/livecoders-collage.png"
 import ChatBubbleIcon from "../img/icons/comments-regular.svg"
 import HeartIcon from "../img/icons/heart-regular.svg"
 import KeyboardIcon from "../img/icons/keyboard-regular.svg"

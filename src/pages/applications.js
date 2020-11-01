@@ -8,8 +8,8 @@ import "../css/applications.css"
 export default () => (
   <React.Fragment>
     <SEO title="Applications | The Live Coders" />
+    <Header />
     <div className="head">
-      <Header />
       <div>
         <h1>Apply to be part of the team</h1>
 

@@ -23,8 +23,8 @@ const SampleSponsors = [
 export default () => (
   <React.Fragment>
     <SEO title="LCC3 | The Live Coders" />
+    <Header />
     <div className="head">
-      <Header />
       <div>
         <h1>Live Coders Conference 3, 2020</h1>
         <p>Wash hands, cover face, be nice</p>

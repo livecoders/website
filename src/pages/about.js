@@ -16,8 +16,8 @@ import "../css/about.css"
 export default () => (
   <React.Fragment>
     <SEO title="About | The Live Coders" />
+    <Header />
     <div className="head">
-      <Header />
       <div>
         <h1>About the Live Coders</h1>
         <p>
