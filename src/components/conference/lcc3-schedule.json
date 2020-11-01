@@ -1,0 +1,106 @@
+[
+  {
+    "est": "7:00",
+    "utc": "13:00",
+    "name": "Johanna Koester",
+    "email": "koester@us.ibm.com",
+    "title": "Empathy, Compassion and Growing Your Tech Career",
+    "audience": "All"
+  },
+  {
+    "est": "7:30",
+    "utc": "13:30",
+    "name": "Menaka Baskerpillai",
+    "email": "menabasker1996@gmail.com",
+    "title": "Architecting Cloud Native Application in Azure using .Net Core",
+    "audience": "Intermediate"
+  },
+  {
+    "est": "8:00",
+    "utc": "14:00",
+    "name": "Nicole Koenigstein",
+    "email": "nicolekoenigstein@me.com",
+    "title": "Living in another Dimension - Principal Component Analysis (PCA)",
+    "audience": ""
+  },
+  {
+    "est": "8:30",
+    "utc": "14:30",
+    "name": "Shuchita Prasad",
+    "email": "shuchitaprasad@gmail.com",
+    "title": "Chatbots, NLP platforms explained from layman's perspective",
+    "audience": "Beginner"
+  },
+  {
+    "est": "9:00",
+    "utc": "15:00",
+    "name": "Rosalind Wills",
+    "email": "blackjacksoftwaredev@gmail.com",
+    "title": "Git Good: Getting Comfortable with the Git Command Line",
+    "audience": "All"
+  },
+  {
+    "est": "9:30",
+    "utc": "15:30",
+    "name": "Dr. Metham Ballan ",
+    "email": "meltemballan@gmail.com",
+    "title": "Is AI Intelligent? ",
+    "audience": ""
+  },
+  {
+    "est": "10:00",
+    "utc": "16:00",
+    "name": "Adora Nwodo",
+    "email": "nennenwodo@gmail.com",
+    "title": "7 Habits of Highly Effective Engineering Teams",
+    "audience": "All"
+  },
+  {
+    "est": "10:30",
+    "utc": "16:30",
+    "name": "Rachael Olasunkanmi",
+    "email": "rachaelolas19@gmail.com",
+    "title": "PowerHouse Women and How to Join Them",
+    "audience": "All"
+  },
+  {
+    "est": "11:00",
+    "utc": "17:00",
+    "name": "Simpathey",
+    "email": "Simpathey@gmail.com",
+    "title": "3D Printing for Hardware Prototyping",
+    "audience": "Beginner"
+  },
+  {
+    "est": "11:30",
+    "utc": "17:30",
+    "name": "TBD",
+    "email": "TBD",
+    "title": "TBD",
+    "audience": ""
+  },
+  {
+    "est": "12:00",
+    "utc": "18:00",
+    "name": "May Cheung",
+    "email": "may@cmcheung.co.uk",
+    "title": "Getting Comfortable With Being Uncomfortable: How I Realised Where My Passions Lie and Found My Place in Tech",
+    "audience": "All"
+  },
+  {
+    "est": "12:30",
+    "utc": "18:30",
+    "name": "Kim-Adeline Miguel",
+    "email": "kimiguel@microsoft.com",
+    "title": "A look at Redwood, a full-stack RPG: React, Prisma, GraphQL (among others) 🛡",
+    "audience": "All"
+  },
+  {
+    "est": "13:00",
+    "utc": "19:00",
+    "name": "Alyssa Nicoll",
+    "email": "alyssa.nicoll@progress.com",
+    "title": "Dark Patterns in UX",
+    "audience": "All"
+  }
+]
