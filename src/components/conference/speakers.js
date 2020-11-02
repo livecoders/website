@@ -8,6 +8,8 @@ const Speaker = ({ event }) => (
     <a name={event.name} id={event.name}>
       <article className="speaker">
         <h3>{event.name}</h3>
+        <a href={`#schedule`}>Back to Schedule</a>
+        <br />
         <span className="sessionTitle">{event.title}</span>
         <br />
         {event.bio.map((bioLine, i) => (

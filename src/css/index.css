@@ -192,7 +192,7 @@ h2 {
   padding: 10px !important;
   border: 1px solid white;
   min-width: 200px;
-  text-align: left;
+  /* text-align: left; */
   flex-grow: 0;
   flex: 0 30%;
 }

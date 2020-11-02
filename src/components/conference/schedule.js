@@ -24,17 +24,13 @@ const events = data
   })
   .filter((item) => item.confirmed)
 
-const eventWrapper = styled.a``
-
 const Event = ({ event }) => (
   <>
     <article className="scheduleItem">
       <EventWrapper className="speaker" href={`#${event.name}`}>
         <span className="sessionTitle">{event.title}</span>
         <br />
-
         {event.name}
-
         <br />
         <span className="scheduleTime">{event.localized}</span>
       </EventWrapper>
