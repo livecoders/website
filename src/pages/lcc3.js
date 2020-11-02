@@ -5,6 +5,7 @@ import Footer from "../components/footer"
 import SEO from "../components/seo"
 
 import Schedule from "../components/conference/schedule"
+import Speakers from "../components/conference/speakers"
 
 export default () => (
   <React.Fragment>
@@ -14,7 +15,6 @@ export default () => (
       <section>
         <h1>The Live Coders Conference 3</h1>
         <h2>November 19th, 2020</h2>
-        <h2>Start To Finish</h2>
       </section>
       <section>
         <h2>Schedule</h2>
@@ -22,6 +22,7 @@ export default () => (
       </section>
       <section>
         <h2>Speakers</h2>
+        <Speakers />
       </section>
       <section>
         <h2>Sponsors</h2>
