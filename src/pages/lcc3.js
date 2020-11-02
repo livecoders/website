@@ -7,6 +7,8 @@ import SEO from "../components/seo"
 import Schedule from "../components/conference/schedule"
 import Speakers from "../components/conference/speakers"
 
+import "../css/index.css"
+
 export default () => (
   <React.Fragment>
     <SEO title="LCC3 | The Live Coders" />

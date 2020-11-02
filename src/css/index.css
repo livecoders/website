@@ -179,3 +179,24 @@ h2 {
 #codeOfConduct a {
   color: white;
 }
+
+.scheduleContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.scheduleItem {
+  margin: 2px;
+  padding: 10px!important;
+  border: 1px solid white;
+  display: block;
+  min-width: 400px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.scheduleItem .sessionTitle {
+  font-size: medium;
+  font-weight: bold;
+}
