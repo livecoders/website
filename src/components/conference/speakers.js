@@ -4,23 +4,24 @@ let data = require("./lcc3-schedule.json")
 const events = data.filter((item) => item.confirmed)
 
 const Speaker = ({ event }) => (
-  <>
-    <a name={event.name}></a>
-    <article class="speaker">
-      <h3>{event.name}</h3>
-      <span class="sessionTitle">{event.title}</span>
-      <br />
-      {event.bio.map((bioLine) => (
-        <p>{bioLine}</p>
-      ))}
-      <ol>
-        {event.points.length > 0 &&
-          event.points.map((point) => {
-            return <li>{point}</li>
-          })}
-      </ol>
-    </article>
-  </>
+  <React.Fragment key={event.utc}>
+    <a name={event.name} id={event.name}>
+      <article className="speaker">
+        <h3>{event.name}</h3>
+        <span className="sessionTitle">{event.title}</span>
+        <br />
+        {event.bio.map((bioLine, i) => (
+          <p key={i}>{bioLine}</p>
+        ))}
+        <ol>
+          {event.points.length > 0 &&
+            event.points.map((point, i) => {
+              return <li key={i}>{point}</li>
+            })}
+        </ol>
+      </article>
+    </a>
+  </React.Fragment>
 )
 
 export default () => (

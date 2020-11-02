@@ -4,9 +4,6 @@ const { format } = require("date-fns")
 
 const events = data
   .map((item) => {
-    console.log(item)
-    // const morning = "1:00"
-
     const localized = new Date(
       `2020-11-19T${item.utc.length > 4 ? item.utc : "0" + item.utc}:00Z`
     )
@@ -19,12 +16,14 @@ const events = data
 
 const Event = ({ event }) => (
   <>
-    <article class="scheduleItem">
-    <span class="sessionTitle">{event.title}</span>
-    <br />
-    <a class="speaker" href={`#${event.name}`}>{event.name}</a>
-    <br />
-    <span class="scheduleTime">{event.localized}</span>
+    <article className="scheduleItem">
+      <span className="sessionTitle">{event.title}</span>
+      <br />
+      <a className="speaker" href={`#${event.name}`}>
+        {event.name}
+      </a>
+      <br />
+      <span className="scheduleTime">{event.localized}</span>
     </article>
   </>
 )
@@ -33,10 +32,10 @@ export default () => (
   <>
     <span>Your current time is: {format(new Date(), "MMMM do h:mm a")}</span>
     <br />
-    <div class="scheduleContainer">
-    {events.map((event) => (
-      <Event event={event} key={event.utc} />
-    ))}
+    <div className="scheduleContainer">
+      {events.map((event) => (
+        <Event event={event} key={event.utc} />
+      ))}
     </div>
   </>
 )
