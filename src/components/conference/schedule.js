@@ -1,6 +1,16 @@
 import React from "react"
+import styled from "styled-components"
 let data = require("./lcc3-schedule.json")
 const { format } = require("date-fns")
+
+const EventWrapper = styled.a`
+  color: white;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    color: rebeccapurple;
+  }
+`
 
 const events = data
   .map((item) => {
@@ -14,16 +24,20 @@ const events = data
   })
   .filter((item) => item.confirmed)
 
+const eventWrapper = styled.a``
+
 const Event = ({ event }) => (
   <>
     <article className="scheduleItem">
-      <span className="sessionTitle">{event.title}</span>
-      <br />
-      <a className="speaker" href={`#${event.name}`}>
+      <EventWrapper className="speaker" href={`#${event.name}`}>
+        <span className="sessionTitle">{event.title}</span>
+        <br />
+
         {event.name}
-      </a>
-      <br />
-      <span className="scheduleTime">{event.localized}</span>
+
+        <br />
+        <span className="scheduleTime">{event.localized}</span>
+      </EventWrapper>
     </article>
   </>
 )
