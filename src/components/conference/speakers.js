@@ -5,19 +5,21 @@ const events = data.filter((item) => item.confirmed)
 
 const Speaker = ({ event }) => (
   <>
-    <span>{event.name}</span>
-    <br />
-    <span>{event.title}</span>
-    <br />
-    {event.bio.map((bioLine) => (
-      <p>{bioLine}</p>
-    ))}
-    <ol>
-      {event.points.length > 0 &&
-        event.points.map((point) => {
-          return <li>{point}</li>
-        })}
-    </ol>
+    <a name={event.name}></a>
+    <article class="speaker">
+      <h3>{event.name}</h3>
+      <span class="sessionTitle">{event.title}</span>
+      <br />
+      {event.bio.map((bioLine) => (
+        <p>{bioLine}</p>
+      ))}
+      <ol>
+        {event.points.length > 0 &&
+          event.points.map((point) => {
+            return <li>{point}</li>
+          })}
+      </ol>
+    </article>
   </>
 )
 

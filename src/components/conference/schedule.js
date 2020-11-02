@@ -22,7 +22,7 @@ const Event = ({ event }) => (
     <article class="scheduleItem">
     <span class="sessionTitle">{event.title}</span>
     <br />
-    <span class="speaker">{event.name}</span>
+    <a class="speaker" href={`#${event.name}`}>{event.name}</a>
     <br />
     <span class="scheduleTime">{event.localized}</span>
     </article>

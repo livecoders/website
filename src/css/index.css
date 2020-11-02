@@ -180,6 +180,7 @@ h2 {
   color: white;
 }
 
+/** Conference page config **/
 .scheduleContainer {
   display: flex;
   flex-direction: row;
