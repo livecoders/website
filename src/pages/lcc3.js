@@ -9,6 +9,11 @@ import Speakers from "../components/conference/speakers"
 
 import "../css/index.css"
 
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
+
 export default () => (
   <React.Fragment>
     <SEO title="LCC3 | The Live Coders" />
