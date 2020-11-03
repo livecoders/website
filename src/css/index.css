@@ -179,37 +179,3 @@ h2 {
 #codeOfConduct a {
   color: white;
 }
-
-/** Conference page config **/
-.scheduleContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.scheduleItem {
-  margin: 2px;
-  padding: 10px !important;
-  border: 1px solid white;
-  min-width: 200px;
-  /* text-align: left; */
-  flex-grow: 0;
-  flex: 0 30%;
-}
-
-.scheduleItem .sessionTitle {
-  font-size: medium;
-  font-weight: bold;
-}
-
-article.speaker {
-  text-align: left;
-  padding: 3px;
-  border-bottom: 1px solid #FFF;
-  margin: 0 10px;
-}
-
-.speaker > .sessionTitle {
-  text-decoration: underline;
-  font-size: medium;
-}
