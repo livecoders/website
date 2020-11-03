@@ -28,12 +28,13 @@ export default () => (
         <h2>Schedule</h2>
         <Schedule />
       </section>
+      <section id="sponsors">
+        <h2>Sponsors</h2>
+        <p>Coming soon...</p>
+      </section>
       <section>
         <h2>Speakers</h2>
         <Speakers />
-      </section>
-      <section>
-        <h2>Sponsors</h2>
       </section>
     </div>
     <Footer />
