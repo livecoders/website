@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 let data = require("./lcc3-schedule.json")
 const { format } = require("date-fns")
 
@@ -50,6 +52,12 @@ const EventWrapper = styled.article`
     font-weight: 400;
   }
 
+  .sessionSpeakerPhoto {
+    border-radius: 50%;
+    position: relative;
+    left:50%;
+    
+  }
   .sessionSpeaker {
     font-weight: bold;
   }
@@ -88,6 +96,8 @@ const Event = ({ event }) => (
     <EventWrapper className="scheduleItem">
       <a className="speaker" href={`#${event.name}`}>
         <span className="sessionTitle">{event.title}</span>
+        <br />
+        <img src={`${event.photo}`}  className="sessionSpeakerPhoto" />
         <br />
         <span className="sessionSpeaker">{event.name}</span>
         <br />
