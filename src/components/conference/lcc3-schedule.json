@@ -1,0 +1,188 @@
+[
+  {
+    "est": "7:00",
+    "utc": "13:00",
+    "name": "Johanna Koester",
+    "title": "Empathy, Compassion and Growing Your Tech Career",
+    "audience": "All",
+    "bio": [
+      "Johanna Koester, Director of Worldwide Developer Advocacy at IBM, leads a global team of developer advocacy with responsibility for unleashing the best of open technology to today’s developers through face to face events and digital content.",
+      "Over the past 10 years, she has had the honor of leading developer facing teams including IBM’s Developer Offering Management team and the project office responsible for founding and sponsoring many strategic open source communities including the OpenStack Foundation, Cloud Foundry Foundation, Node.js Foundation, Cloud Native Computing Foundation, ODPi and more.",
+      "In these roles, she has been an outspoken advocate for open technologies to foster development of the next generation of Cloud and AI Technology to drive interoperability and speed of innovation for industry developers.",
+      "Through her involvement in these communities, she always carves out time to advocate for diversity in open source communities including leadership roles in the Women of OpenStack committee and Cloud Foundry Ambassadors.",
+      "She holds a BS in Computer Science and Math from Tulane University and an MBA from the University of North Carolina at Chapel Hill.",
+      "You can find more background information as well her views on developer advocacy and open tech on Twitter @jokoester."
+    ],
+    "points": [],
+    "confirmed": true
+  },
+  {
+    "est": "7:30",
+    "utc": "13:30",
+    "name": "Menaka Baskerpillai",
+    "title": "Architecting Cloud Native Application in Azure using .Net Core dotnet, azure, .NET, microservices, ASP.NET",
+    "audience": "Intermediate",
+    "bio": [
+      "Menaka Baskerpillai working as an Associate Software Engineer at Accenture Digital, she is a tech enthusiastic blogger and an international speaker who speaks about cloud and .Net core. Menaka spends her value time in learning and sharing her knowledge to the community. She is also a Former Microsoft Student Partner and Mozilla Firefox student Ambassador. She is a Microsoft certified Resource in Azure and programming in c#. Menaka recognised as a Most valuable professional by c# corner community"
+    ],
+    "points": [
+      "How to architect Cloud Native Application?",
+      "Why .Net core why not .Net framework?",
+      "Azure as a Cloud Service Provider",
+      "Real time use case of Cloud Native Application?",
+      "Migration to Cloud."
+    ],
+    "confirmed": true
+  },
+  {
+    "est": "8:00",
+    "utc": "14:00",
+    "name": "Nicole Koenigstein",
+    "title": "Living in another Dimension - Principal Component Analysis (PCA)",
+    "audience": "",
+    "bio": [""],
+    "points": [],
+    "confirmed": false
+  },
+  {
+    "est": "8:30",
+    "utc": "14:30",
+    "name": "Shuchita Prasad",
+    "title": "Chatbots, NLP platforms explained from layman's perspective",
+    "audience": "Beginner",
+    "bio": [
+      "Having been in IT industry for almost 12 years , and experienced the changing landscape of technology , I would love to share my learnings and knowledge. I personally feel that buzz words explained in simple terms can help a lot of people irrespective whether technical/non technical."
+    ],
+    "points": [],
+    "confirmed": true
+  },
+  {
+    "est": "9:00",
+    "utc": "15:00",
+    "name": "Rosalind Wills",
+    "title": "Git Good: Getting Comfortable with the Git Command Line",
+    "audience": "All",
+    "bio": [
+      "I am a Javascript engineer at Automattic and a full-time nerd who has been working in the software industry for over ten years, always excited to keep up on and speak about the latest trends of the fast-moving world of web development. I have a Masters Degree in Software Engineering from DePaul University and have worked with multiple Javascript stacks as well as cross-language into C#, Java, Kotlin, and PHP. During my off hours, I enjoy video gaming, livestreaming, snuggling my cat, and geeking out on Twitter, where you can reach me @blackjackkent."
+    ],
+    "points": [],
+    "confirmed": true
+  },
+  {
+    "est": "9:30",
+    "utc": "15:30",
+    "name": "Dr. Metham Ballan",
+    "title": "Is AI Intelligent?",
+    "audience": "",
+    "bio": [""],
+    "points": [],
+    "confirmed": false
+  },
+  {
+    "est": "10:00",
+    "utc": "16:00",
+    "name": "Adora Nwodo",
+    "title": "7 Habits of Highly Effective Engineering Teams",
+    "audience": "All",
+    "bio": [
+      "Nenne Adaora Nwodo (who fondly likes to be called Adora), is a Software Engineer based in Lagos, Nigeria. She currently works at Microsoft where she builds cloud services related to Artificial Intelligence and Mixed Reality.",
+      "In 2018, she created a blog called AdoraHack where she publishes articles on Software Engineering, Productivity & Career Growth. In June 2019, she created a YouTube channel for AdoraHack where she posts tech content that could be useful to Software Developers.",
+      "Adora is extremely passionate about the developer community and is trying to drive inclusion for women in technology. She co-organizes community events, contributes to open source and speaks at conferences/meetups whenever possible."
+    ],
+    "points": [
+      "Soft skills",
+      "The importance of interdependence",
+      "Interdependence in Software engineering team",
+      "How to drive inclusion within team",
+      "The journey from dependent to interdependent in software Engineering"
+    ],
+    "confirmed": true
+  },
+  {
+    "est": "10:30",
+    "utc": "16:30",
+    "name": "Rachael Olasunkanmi",
+    "title": "PowerHouse Women and How to Join Them",
+    "audience": "All",
+    "bio": [
+      "Rachael Olasunkanmi is Student Affairs professional, specializing in financial aid, scholarship, and grant account management. I am humble in change, but bold in action when it comes to strategizing with my teams on exceeding departmental goals, project management, and coordinating resources to elevate the team and students to the next level.",
+      "Offering over seven years of experience in student affairs, I’ve perfected the art of educating, empowering, and motivating others to level up their careers and themselves. I’m excited to use these strategies to further develop my career and help schools transform the lives of their students.",
+      "Although it’s not all work and no play, I also coordinate employee and student engagement activities. Some activities include- recruitment events, presentations to local high schools, team-building, and outreach efforts to provide further resources to students outside of the office.",
+      "I am credentialed by The National Association of Student Financial Aid Administrators in the FAFSA Application Process, Student Eligibility, Needs Analysis, and Verification. I’m excited about the opportunity to utilize my expertise and cultivate relationships through strategic planning and collaboration in my field.",
+      "\"An investment in knowledge pays the best interest.\" - Benjamin Franklin"
+    ],
+    "points": [],
+    "confirmed": true
+  },
+  {
+    "est": "11:00",
+    "utc": "17:00",
+    "name": "Simpathey",
+    "title": "3D Printing for Hardware Prototyping",
+    "audience": "Beginner",
+    "bio": [
+      "I graduated from Carnegie Mellon University with a bachelor’s in mechanical engineering. During my 5 years at Carnegie Mellon I used 3D printers including several Printerbot’s and one Makerbot. I used 3D printing for prototyping all my university projects including my capstone which won best overall for my class. Since I graduated I have been working as a Mechanical Engineer building storage systems. I am responsible for maintaining the 3D printers at my company and frequently use them to mechanically prototype new hardware."
+    ],
+    "points": [],
+    "confirmed": true
+  },
+  {
+    "est": "11:30",
+    "utc": "17:30",
+    "name": "Kim-Adeline Miguel",
+    "title": "A look at Redwood, a full-stack RPG: React, Prisma, GraphQL (among others) 🛡",
+    "audience": "All",
+    "bio": [
+      "Kim-Adeline (she/her) is a software engineer at Microsoft working on the Python extension for VS Code.",
+      "Prior to that, she dabbled with parallel programming in Singapore and worked as a front-end engineer in Denmark and in Vancouver.",
+      "Other qualifications include propagating succulents 🌵, being able to hold crow pose for 3 breaths 🐦, knowing how to rollerskate forwards (backwards is still a work in progress) 🛹, and using emojis wherever possible 👩‍🎨."
+    ],
+    "points": [
+      "😎 a hip and cool coder using shiny new tech",
+      "🛠 a trailblazer and tinkerer at the forefront of full-stack webdev trends",
+      "✨ a serverless magician who deploys with every push to main",
+      "🌱 an open-source contributor welcomed into a growing and supportive community",
+      "🏷 a sticker collector (shipped everywhere in the world for free!)"
+    ],
+    "confirmed": true
+  },
+  {
+    "est": "12:00",
+    "utc": "18:00",
+    "name": "May Cheung",
+    "title": "Getting Comfortable With Being Uncomfortable: How I Realised Where My Passions Lie and Found My Place in Tech",
+    "audience": "All",
+    "bio": [
+      "Think you need a degree in computing science or software engineering or that you need to be young to work or transition into the tech industry?",
+      "Wrong!",
+      "There’s more than one way to get working in the tech industry and it doesn’t have to always centre on ‘technical’ roles. With the continuing merging of technology into every aspect of life there are more technology companies than ever. Those companies need people in product, design, operations, administration, recruitment and much more.",
+      "In this talk I go through my personal journey for the last 3 years. How, at the age of 36 and facing life as a new divorcee, I realised that whilst I loved my solid but comfortable job in a law firm that it wasn’t where my passions lie. I’ve always had a keen interest in tech and was determined to change the course of my career into the industry so I set a goal to change my career path by the time I was 40.",
+      "I did this by understanding my strengths, chasing opportunities and not being afraid of saying yes to new experiences whilst at the same time beating back imposter syndrome and the fear of failure; I got comfortable with being uncomfortable."
+    ],
+    "points": [],
+    "confirmed": true
+  },
+  {
+    "est": "12:30",
+    "utc": "18:30",
+    "name": "TBD",
+    "email": "TBD",
+    "title": "TBD",
+    "audience": "",
+    "bio": [""],
+    "points": [],
+    "confirmed": false
+  },
+  {
+    "est": "13:00",
+    "utc": "19:00",
+    "name": "Alyssa Nicoll",
+    "title": "Dark Patterns in UX",
+    "audience": "All",
+    "bio": [
+      "Alyssa is an Angular Developer Advocate for KUI and a Google Developer Expert for Angular. Her two degrees (Web Design & Development and Psychology) feed her speaking career. She has spoken at over 30 conferences Internationally. She is a weekly panelist on Adventures in Angular and Angular Air, which have a combined following of over 16,000 listeners. She enjoys gaming, scuba diving, and has a little one that fondly goes by \"Mr. Milks\". www.telerik.com/blogs/author/alyssa-nicoll @AlyssaNicol"
+    ],
+    "points": [],
+    "confirmed": true
+  }
+]

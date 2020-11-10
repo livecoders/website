@@ -1,18 +1,15 @@
 {
-  "name": "genMembers",
+  "name": "genmissionstatementimage",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@jlengstorf/get-twitch-oauth": "^1.0.0",
     "ansi-colors": "^4.1.1",
-    "dotenv": "^8.2.0",
-    "node-fetch": "^2.6.1"
+    "canvas": "^2.6.1"
   }
 }
