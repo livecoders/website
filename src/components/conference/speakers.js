@@ -33,6 +33,22 @@ const SpeakerWrapper = styled.article`
     font-size: xx-large;
   }
 
+  .sessionSpeakerPhotoBody {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 1vh;
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    .sessionSpeakerPhotoBody {
+      position: relative;
+      left: calc((100vw - 300px)/2 - 32px - 5vw);
+    }
+  }
+ 
+
   .sessionTitle {
     font-family: "Press Start 2P", sans-serif;
     text-transform: uppercase;
@@ -62,9 +78,12 @@ const List = styled.ol`
 
 const Speaker = ({ event,index, length }) => (
   <React.Fragment key={event.utc}>
-    <a name={event.name} id={event.name}>
+    <div name={event.name} id={event.name}>
       <SpeakerWrapper className="speaker">
         <h3 className="speakerName">{event.name}</h3>
+        <br />
+        <img src={`${event.photo}`}  className="sessionSpeakerPhotoBody" alt={event.name} />
+        <br />
         <a href={`#schedule`}>Back to Schedule</a>
         <br />
         <span className="sessionTitle">{event.title}</span>
@@ -82,7 +101,7 @@ const Speaker = ({ event,index, length }) => (
             })}
         </List>
       </SpeakerWrapper>
-    </a>
+    </div>
 
     {index !== length-1 && <Divider></Divider>}
   </React.Fragment>
