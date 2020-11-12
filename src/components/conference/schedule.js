@@ -50,6 +50,14 @@ const EventWrapper = styled.article`
     font-weight: 400;
   }
 
+  .sessionSpeakerPhoto {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: calc((100% - 200px)/2);
+    
+  }
   .sessionSpeaker {
     font-weight: bold;
   }
@@ -88,6 +96,8 @@ const Event = ({ event }) => (
     <EventWrapper className="scheduleItem">
       <a className="speaker" href={`#${event.name}`}>
         <span className="sessionTitle">{event.title}</span>
+        <br />
+        <img src={`${event.photo}`}  className="sessionSpeakerPhoto" alt={event.name} />
         <br />
         <span className="sessionSpeaker">{event.name}</span>
         <br />

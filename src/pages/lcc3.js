@@ -20,7 +20,7 @@ export default () => (
     <Header />
     <div className="head">
       <section>
-        <a name="schedule" id="schedule" />
+        <div name="schedule" id="schedule" />
         <h1>The Live Coders Conference 3</h1>
         <h2>November 19th, 2020</h2>
       </section>
