@@ -4,7 +4,7 @@
     "utc": "13:00",
     "name": "Johanna Koester",
     "photo": "/images/speakers/Johanna.jpg",
-    "title": "Empathy, Compassion and Growing Your Tech Career",    
+    "title": "Empathy, Compassion and Growing Your Tech Career",
     "audience": "All",
     "bio": [
       "Johanna Koester, Director of Worldwide Developer Advocacy at IBM, leads a global team of developer advocacy with responsibility for unleashing the best of open technology to today’s developers through face to face events and digital content.",
@@ -74,21 +74,10 @@
     "confirmed": true
   },
   {
-    "est": "9:30",
-    "utc": "15:30",
-    "name": "Dr. Metham Ballan",
-    "photo": "/images/speakers/unavailable.jpg",
-    "title": "Is AI Intelligent?",
-    "audience": "",
-    "bio": [""],
-    "points": [],
-    "confirmed": false
-  },
-  {
     "est": "10:00",
     "utc": "16:00",
     "name": "Adora Nwodo",
-    "photo": "/images/speakers/Adora.jpg",    
+    "photo": "/images/speakers/Adora.jpg",
     "title": "7 Habits of Highly Effective Engineering Teams",
     "audience": "All",
     "bio": [
@@ -125,12 +114,12 @@
   {
     "est": "11:00",
     "utc": "17:00",
-    "name": "Simpathey",
+    "name": "Dr. Meltem Ballan",
     "photo": "/images/speakers/unavailable.jpg",
-    "title": "3D Printing for Hardware Prototyping",
+    "title": "Is AI Intelligent?",
     "audience": "Beginner",
     "bio": [
-      "I graduated from Carnegie Mellon University with a bachelor’s in mechanical engineering. During my 5 years at Carnegie Mellon I used 3D printers including several Printerbot’s and one Makerbot. I used 3D printing for prototyping all my university projects including my capstone which won best overall for my class. Since I graduated I have been working as a Mechanical Engineer building storage systems. I am responsible for maintaining the 3D printers at my company and frequently use them to mechanically prototype new hardware."
+      "Accomplished technology executive with a unique combination of analytical and leadership expertise developed over 20 years both in industry and academia. A pioneering woman data scientist who has nurtured and mentored hundreds of budding analysts and scientists as a recognized leader and as an advisory board member.","Co-founded a technology startup providing a Big-data analytics and ML platform. Managed large multinational and multidisciplinary projects in automotive, aviation, healthcare, software and marketing. Established labs, worked on academic projects, authored over 30 publications on ML/AI implementation, analytics and neuroscience.","She recently joined GM as a senior member of Chief Data and Analytics Office. During her career she has designed complex machine learning models and implemented AI projects including natural language processing (NLP), linear and logistic regression, supervised and unsupervised learning, neural network, deep learning  algorithms and hybrid approaches of computer vision. Her passion for cognitive and biological bases of data prompted her to have a career in academia where she received a post graduate degree in Complex Systems and Brain Sciences with a minor in cognitive and behavioral neuroscience. She implemented her knowledge of neuroscience and analytics while a professor at the University of North Carolina Chapel Hill Medical School.","A regular speaker and consultant for universities, including UT Austin, UT Dallas, MIT, and Stanford and data science and ethics conferences.", "You can reach Dr. Ballan on her LinkedIn at:  https://www.linkedin.com/in/meltemballan/"
     ],
     "points": [],
     "confirmed": true
@@ -177,7 +166,6 @@
     "est": "12:30",
     "utc": "18:30",
     "name": "TBD",
-    "photo": "/images/speakers/unavailable.jpg",
     "email": "TBD",
     "title": "TBD",
     "audience": "",
