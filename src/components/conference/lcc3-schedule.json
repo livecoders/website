@@ -3,7 +3,7 @@
     "est": "7:00",
     "utc": "13:00",
     "name": "Johanna Koester",
-    "photo": "../img/speakers/Johanna.jpg",
+    "photo": "/images/speakers/Johanna.jpg",
     "title": "Empathy, Compassion and Growing Your Tech Career",    
     "audience": "All",
     "bio": [
@@ -21,7 +21,7 @@
     "est": "7:30",
     "utc": "13:30",
     "name": "Menaka Baskerpillai",
-    "photo": "../img/speakers/Menaka.jpg",
+    "photo": "/images/speakers/Menaka.jpg",
     "title": "Architecting Cloud Native Application in Azure using .Net Core dotnet, azure, .NET, microservices, ASP.NET",
     "audience": "Intermediate",
     "bio": [
@@ -40,7 +40,7 @@
     "est": "8:00",
     "utc": "14:00",
     "name": "Nicole Koenigstein",
-    "photo": "../img/speakers/unavailable.png",
+    "photo": "/images/speakers/unavailable.jpg",
     "title": "Living in another Dimension - Principal Component Analysis (PCA)",
     "audience": "",
     "bio": [""],
@@ -51,7 +51,7 @@
     "est": "8:30",
     "utc": "14:30",
     "name": "Shuchita Prasad",
-    "photo": "../img/speakers/Shuchita.jpg",
+    "photo": "/images/speakers/Shuchita.jpg",
     "title": "Chatbots, NLP platforms explained from layman's perspective",
     "audience": "Beginner",
     "bio": [
@@ -64,7 +64,7 @@
     "est": "9:00",
     "utc": "15:00",
     "name": "Rosalind Wills",
-    "photo": "../img/speakers/unavailable.png",
+    "photo": "/images/speakers/unavailable.jpg",
     "title": "Git Good: Getting Comfortable with the Git Command Line",
     "audience": "All",
     "bio": [
@@ -77,7 +77,7 @@
     "est": "9:30",
     "utc": "15:30",
     "name": "Dr. Metham Ballan",
-    "photo": "../img/speakers/unavailable.png",
+    "photo": "/images/speakers/unavailable.jpg",
     "title": "Is AI Intelligent?",
     "audience": "",
     "bio": [""],
@@ -88,7 +88,7 @@
     "est": "10:00",
     "utc": "16:00",
     "name": "Adora Nwodo",
-    "photo": "../img/speakers/Adora.jpg",    
+    "photo": "/images/speakers/Adora.jpg",    
     "title": "7 Habits of Highly Effective Engineering Teams",
     "audience": "All",
     "bio": [
@@ -109,7 +109,7 @@
     "est": "10:30",
     "utc": "16:30",
     "name": "Rachael Olasunkanmi",
-    "photo": "../img/speakers/unavailable.png",
+    "photo": "/images/speakers/unavailable.jpg",
     "title": "PowerHouse Women and How to Join Them",
     "audience": "All",
     "bio": [
@@ -126,7 +126,7 @@
     "est": "11:00",
     "utc": "17:00",
     "name": "Simpathey",
-    "photo": "../img/speakers/unavailable.png",
+    "photo": "/images/speakers/unavailable.jpg",
     "title": "3D Printing for Hardware Prototyping",
     "audience": "Beginner",
     "bio": [
@@ -139,7 +139,7 @@
     "est": "11:30",
     "utc": "17:30",
     "name": "Kim-Adeline Miguel",
-    "photo": "../img/speakers/kim.jpg",
+    "photo": "/images/speakers/kim.jpg",
     "title": "A look at Redwood, a full-stack RPG: React, Prisma, GraphQL (among others) 🛡",
     "audience": "All",
     "bio": [
@@ -160,7 +160,7 @@
     "est": "12:00",
     "utc": "18:00",
     "name": "May Cheung",
-    "photo": "../img/speakers/unavailable.png",
+    "photo": "/images/speakers/unavailable.jpg",
     "title": "Getting Comfortable With Being Uncomfortable: How I Realised Where My Passions Lie and Found My Place in Tech",
     "audience": "All",
     "bio": [
@@ -177,6 +177,7 @@
     "est": "12:30",
     "utc": "18:30",
     "name": "TBD",
+    "photo": "/images/speakers/unavailable.jpg",
     "email": "TBD",
     "title": "TBD",
     "audience": "",
@@ -188,7 +189,7 @@
     "est": "13:00",
     "utc": "19:00",
     "name": "Alyssa Nicoll",
-    "photo": "../img/speakers/Alyssa.png",
+    "photo": "/images/speakers/Alyssa.png",
     "title": "Dark Patterns in UX",
     "audience": "All",
     "bio": [
