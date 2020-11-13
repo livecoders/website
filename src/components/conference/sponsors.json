@@ -1,0 +1,23 @@
+[
+	{
+		"level":"Team",
+		"name": "Fauna DB",
+		"logo": "/images/sponsors/sponsor_fauna.png",
+		"alt": "Fauna Db - a global serverless database provider",
+		"url": "https://fauna.com"
+	},
+	{
+		"level": "Team",
+		"name": "Manning Publications",
+		"logo": "/images/sponsors/sponsor_manning.jpg",
+		"alt": "Manning Publications",
+		"url": "https://manning.com"
+	},
+	{
+		"level": "1-Platinum",
+		"name":"Microsoft Azure",
+		"logo": "/images/sponsors/sponsor_azure.jpg",
+		"alt": "Join the Azure Global Community Cloud Skills Challenge!",
+		"url": "https://azure.microsoft.com"
+	}
+]

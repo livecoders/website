@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 
 import Schedule from "../components/conference/schedule"
 import Speakers from "../components/conference/speakers"
+import Sponsors from "../components/conference/sponsors"
 
 import "../css/index.css"
 
@@ -30,7 +31,7 @@ export default () => (
       </section>
       <section id="sponsors">
         <h2>Sponsors</h2>
-        <p>Coming soon...</p>
+        <Sponsors />
       </section>
       <section>
         <h2>Speakers</h2>
