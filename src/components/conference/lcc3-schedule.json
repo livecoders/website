@@ -63,12 +63,12 @@
   {
     "est": "9:00",
     "utc": "15:00",
-    "name": "Rosalind Wills",
+    "name": "Lizzie Seigel",
     "photo": "/images/speakers/unavailable.jpg",
-    "title": "Git Good: Getting Comfortable with the Git Command Line",
+    "title": "Math for TensorFlow 101",
     "audience": "All",
     "bio": [
-      "I am a Javascript engineer at Automattic and a full-time nerd who has been working in the software industry for over ten years, always excited to keep up on and speak about the latest trends of the fast-moving world of web development. I have a Masters Degree in Software Engineering from DePaul University and have worked with multiple Javascript stacks as well as cross-language into C#, Java, Kotlin, and PHP. During my off hours, I enjoy video gaming, livestreaming, snuggling my cat, and geeking out on Twitter, where you can reach me @blackjackkent."
+      ""
     ],
     "points": [],
     "confirmed": true
@@ -115,7 +115,7 @@
     "est": "11:00",
     "utc": "17:00",
     "name": "Dr. Meltem Ballan",
-    "photo": "/images/speakers/unavailable.jpg",
+    "photo": "/images/speakers/MeltemBallan.jpg",
     "title": "Is AI Intelligent?",
     "audience": "Beginner",
     "bio": [
@@ -149,7 +149,7 @@
     "est": "12:00",
     "utc": "18:00",
     "name": "May Cheung",
-    "photo": "/images/speakers/unavailable.jpg",
+    "photo": "/images/speakers/MayCheung.jpg",
     "title": "Getting Comfortable With Being Uncomfortable: How I Realised Where My Passions Lie and Found My Place in Tech",
     "audience": "All",
     "bio": [
