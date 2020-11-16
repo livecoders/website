@@ -1,6 +1,6 @@
 [
   {
-    "est": "7:00",
+    "est": "8:00",
     "utc": "13:00",
     "name": "Johanna Koester",
     "photo": "/images/speakers/Johanna.jpg",
@@ -18,7 +18,7 @@
     "confirmed": true
   },
   {
-    "est": "7:30",
+    "est": "8:30",
     "utc": "13:30",
     "name": "Menaka Baskerpillai",
     "photo": "/images/speakers/Menaka.jpg",
@@ -37,7 +37,7 @@
     "confirmed": true
   },
   {
-    "est": "8:00",
+    "est": "9:00",
     "utc": "14:00",
     "name": "Nicole Koenigstein",
     "photo": "/images/speakers/unavailable.jpg",
@@ -48,7 +48,7 @@
     "confirmed": false
   },
   {
-    "est": "8:30",
+    "est": "9:30",
     "utc": "14:30",
     "name": "Shuchita Prasad",
     "photo": "/images/speakers/Shuchita.jpg",
@@ -61,20 +61,7 @@
     "confirmed": true
   },
   {
-    "est": "9:00",
-    "utc": "15:00",
-    "name": "Lizzie Siegle",
-    "photo": "/images/speakers/lizzie.png",
-    "title": "Math for TensorFlow 101",
-    "audience": "All",
-    "bio": [
-      "Get a refresher on mathematical foundations like matrices and vectors that can help you when using different machine learning tools and libraries. We'll also go over how to perform basic math, vector and matrix, and exponent and logarithm operations in TensorFlow!"
-    ],
-    "points": [],
-    "confirmed": true
-  },
-  {
-    "est": "10:00",
+    "est": "11:00",
     "utc": "16:00",
     "name": "Adora Nwodo",
     "photo": "/images/speakers/Adora.jpg",
@@ -95,7 +82,7 @@
     "confirmed": true
   },
   {
-    "est": "10:30",
+    "est": "11:30",
     "utc": "16:30",
     "name": "Rachael Olasunkanmi",
     "photo": "/images/speakers/unavailable.jpg",
@@ -112,7 +99,7 @@
     "confirmed": true
   },
   {
-    "est": "11:00",
+    "est": "12:00",
     "utc": "17:00",
     "name": "Dr. Meltem Ballan",
     "photo": "/images/speakers/MeltemBallan.jpg",
@@ -125,7 +112,7 @@
     "confirmed": true
   },
   {
-    "est": "11:30",
+    "est": "12:30",
     "utc": "17:30",
     "name": "Kim-Adeline Miguel",
     "photo": "/images/speakers/kim.jpg",
@@ -146,7 +133,7 @@
     "confirmed": true
   },
   {
-    "est": "12:00",
+    "est": "13:00",
     "utc": "18:00",
     "name": "May Cheung",
     "photo": "/images/speakers/MayCheung.jpg",
@@ -163,7 +150,7 @@
     "confirmed": true
   },
   {
-    "est": "12:30",
+    "est": "13:30",
     "utc": "18:30",
     "name": "TBD",
     "photo": "/images/speakers/unavailable.jpg",
@@ -175,7 +162,20 @@
     "confirmed": false
   },
   {
-    "est": "13:00",
+    "est": "13:30",
+    "utc": "18:30",
+    "name": "Lizzie Siegle",
+    "photo": "/images/speakers/lizzie.png",
+    "title": "Math for TensorFlow 101",
+    "audience": "All",
+    "bio": [
+      "Get a refresher on mathematical foundations like matrices and vectors that can help you when using different machine learning tools and libraries. We'll also go over how to perform basic math, vector and matrix, and exponent and logarithm operations in TensorFlow!"
+    ],
+    "points": [],
+    "confirmed": true
+  },
+ {
+    "est": "14:00",
     "utc": "19:00",
     "name": "Alyssa Nicoll",
     "photo": "/images/speakers/Alyssa.png",
