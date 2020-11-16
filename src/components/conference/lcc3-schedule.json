@@ -64,11 +64,11 @@
     "est": "9:00",
     "utc": "15:00",
     "name": "Lizzie Siegle",
-    "photo": "/images/speakers/unavailable.jpg",
+    "photo": "/images/speakers/lizzie.png",
     "title": "Math for TensorFlow 101",
     "audience": "All",
     "bio": [
-      ""
+      "Get a refresher on mathematical foundations like matrices and vectors that can help you when using different machine learning tools and libraries. We'll also go over how to perform basic math, vector and matrix, and exponent and logarithm operations in TensorFlow!"
     ],
     "points": [],
     "confirmed": true
