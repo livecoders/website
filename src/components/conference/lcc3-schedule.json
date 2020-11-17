@@ -39,13 +39,15 @@
   {
     "est": "9:00",
     "utc": "14:00",
-    "name": "Nicole Koenigstein",
-    "photo": "/images/speakers/unavailable.jpg",
-    "title": "Living in another Dimension - Principal Component Analysis (PCA)",
-    "audience": "",
-    "bio": [""],
+    "name": "Rosalind Wills",
+    "photo": "/images/speakers/rosalind.jpeg",
+    "title": "Git Good: Getting Comfortable with the Git Command Line",
+    "audience": "All",
+    "bio": [
+      "I am a Javascript engineer at Automattic and a full-time nerd who has been working in the software industry for over ten years, always excited to keep up on and speak about the latest trends of the fast-moving world of web development. I have a Masters Degree in Software Engineering from DePaul University and have worked with multiple Javascript stacks as well as cross-language into C#, Java, Kotlin, and PHP. During my off hours, I enjoy video gaming, livestreaming, snuggling my cat, and geeking out on Twitter, where you can reach me @blackjackkent."
+    ],
     "points": [],
-    "confirmed": false
+    "confirmed": true
   },
   {
     "est": "9:30",
@@ -61,8 +63,63 @@
     "confirmed": true
   },
   {
+    "est": "10:00",
+    "utc": "15:00",
+    "name": "Alyssa Nicoll",
+    "photo": "/images/speakers/Alyssa.png",
+    "title": "Dark Patterns in UX",
+    "audience": "All",
+    "bio": [
+      "Alyssa is an Angular Developer Advocate for KUI and a Google Developer Expert for Angular. Her two degrees (Web Design & Development and Psychology) feed her speaking career. She has spoken at over 30 conferences Internationally. She is a weekly panelist on Adventures in Angular and Angular Air, which have a combined following of over 16,000 listeners. She enjoys gaming, scuba diving, and has a little one that fondly goes by \"Mr. Milks\". www.telerik.com/blogs/author/alyssa-nicoll @AlyssaNicol"
+    ],
+    "points": [],
+    "confirmed": true
+  },
+  {
+    "est": "10:30",
+    "utc": "15:30",
+    "name": "Carey Payette",
+    "photo": "/images/speakers/unavailable.jpg",
+    "title": "Raspberry Pi is Awesome!",
+    "audience": "Beginner",
+    "bio": ["Carey is a Live Coder and the bomb-diggity"],
+    "points": [],
+    "confirmed": false
+  },
+
+  {
     "est": "11:00",
     "utc": "16:00",
+    "name": "Dr. Meltem Ballan",
+    "photo": "/images/speakers/MeltemBallan.jpg",
+    "title": "Is AI Intelligent?",
+    "audience": "Beginner",
+    "bio": [
+      "Accomplished technology executive with a unique combination of analytical and leadership expertise developed over 20 years both in industry and academia. A pioneering woman data scientist who has nurtured and mentored hundreds of budding analysts and scientists as a recognized leader and as an advisory board member.","Co-founded a technology startup providing a Big-data analytics and ML platform. Managed large multinational and multidisciplinary projects in automotive, aviation, healthcare, software and marketing. Established labs, worked on academic projects, authored over 30 publications on ML/AI implementation, analytics and neuroscience.","She recently joined GM as a senior member of Chief Data and Analytics Office. During her career she has designed complex machine learning models and implemented AI projects including natural language processing (NLP), linear and logistic regression, supervised and unsupervised learning, neural network, deep learning  algorithms and hybrid approaches of computer vision. Her passion for cognitive and biological bases of data prompted her to have a career in academia where she received a post graduate degree in Complex Systems and Brain Sciences with a minor in cognitive and behavioral neuroscience. She implemented her knowledge of neuroscience and analytics while a professor at the University of North Carolina Chapel Hill Medical School.","A regular speaker and consultant for universities, including UT Austin, UT Dallas, MIT, and Stanford and data science and ethics conferences.", "You can reach Dr. Ballan on her LinkedIn at:  https://www.linkedin.com/in/meltemballan/"
+    ],
+    "points": [],
+    "confirmed": true
+  },
+  {
+    "est": "11:30",
+    "utc": "16:30",
+    "name": "Rachael Olasunkanmi",
+    "photo": "/images/speakers/rachael.jpeg",
+    "title": "PowerHouse Women and How to Join Them",
+    "audience": "All",
+    "bio": [
+      "Rachael Olasunkanmi is Student Affairs professional, specializing in financial aid, scholarship, and grant account management. I am humble in change, but bold in action when it comes to strategizing with my teams on exceeding departmental goals, project management, and coordinating resources to elevate the team and students to the next level.",
+      "Offering over seven years of experience in student affairs, I’ve perfected the art of educating, empowering, and motivating others to level up their careers and themselves. I’m excited to use these strategies to further develop my career and help schools transform the lives of their students.",
+      "Although it’s not all work and no play, I also coordinate employee and student engagement activities. Some activities include- recruitment events, presentations to local high schools, team-building, and outreach efforts to provide further resources to students outside of the office.",
+      "I am credentialed by The National Association of Student Financial Aid Administrators in the FAFSA Application Process, Student Eligibility, Needs Analysis, and Verification. I’m excited about the opportunity to utilize my expertise and cultivate relationships through strategic planning and collaboration in my field.",
+      "\"An investment in knowledge pays the best interest.\" - Benjamin Franklin"
+    ],
+    "points": [],
+    "confirmed": true
+  },
+  {
+    "est": "12:00",
+    "utc": "17:00",
     "name": "Adora Nwodo",
     "photo": "/images/speakers/Adora.jpg",
     "title": "7 Habits of Highly Effective Engineering Teams",
@@ -79,36 +136,6 @@
       "How to drive inclusion within team",
       "The journey from dependent to interdependent in software Engineering"
     ],
-    "confirmed": true
-  },
-  {
-    "est": "11:30",
-    "utc": "16:30",
-    "name": "Rachael Olasunkanmi",
-    "photo": "/images/speakers/unavailable.jpg",
-    "title": "PowerHouse Women and How to Join Them",
-    "audience": "All",
-    "bio": [
-      "Rachael Olasunkanmi is Student Affairs professional, specializing in financial aid, scholarship, and grant account management. I am humble in change, but bold in action when it comes to strategizing with my teams on exceeding departmental goals, project management, and coordinating resources to elevate the team and students to the next level.",
-      "Offering over seven years of experience in student affairs, I’ve perfected the art of educating, empowering, and motivating others to level up their careers and themselves. I’m excited to use these strategies to further develop my career and help schools transform the lives of their students.",
-      "Although it’s not all work and no play, I also coordinate employee and student engagement activities. Some activities include- recruitment events, presentations to local high schools, team-building, and outreach efforts to provide further resources to students outside of the office.",
-      "I am credentialed by The National Association of Student Financial Aid Administrators in the FAFSA Application Process, Student Eligibility, Needs Analysis, and Verification. I’m excited about the opportunity to utilize my expertise and cultivate relationships through strategic planning and collaboration in my field.",
-      "\"An investment in knowledge pays the best interest.\" - Benjamin Franklin"
-    ],
-    "points": [],
-    "confirmed": true
-  },
-  {
-    "est": "12:00",
-    "utc": "17:00",
-    "name": "Dr. Meltem Ballan",
-    "photo": "/images/speakers/MeltemBallan.jpg",
-    "title": "Is AI Intelligent?",
-    "audience": "Beginner",
-    "bio": [
-      "Accomplished technology executive with a unique combination of analytical and leadership expertise developed over 20 years both in industry and academia. A pioneering woman data scientist who has nurtured and mentored hundreds of budding analysts and scientists as a recognized leader and as an advisory board member.","Co-founded a technology startup providing a Big-data analytics and ML platform. Managed large multinational and multidisciplinary projects in automotive, aviation, healthcare, software and marketing. Established labs, worked on academic projects, authored over 30 publications on ML/AI implementation, analytics and neuroscience.","She recently joined GM as a senior member of Chief Data and Analytics Office. During her career she has designed complex machine learning models and implemented AI projects including natural language processing (NLP), linear and logistic regression, supervised and unsupervised learning, neural network, deep learning  algorithms and hybrid approaches of computer vision. Her passion for cognitive and biological bases of data prompted her to have a career in academia where she received a post graduate degree in Complex Systems and Brain Sciences with a minor in cognitive and behavioral neuroscience. She implemented her knowledge of neuroscience and analytics while a professor at the University of North Carolina Chapel Hill Medical School.","A regular speaker and consultant for universities, including UT Austin, UT Dallas, MIT, and Stanford and data science and ethics conferences.", "You can reach Dr. Ballan on her LinkedIn at:  https://www.linkedin.com/in/meltemballan/"
-    ],
-    "points": [],
     "confirmed": true
   },
   {
@@ -152,18 +179,6 @@
   {
     "est": "13:30",
     "utc": "18:30",
-    "name": "TBD",
-    "photo": "/images/speakers/unavailable.jpg",
-    "email": "TBD",
-    "title": "TBD",
-    "audience": "",
-    "bio": [""],
-    "points": [],
-    "confirmed": false
-  },
-  {
-    "est": "13:30",
-    "utc": "18:30",
     "name": "Lizzie Siegle",
     "photo": "/images/speakers/lizzie.png",
     "title": "Math for TensorFlow 101",
@@ -174,17 +189,16 @@
     "points": [],
     "confirmed": true
   },
- {
-    "est": "14:00",
-    "utc": "19:00",
-    "name": "Alyssa Nicoll",
-    "photo": "/images/speakers/Alyssa.png",
-    "title": "Dark Patterns in UX",
-    "audience": "All",
-    "bio": [
-      "Alyssa is an Angular Developer Advocate for KUI and a Google Developer Expert for Angular. Her two degrees (Web Design & Development and Psychology) feed her speaking career. She has spoken at over 30 conferences Internationally. She is a weekly panelist on Adventures in Angular and Angular Air, which have a combined following of over 16,000 listeners. She enjoys gaming, scuba diving, and has a little one that fondly goes by \"Mr. Milks\". www.telerik.com/blogs/author/alyssa-nicoll @AlyssaNicol"
-    ],
+  {
+    "est": "9:00",
+    "utc": "14:00",
+    "name": "Nicole Koenigstein",
+    "photo": "/images/speakers/unavailable.jpg",
+    "title": "Living in another Dimension - Principal Component Analysis (PCA)",
+    "audience": "",
+    "bio": [""],
     "points": [],
-    "confirmed": true
+    "confirmed": false
   }
-]
+
+ ]
