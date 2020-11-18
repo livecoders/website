@@ -187,7 +187,7 @@
       "Get a refresher on mathematical foundations like matrices and vectors that can help you when using different machine learning tools and libraries. We'll also go over how to perform basic math, vector and matrix, and exponent and logarithm operations in TensorFlow!"
     ],
     "points": [],
-    "confirmed": true
+    "confirmed": false
   },
   {
     "est": "9:00",
