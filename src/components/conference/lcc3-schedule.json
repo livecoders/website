@@ -143,7 +143,7 @@
     "utc": "17:30",
     "name": "Kim-Adeline Miguel",
     "photo": "/images/speakers/kim.jpg",
-    "title": "A look at Redwood, a full-stack RPG: React, Prisma, GraphQL (among others) 🛡",
+    "title": "Adventures in the Jamstack forest: Discovering Redwood",
     "audience": "All",
     "bio": [
       "Kim-Adeline (she/her) is a software engineer at Microsoft working on the Python extension for VS Code.",
