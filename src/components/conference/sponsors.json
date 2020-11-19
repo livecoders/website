@@ -19,5 +19,19 @@
 		"logo": "/images/sponsors/sponsor_azure.jpg",
 		"alt": "Join the Azure Global Community Cloud Skills Challenge!",
 		"url": "https://aka.ms/LiveCodersCSC"
+	},
+	{
+		"level": "1-Platinum",
+		"name":"Progress",
+		"logo": "/images/sponsors/sponsor_Progress.png",
+		"alt": "Check out the Code It Live channel from Progress Software",
+		"url": "https://twitch.tv/codeitlive"
+	},
+	{
+		"level": "2-Gold",
+		"name":"Linode",
+		"logo": "/images/sponsors/Linode.png",
+		"alt": "Try Linode Free with a $100 credit!",
+		"url": "https://linode.com/livecoders"
 	}
 ]

@@ -8,6 +8,8 @@ import Schedule from "../components/conference/schedule"
 import Speakers from "../components/conference/speakers"
 import Sponsors from "../components/conference/sponsors"
 
+import LiveCodersChannel from "../components/twitch-channel"
+
 import "../css/index.css"
 
 if (typeof window !== "undefined") {
@@ -25,6 +27,7 @@ export default () => (
         <h1>The Live Coders Conference 3</h1>
         <h2>November 19th, 2020</h2>
       </section>
+      <LiveCodersChannel />
       <section>
         <h2>Schedule</h2>
         <Schedule />
