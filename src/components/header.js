@@ -4,8 +4,9 @@ import Nav from "../components/nav"
 
 import LogoImg from "../img/live-coder-transparent.png"
 
-import "../css/header.css"
 import EventBanner from "./event-banner"
+
+import "../css/header.css"
 
 export default () => {
   return (
