@@ -66,8 +66,9 @@ export default () => (
               </a>
             </div>
             <Link to="/coc/" className="foot-coc">
-              Code of Conduct
+              Code of Conduct (Report Violation)
             </Link>
+
             <span className="f-awesome-attribute">
               Icons by{" "}
               <a href="https://fontawesome.com/license/free">Font Awesome</a>
