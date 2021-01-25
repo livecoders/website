@@ -16,6 +16,15 @@ export default () => (
     </div>
     <section id="codeOfConduct">
       <h2>General</h2>
+      <a
+        href="https://forms.gle/9yyiB7xQMX6CES9n9"
+        target="_blank"
+        rel="noreferrer"
+        style={{ color: "#FFF" }}
+      >
+        To report a violation, please reach out here.(Report Violation)
+      </a>
+
       <ul>
         <li>
           Be kind and welcoming to new viewers in your stream, other viewers in
@@ -158,6 +167,14 @@ export default () => (
           etc. please reach out to Community Manager LilyHazel.
         </li>
       </ul>
+      <a
+        href="https://forms.gle/9yyiB7xQMX6CES9n9"
+        target="_blank"
+        rel="noreferrer"
+        style={{ color: "#FFF" }}
+      >
+        To report a violation, please reach out here.(Report Violation)
+      </a>
     </section>
     <Footer />
   </React.Fragment>
