@@ -57,14 +57,14 @@ export default () => (
     <br />
     <h3>Team Sponsors</h3>
     <SponsorGrid>
-      {teamSponsors.map((teamSponsor) => (
-        <Sponsor item={teamSponsor} />
+      {teamSponsors.map((teamSponsor, index) => (
+        <Sponsor item={teamSponsor} key={index} />
       ))}
     </SponsorGrid>
     <h3>Conference Sponsors</h3>
     <SponsorGrid>
-      {sponsors.map((sponsor) => (
-        <Sponsor item={sponsor} />
+      {sponsors.map((sponsor, index) => (
+        <Sponsor item={sponsor} key={index} />
       ))}
     </SponsorGrid>
   </>
