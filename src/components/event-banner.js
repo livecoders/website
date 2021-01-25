@@ -14,12 +14,12 @@ const EventWrapper = styled.div`
   }
 `
 
-export default ({ date, link = "lcc3" }) => {
+export default ({ date, title, link = "lcc3" }) => {
   return (
     <>
       {date && (
         <EventWrapper>
-          <Link to={`/${link}`}>{`The Live Coders Conference | ${date}`}</Link>
+          <Link to={`/${link}`}>{`${title} | ${date}`}</Link>
         </EventWrapper>
       )}
     </>
