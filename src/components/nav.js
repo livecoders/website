@@ -10,7 +10,7 @@ export default ({ isFooter }) => (
         <Link to={"/"}>Home</Link>
       </li>
       <li>
-        <Link to={"/lcc3"}>Conference</Link>
+        <Link to={"/conference"}>Conference</Link>
       </li>
       <li>
         <Link to={"/members"}>Team Members</Link>
