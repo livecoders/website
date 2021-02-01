@@ -11,11 +11,11 @@ import "../css/header.css"
 export default () => {
   return (
     <React.Fragment>
-      {/* <EventBanner
-        link={"iwd-2021"}
+      <EventBanner
+        link={"conference"}
         date={"March 8th, 2021"}
         title={"International Womens' Day Event"}
-      /> */}
+      />
       <header>
         <Link to="/">
           <img src={LogoImg} alt={"Live Coders Logo"} />
