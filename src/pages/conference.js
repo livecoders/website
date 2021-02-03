@@ -17,7 +17,7 @@ console.log(process.env.NODE_ENV)
 const siteUrl =
   process.env.NODE_ENV === "development"
     ? "http://localhost:8000"
-    : "https://livecoders.dev/"
+    : "https://livecoders.dev"
 
 export default () => (
   <React.Fragment>
