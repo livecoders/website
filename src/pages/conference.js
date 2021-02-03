@@ -1,17 +1,47 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
-import SEO from "../components/seo"
 
 import IwdImg from "../img/iwd-2021-banner.jpg"
+import OgImage from "../img/tlc-iwd-2021.png"
 
 import "../css/index.css"
 
+const title = `Conference | The Live Coders`
+const description = `The Live Coders presents International Women's Day Challenge`
+
+console.log(process.env.NODE_ENV)
+
+const siteUrl =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:8000"
+    : "https://livecoders.dev/"
+
 export default () => (
   <React.Fragment>
-    <SEO title="Conference | The Live Coders" />
     <Header />
+    <Helmet
+      title={title}
+      meta={[
+        {
+          name: `description`,
+          content: description,
+        },
+        { property: `og:title`, content: title },
+        { property: `og:description`, content: description },
+        { property: `og:type`, content: `website` },
+        { property: `twitter:card`, content: `summary_large_image` },
+        { property: `twitter:creator`, content: `The Live Coders` },
+        { property: `twitter:title`, content: title },
+        { property: `twitter:description`, content: description },
+        {
+          property: `twitter:image`,
+          content: `${siteUrl}${OgImage}`,
+        },
+      ]}
+    />
     <div className="head">
       <section>
         <div name="schedule" id="schedule" />
