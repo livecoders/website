@@ -4,8 +4,8 @@ import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import Footer from "../components/footer"
 
-import IwdImg from "../img/iwd-2021-banner.jpg"
-import OgImage from "../img/tlc-iwd-2021.png"
+import IwdImg from "../img/iwd-header.jpg"
+import OgImage from "../img/og-iwd-image-gmt.jpg"
 
 import "../css/index.css"
 
