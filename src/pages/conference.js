@@ -6,6 +6,7 @@ import Footer from "../components/footer"
 
 import IwdImg from "../img/iwd-header.jpg"
 import OgImage from "../img/og-iwd-image-gmt.jpg"
+import ProgressSponsorImg from "../img/progress-sponsor.jpg"
 
 import "../css/index.css"
 
@@ -99,7 +100,17 @@ export default () => (
         </p>
         <p>We look forward to seeing you online in March!</p>
       </section>
+      <section>
+        Sessions:<br />
+        <iframe title="Sessions" src="https://sessionize.com/api/v2/hg8851h8/view/Sessions" width="100%" height="500px" frameBorder="0" />
+      </section>
+      <section>
+        <img
+          src={ProgressSponsorImg}
+          alt="Silver Sponsor - Progress"
+        />
+      </section>
     </div>
     <Footer />
-  </React.Fragment>
+  </React.Fragment >
 )
