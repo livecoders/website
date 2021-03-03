@@ -122,7 +122,7 @@ export default () => (
         <section>
           <img
             src={AssemblyAISponsorImg}
-            alt="In-Kind Sponsor - Assembly AI"
+            alt="In-Kind Sponsor - AssemblyAI"
             style={{marginTop: "3vh"}}
           />
         </section>
