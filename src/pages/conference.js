@@ -7,6 +7,8 @@ import Footer from "../components/footer"
 import IwdImg from "../img/iwd-header.jpg"
 import OgImage from "../img/og-iwd-image-gmt.jpg"
 import ProgressSponsorImg from "../img/progress-sponsor.jpg"
+import AranaSponsorImg from "../img/arana-sponsor.jpg"
+import AssemblyAISponsorImg from "../img/assemblyai-sponsor.jpg"
 
 import "../css/index.css"
 
@@ -108,7 +110,22 @@ export default () => (
         <img
           src={ProgressSponsorImg}
           alt="Silver Sponsor - Progress"
+          style={{marginTop: "3vh"}}
         />
+        <section>
+          <img
+            src={AranaSponsorImg}
+            alt="In-Kind Sponsor - Arana"
+            style={{marginTop: "3vh"}}
+          />
+        </section>
+        <section>
+          <img
+            src={AssemblyAISponsorImg}
+            alt="In-Kind Sponsor - Assembly AI"
+            style={{marginTop: "3vh"}}
+          />
+        </section>
       </section>
     </div>
     <Footer />
