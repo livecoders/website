@@ -1,11 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-let data = require("./lcc3-schedule.json")
+let data = require("./lcc4-schedule.json")
 const { format } = require("date-fns")
+
+const eventDate = "2021-03-08";
 
 const EventGrid = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
   margin: 32px;
   gap: 16px;
 
@@ -23,20 +25,16 @@ const EventWrapper = styled.article`
   background-size: cover;
   overflow-x: hidden;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   flex-grow: 1;
   padding: 1vh 1vw;
 
   a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
     color: white;
     text-decoration: none;
-
-    width: 100%;
-    max-width: 100%;
-    height: 100%
   }
 
   a:hover {
@@ -62,18 +60,23 @@ const EventWrapper = styled.article`
     font-weight: bold;
   }
 
-  .sessionSpeaker::before {
-    content: "By ";
-    font-weight: normal;
+  .low-margin {
+    margin: 0;
+    padding: 1vh 0 5px;
   }
 
   .scheduleTime {
+    padding-top: 1vh;
     font-size: medium;
     text-decoration: underline;
   }
 
   @media screen and (max-width: 600px) {
-    .sessionTitle, .sessionSpeaker, .scheduleTime {
+    .sessionSpeaker {
+      padding: 1vh 0;
+    }
+
+    .sessionTitle, .scheduleTime {
       padding: 2vh 0;
     }
   }
@@ -82,34 +85,48 @@ const EventWrapper = styled.article`
 const events = data
   .map((item) => {
     const localized = new Date(
-      `2020-11-19T${item.utc.length > 4 ? item.utc : "0" + item.utc}:00Z`
+      `${eventDate}T${item.utc.length > 4 ? item.utc : "0" + item.utc}:00Z`
     )
     return Object.assign({}, item, {
       utcHour: parseInt(item.utc.replace(":", ""), 10),
       localized: format(localized, "MMMM do h:mm a"),
+      dateObj: localized
     })
   })
-  .filter((item) => item.confirmed)
+  .filter((item) => item.confirmed).sort((a, b) => {
+    let at = a.dateObj,
+      bt = b.dateObj
+  
+    if (at < bt) {
+      return -1
+    }
+    if (at > bt) {
+      return 1
+    }
+    return 0
+  })
 
 const Event = ({ event }) => (
   <>
     <EventWrapper className="scheduleItem">
-      <a className="speaker" href={`#${event.name}`}>
         <span className="sessionTitle">{event.title}</span>
         <br />
-        <img src={`${event.photo}`}  className="sessionSpeakerPhoto" alt={event.name} />
+        {Array.isArray(event.description) ? event.description.map((txtLine, i) => (
+          <p key={`desc-${i}`}>{txtLine}</p>
+        )) : (<p>{event.description}</p>)}
         <br />
-        <span className="sessionSpeaker">{event.name}</span>
+        <p className="low-margin">Hosted by:</p>
+        {event.speakers.map((speaker, i) => (
+          <><a href={"#"+speaker.name.replace(/\W/g,'_')} key={i}><span className="sessionSpeaker">{speaker.name}</span></a><br /></>
+        ))}
         <br />
         <span className="scheduleTime">{event.localized}</span>
-      </a>
     </EventWrapper>
   </>
 )
 
 export default () => (
   <>
-    <span>Your current time is: {format(new Date(), "MMMM do h:mm a")}</span>
     <br />
     <EventGrid>
       {events.map((event) => (

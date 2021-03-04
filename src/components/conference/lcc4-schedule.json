@@ -1,0 +1,181 @@
+[
+  {
+    "utc": "18:15",
+    "title": "A love story — The Web & I",
+    "description": "Back in 2011, my best friend and love of my life introduced me to the wonderful world of web. I was finishing up my Psych degree at OU and had become completely un-enamored with the field of Psychology. I had entered into it, thinking to make real discoveries about the mental health issues and diseases of the day. My professors and upper-grad students shone a different, apathetic light onto the industry — one that shocked me and prepared me for the jump to web. I’ll share some of my struggles as I unfold the rest of my journey to GDE, DevRel and beyond. Perhaps if we have time, I’ll even share some code-bits that I’m particularly proud of.",
+    "speakers": [
+      {
+        "name": "Alyssa Nicoll",
+        "position": "Angular Developer Advocate for Kendo UI | GDE",
+        "photo": "/images/speakers/Alyssa Nicoll.jpg",
+        "bio": "Alyssa is an Angular Developer Advocate for KUI and a GDE for Angular. Her two degrees (Web Design & Development and Psychology) feed her speaking career. She also streams weekly on the Angular Air podcast and Twitch CodeItLive channel.",
+        "social": {
+          "twitter": "https://twitter.com/AlyssaNicoll"
+        }
+      }
+    ],
+    "confirmed": true
+  },
+  {
+    "utc": "15:15",
+    "title": "Basics of Hardware Building with Arduino",
+    "description": ["I've found that many women haven't learned how to work with hardware or Arduinos. Through workshops, mentoring, or working on robotics teams, I love seeing people's eyes light up with excitement when building things! It often feels like hardware is a \"boys club\" and I want to change that!", "I'm going to share the joy of building and programming hardware! You'll see the basics of getting lights to blink, programing sensors to get information, and making a motor work interactively. Questions always come up, so I'll answer them and provide some hints along the way. This will inspire and encourage you to start to hack away on your own projects!"],
+    "speakers": [
+      {
+        "name": "Sarah Withee",
+        "position": "Polyglot software engineer",
+        "photo": "/images/speakers/Sarah Withee.jpg",
+        "bio": "Sarah Withee is a polyglot software engineer, international public speaker, teacher/mentor, and hardware/robot tinkerer in Pittsburgh, PA. She is passionate about the intersection of people and technology. She only uses 100% organic sarcasm and puns.",
+        "social": {
+          "twitter": "https://twitter.com/geekygirlsarah"
+        }
+      }
+    ],
+    "confirmed": true
+  },
+  {
+    "utc": "12:15",
+    "title": "From Panic Attacks to Public Speaking - My Journey",
+    "description": ["Techorama came to the Netherlands for the first time in 2018. The biggest .Net conference in the Netherlands with a host of amazing speakers!", "Suffering from severe anxiety it was going to be a tough couple of days, but still, I wanted to go!", "This is a story about how a panic attack on day one of the conference, followed by a couple of chance meetings lead me to overcome my fear of flying, travelling and people to speak at my first conference."],
+    "speakers": [
+      {
+        "name": "Stacy Cashmore",
+        "position": "Tech Explorer DevOps, Omniplan, Netherlands",
+        "photo": "/images/speakers/Stacy Cashmore.jpg",
+        "bio": ["Stacy is Tech Explorer DevOps and a Microsoft MVP in Developer Technologies.", "She’s been developing software since the mid-1990s and has been speaking about improving the way we develop software at conferences and meetups since 2018"],
+        "social": {
+          "twitter": "https://twitter.com/Stacy_Cash"
+        }
+      }
+    ],
+    "confirmed": true
+  },
+  {
+    "utc": "11:15",
+    "title": "How to survive in a male dominated industry",
+    "description": "When you run a technology startup, the voices of women often go unheard. It's not because we don't speak up, it's because people think little of us. When you are told \"you will never be CEO of this company because this company won't be run by a woman\", then you really understand how people view you. But it's not about letting these moments get you down. It's about using those to build yourself up, understand your worth, and help other women do the same. I will use my own examples to talk about how I've survived in my world of tech, dev, gaming, esports, cars, skateboarding dominated by men and how you too can come out on top.",
+    "speakers": [
+      {
+        "name": "Michelle Mannering",
+        "position": "Hackathon Queen®™ | Founder | Esports Queen",
+        "photo": "/images/speakers/Michelle_Mannering.jpg",
+        "bio": "I am a highly motivated, curious and compassionate leader. I have founded several tech companies and, as a result, sits at the forefront of this city’s science, tech, esports and startup scenes.",
+        "social": {
+          "twitter": "https://twitter.com/AlyssaNicoll"
+        }
+      }
+    ],
+    "confirmed": true
+  },
+  {
+    "utc": "14:15",
+    "title": "Imposter Syndrome: Breaking Through Barriers",
+    "description": "Are you afraid to take the next step? Do you think you’re not good enough? Or wonder why you were hired in the first place? This is what we call Impostor Syndrome. Did you know some of the most famous, brilliant and amazing people suffer from it? Heather Downing and Debbie O'Brien tell you their story, and the lessons they learned in order to overcome imposter syndrome. Think you aren't good enough? Let's talk about it.",
+    "speakers": [
+      {
+        "name": "Heather Downing",
+        "position": "Senior Developer Advocate",
+        "photo": "/images/speakers/heather Downing.jpg",
+        "bio": "Heather is a passionate coder with experience in building enterprise-level mobile, voice, and .NET apps. She teaches at tech conferences, supporting developers of all backgrounds. She is a Microsoft MVP, an international speaker, and fosters huskies.",
+        "social": {
+          "twitter": "twitter.com/quorralyne"
+        }
+      },
+      {
+        "name": "Debbie O'Brien",
+        "position": "Head of Learning and Developer Advocate",
+        "photo": "/images/speakers/debbieobrien.jpg",
+        "bio": "Debbie O’Brien is Head of Learning and Developer Advocate at NuxtJS, Microsoft Most Valuable Professional in Developer Technologies, Google Developer Expert in web technologies, GitHub Star, Auth0 Ambassador and a Media Developer Expert.",
+        "social": {
+          "twitter": "https://twitter.com/debs_obrien"
+        }
+      }
+    ],
+    "confirmed": true
+  },
+  {
+    "utc": "17:15",
+    "title": "It Wasn't Just Luck",
+    "description": "As the daughter of a single, immigrant, mother, Sarah knew one thing since she was a child: She loved teaching and learning, she never wanted to sleep in a car again. Now with her PhD in computer science and a principal program manager at Microsoft, she is dedicating her career to encouraging and teaching others to discover their own passions and paths through life. But with a daughter of her own now, the \"path\" isn't so much a path anymore, but a never-ending set of decisions, defenses, and challenges to overcome. In this session, \"Dr G\" will describe the challenges of focusing on education in tech, starting a company, and being a mom.",
+    "speakers": [
+      {
+        "name": "Sarah Guthals",
+        "position": "PhD, Principal Program Manager, Microsoft",
+        "photo": "/images/speakers/Sarah Guthals.png",
+        "bio": "Sarah Guthals is a Principal Program Manager at Microsoft. With a Ph.D. in Computer Science from UC San Diego, her passion is to design content, software, and companies that focus on engaging learners.",
+        "social": {
+          "twitter": "https://twitter.com/drguthals"
+        }
+      }
+    ],
+    "confirmed": true
+  },
+  {
+    "utc": "10:15",
+    "title": "Migrating a platform to Azure",
+    "description": ["After 3 years of running our startup travel management platform on AWS, we were given an opportunity to move it all to Azure and see how well our .NET platform could perform over there.", "I will talk about the services that we took up in Azure, including for the runtime and devops, discuss some problems we had to overcome, and give some overall thoughts on the process. I can also demonstrate our pipelines for build and deploy.", "It was a huge task to undertake by myself as the rest of my team focused on day to day work, but I was very proud to achieve what I did, and it's empowered me to take on extra challenges in devops now."],
+    "speakers": [
+      {
+        "name": "Bron Thulke",
+        "position": "CTO and Cofounder at YouLive to Travel",
+        "photo": "/images/speakers/BronThulke.jpg",
+        "bio": "Bron has been developing code since the turn of the century, and loves learning new tech. Her motto is \"if you're not learning, you're not moving\". Yes she just made that up, she is a programmer not a wordsmith. Bron is the CTO at YouLive to Travel.",
+        "social": {
+          "twitter": "https://twitter.com/_bron_"
+        }
+      }
+    ],
+    "confirmed": true
+  },
+  {
+    "utc": "16:15",
+    "title": "Own Your Power by Taking Care of Yourself",
+    "description": ["Two years ago I hit rock bottom. My mind focused on everything that had gone wrong, leaving me to put nurturing my online brand identity on hold. I left my fast-growing tech Youtube and IG account to spend the next two years improving my mindset. I learned how to take better care of myself.", "This talk is for anyone who has faced a creative block due to personal hardships. I’m hoping that my story of how I embraced the time and space my creative block gave to me, and how taking care of myself helped to unleash my inner creative strength, will inspire and enable you to prioritize your mental, physical, spiritual and emotional health."],
+    "speakers": [
+      {
+        "name": "Maricris Bonzo",
+        "position": "Developer Advocate at Magic by day. Multi-Passionate Creative with a current focus on Self Sovereign Identity by night.",
+        "photo": "/images/speakers/MaricrisBonzo.jpg",
+        "bio": "I'm a Developer Advocate with a Software Engineering background. When I'm not at work, I'm either playing with my furry kids (Kona 🐶, Reggie 🐶, and Pitou 🐱) or working on a topic I care about at Cafe Estela.",
+        "social": {
+          "twitter": "https://twitter.com/seemcat"
+        }
+      }
+    ],
+    "confirmed": true
+  },
+  {
+    "utc": "19:15",
+    "title": "Python Girl in an Augmented World",
+    "description": ["After years of self-learning Python and ultimately publishing her first book Bite-Size Python: An Introduction to Python Programming, April thought she had hit the pinnacle of her career in tech. However, one delayed flight and the urge to scroll through Twitter changed the trajectory of her career.", "Today, April works in the area of Spatial Computing as a Sr. Cloud Advocate at Microsoft. Making the transition from Python to C# was no easy feat for her. It took motivation and a strong determination to overcome impostor syndrome and feel confident in her ability create Mixed Reality apps.", "Learn the tips that helped April in her journey."],
+    "speakers": [
+      {
+        "name": "April Speight",
+        "position": "Sr. Cloud Advocate, Microsoft",
+        "photo": "/images/speakers/April Speight.png",
+        "bio": "April Speight is a Sr. Cloud Advocate on the Spatial Computing technology team at Microsoft. She is the author of Bite-Size Python: An Introduction to Python Programming. She finds passion in helping others transition into a career in tech.",
+        "social": {
+          "twitter": "https://twitter.com/vogueandcode"
+        }
+      }
+    ],
+    "confirmed": true
+  },
+  {
+    "utc": "13:15",
+    "title": "The journey to a million lines of code",
+    "description": ["Growing up, I had always wanted to work with computers and when I discovered how powerful programming was, I was intentional about the steps I took as a teenager because I wanted to work towards building a tech career.", "Fast forward to a few years, I'm getting paid to make global impact with code and it's the best feeling ever.", "In this talk, I'd share my story about how I found programming at an early age, started coding and got my first full-time Software Engineering job at 19 without an interview.", "Those steps set the pace for where my career is currently, and I want to share this story to motivate other women."],
+    "speakers": [
+      {
+        "name": "Adora Nwodo",
+        "position": "Software Engineer at Microsoft",
+        "photo": "/images/speakers/Adora Nwodo.jpg",
+        "bio": "Adora Nwodo is a Software Engineer at Microsoft (Mixed Reality) where she builds cloud services related to Artificial Intelligence and Mixed Reality. She's also a Tech Content Creator and DJ.",
+        "social": {
+          "twitter": "https://twitter.com/adoranwodo"
+        }
+      }
+    ],
+    "confirmed": true
+  }
+]

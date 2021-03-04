@@ -1,6 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-let data = require("./lcc3-schedule.json")
+
+import GitHubLogo from "../../img/icons/github-square-brands.svg"
+import TwitterLogo from "../../img/icons/twitter-square-brands.svg"
+import TwitchLogo from "../../img/icons/twitch-brands.svg"
+import YouTubeLogo from "../../img/icons/youtube-brands.svg"
+import LinkIcon from "../../img/icons/link-solid.svg"
+
+let data = require("./lcc4-schedule.json")
 
 const events = data.filter((item) => item.confirmed)
 
@@ -12,6 +19,11 @@ const Divider = styled.div`
   margin: 0 0 0 15vw;
 
   border: solid 1px white;
+
+  @media screen and (min-width: 2000px) {
+    width: 50vw;
+    margin: 0 0 0 25vw;
+  }
 `;
 
 const SpeakerWrapper = styled.article`
@@ -19,6 +31,10 @@ const SpeakerWrapper = styled.article`
 
   @media screen and (max-width: 600px) {
     margin: 5vh 5vw; 
+  }
+
+  @media screen and (min-width: 2000px) {
+    margin: 5vh 25vw; 
   }
 
   a {
@@ -31,6 +47,13 @@ const SpeakerWrapper = styled.article`
   .speakerName {
     font-weight: bold;
     font-size: xx-large;
+    margin: .5vh 0 0;
+    padding: 0;
+  }
+
+  .speakerPosition {
+    margin: .5vh 0;
+    padding: 0;
   }
 
   .sessionSpeakerPhotoBody {
@@ -38,7 +61,20 @@ const SpeakerWrapper = styled.article`
     height: 300px;
     width: 300px;
     margin-bottom: 1vh;
+  }
+
+  .speakerSocial {
+    display: flex;
+    justify-content: center;
     
+    margin: 0;
+    padding: 0;
+  }
+
+  .speakerSocial img {
+    padding: 5px;
+    height: 30px;
+    width: 30px;
   }
   
   @media screen and (max-width: 600px) {
@@ -47,7 +83,6 @@ const SpeakerWrapper = styled.article`
       left: calc((100vw - 300px)/2 - 32px - 5vw);
     }
   }
- 
 
   .sessionTitle {
     font-family: "Press Start 2P", sans-serif;
@@ -65,45 +100,43 @@ const Bio = styled.div`
   text-align: justify;
 `;
 
-const List = styled.ol`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  &>* {
-    text-align: left;
-    padding: 1vh 0;
-  }
-`;
-
-const Speaker = ({ event,index, length }) => (
-  <React.Fragment key={event.utc}>
-    <div name={event.name} id={event.name}>
+const Speaker = ({ event, speaker, sindex, divide }) => (
+  <React.Fragment key={event.utc+"-"+sindex}>
+    <div name={speaker.name} id={speaker.name.replace(/\W/g,'_')}>
       <SpeakerWrapper className="speaker">
-        <h3 className="speakerName">{event.name}</h3>
+        <h3 className="speakerName">{speaker.name}</h3>
+        <h4 className="speakerPosition">{speaker.position}</h4>
+        <div className="speakerSocial">
+          {speaker.social && [...Object.entries(speaker.social)].map((social, i) => (
+            <a
+              href={social[1]}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={`social-${i}`}
+            >
+              <img
+                src={social[0] === "twitter" ? TwitterLogo : social[0] === "twitch" ? TwitchLogo : social[0] === "youtube" ? YouTubeLogo : social[0] === "github" ? GitHubLogo : LinkIcon}
+                alt={social[0] === "twitter" ? "Twitter" : social[0] === "twitch" ? "Twitch" : social[0] === "youtube" ? "YouTube" : social[0] === "github" ? "GitHub" : social[0].charAt(0).toUpperCase() + (social[0].slice(1, social[0].length).toLowerCase())}
+              />
+            </a>
+          ))}
+        </div>
         <br />
-        <img src={`${event.photo}`}  className="sessionSpeakerPhotoBody" alt={event.name} />
+        <img src={speaker.photo ? `${speaker.photo}` : "/images/speakers/unavailable.jpg"}  className="sessionSpeakerPhotoBody" alt={speaker.name} />
         <br />
         <a href={`#schedule`}>Back to Schedule</a>
         <br />
         <span className="sessionTitle">{event.title}</span>
         <br />
         <Bio>
-        {event.bio.map((bioLine, i) => (
-          <p key={i}>{bioLine}</p>
-        ))}
+        {Array.isArray(speaker.bio) ? speaker.bio.map((bioLine, i) => (
+          <p key={`bio-${i}`}>{bioLine}</p>
+        )) : (<p>{speaker.bio}</p>)}
         </Bio>
-        {event.points.length > 0 && <h4 className="points">5 Key Points</h4>}
-        <List>
-          {event.points.length > 0 &&
-            event.points.map((point, i) => {
-              return <li key={i}>{point}</li>
-            })}
-        </List>
       </SpeakerWrapper>
     </div>
 
-    {index !== length-1 && <Divider></Divider>}
+    {divide && <Divider></Divider>}
   </React.Fragment>
 )
 
@@ -111,7 +144,9 @@ export default () => (
   <>
     <br />
     {events.map((event, i, arr) => (
-      <Speaker event={event} key={event.utc} index={i} length={arr.length} />
+      event.speakers.map((speaker, ii, sarr) => (
+        <Speaker event={event} speaker={speaker} key={event.utc+"-"+ii} sindex={ii} divide={i !== arr.length-1 || ii !== sarr.length-1} />
+      ))
     ))}
   </>
 )

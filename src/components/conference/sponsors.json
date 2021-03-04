@@ -1,37 +1,29 @@
 [
 	{
-		"level":"Team",
-		"name": "Fauna DB",
-		"logo": "/images/sponsors/sponsor_fauna.png",
-		"alt": "Fauna Db - a global serverless database provider",
-		"url": "https://fauna.com"
-	},
-	{
-		"level": "Team",
-		"name": "Manning Publications",
-		"logo": "/images/sponsors/sponsor_manning.jpg",
-		"alt": "Manning Publications",
-		"url": "https://manning.com"
-	},
-	{
-		"level": "1-Platinum",
-		"name":"Microsoft Azure",
-		"logo": "/images/sponsors/sponsor_azure.jpg",
-		"alt": "Join the Azure Global Community Cloud Skills Challenge!",
-		"url": "https://aka.ms/LiveCodersCSC"
-	},
-	{
-		"level": "1-Platinum",
+		"level": "Silver",
+		"priority": 1,
 		"name":"Progress",
-		"logo": "/images/sponsors/sponsor_Progress.png",
-		"alt": "Check out the Code It Live channel from Progress Software",
-		"url": "https://twitch.tv/codeitlive"
+		"logo": "/images/sponsors/Progress_Sponsor_White.png",
+		"alt": "Deliver better experiences powered by your apps, data and content with Progress",
+		"url": "https://twitch.tv/codeitlive",
+		"background": false
 	},
 	{
-		"level": "2-Gold",
-		"name":"Linode",
-		"logo": "/images/sponsors/Linode.png",
-		"alt": "Try Linode Free with a $100 credit!",
-		"url": "https://linode.com/livecoders"
+		"level": "In-Kind",
+		"priority": 2,
+		"name":"Arana Software",
+		"logo": "/images/sponsors/Arana_Software_Sponsor_White.png",
+		"alt": "Arana Software provides web application software consulting and development services that will help you improve efficiency and provide more business value through better practices and quality code.",
+		"url": "https://www.aranasoft.com/",
+		"background": false
+	},
+	{
+		"level": "In-Kind",
+		"priority": 2,
+		"name":"AssemblyAI",
+		"logo": "/images/sponsors/AssemblyAI_Sponsor_White.png",
+		"alt": "AssemblyAI is the #1 Speech-to-Text API for Developers",
+		"url": "https://www.assemblyai.com/",
+		"background": false
 	}
 ]
