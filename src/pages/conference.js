@@ -53,7 +53,7 @@ const MainSection = styled.div`
   }
 
   img {
-    max-width: 100vw;
+    max-width: 100%;
   }
 
   @media screen and (max-width: 600px) {
