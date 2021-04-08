@@ -2,6 +2,22 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+/**
+  EventBanner.js
+
+  Example Usage:
+
+  ```js
+  import EventBanner from "./event-banner"
+
+  <EventBanner
+    link={"conference"}
+    date={"March 8th, 2021"}
+    title={"International Womens' Day Event"}
+  />
+  ```
+ */
+
 const EventWrapper = styled.div`
   background-color: #663399;
   padding: 10px;
