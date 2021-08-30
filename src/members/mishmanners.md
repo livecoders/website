@@ -26,6 +26,6 @@ sites:
   - https://mishmanners.info
 ---
 
-Mish AKA the "Hackathon Queen", or "Esports Queen" 👑 is a gamer and esports ninja from Melbourne, Australia. Whilst there's lots of games on her channel, you'll also find her hosting hackathons, AMA sessions on tech, and doing learning streams on coding. So far we've done AWS DeepRacer, Twilio Quest, JavaScript, and lots of Python. Some future plans include Ruby Warrior, Unity, and more!
+Mish AKA the "Hackathon Queen", or "Esports Queen" 👑 is a gamer and esports ninja from Melbourne, Australia. Whilst there's lots of games on her channel, you'll also find her hosting hackathons, AMA sessions on tech, and doing learning streams on coding. So far we've done AWS DeepRacer, Twilio Quest, JavaScript, Ruby Warrior, Unity, Battlesnake, and lots of Python. Some future plans include WordPress migration and more!
 
 © 2020 GitHub, Inc.
