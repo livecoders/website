@@ -1,6 +1,6 @@
 ---
 username: mishmanners
-profile: ../img/members/mishmanners.jpg
+profile: ../img/members/MishManners.jpg
 twitter: MishManners
 instagram: MishManners_
 youtube: https://www.youtube.com/c/mishmanners
