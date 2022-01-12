@@ -43,10 +43,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: master
-      - name: deps
-        run: |
-          sudo apt update
-          sudo apt install -y libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev librsvg2-dev
       - name: build site
         run: |
           npm install
