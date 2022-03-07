@@ -9,7 +9,8 @@ const clientId = process.env.TWITCH_CLIENT_ID
 const clientSecret = process.env.TWITCH_CLIENT_SECRET
 const team = "livecoders"
 
-let teamURL = `https://api.twitch.tv/kraken/teams/${team}`
+let teamURL = `https://api.twitch.tv/helix/teams?name=${team}`
+let userURL = 'https://api.twitch.tv/helix/users?id='
 
 getTwitchAccessToken({ client_id: clientId, client_secret: clientSecret }).then(
   (resp) => {
@@ -18,18 +19,38 @@ getTwitchAccessToken({ client_id: clientId, client_secret: clientSecret }).then(
     // Pull team info from Twitch API
     fetch(teamURL, {
       headers: {
-        Accept: "application/vnd.twitchtv.v5+json",
         "Client-ID": clientId,
-        Authorization: `OAuth ${access_token}`,
+        Authorization: `Bearer ${access_token}`,
       },
     })
       .then((resp) => resp.json())
       .then((data) => {
         // grab just username and logo for each member
-        let users = data.users.map((user) => {
-          return { name: user.name, logo: user.logo }
+        let users = data.data[0].users.map((user) => {
+          return { name: user.user_name, id: user.user_id }
         })
 
+        let promises = []
+        users.forEach(user => {
+          promises.push(
+            fetch(userURL + user.id, {
+              headers: {
+                "Client-ID": clientId,
+                Authorization: `Bearer ${access_token}`,
+              },
+            })
+            .then((resp) => resp.json())
+            .then((userData) => {
+              user.logo = userData.data[0].profile_image_url
+            })
+          )
+        })
+        return Promise.all(promises)
+                      .then(_ => users)
+        
+      })
+      .then(users => {
+        console.log(users)
         // grab all of the files currently in src/members/ (existing member pages)
         const files = fs
           .readdirSync(path.join(__dirname, "..", "..", "src", "members"))
