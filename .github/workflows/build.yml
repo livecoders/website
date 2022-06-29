@@ -8,13 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install Deps
+      - name: Removing locks
+        run: rm package-lock.json
+      - name: Install dependencies
         run: |
-          sudo apt update
-          sudo apt install -y libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev librsvg2-dev
-          npm install
+          sudo apt-get install -y  libvips-dev build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
       - name: Build Site
-        run: npm run build
+        run: |
+          CXXFLAGS="--std=c++14" npm install
+          npm run build
       - name: Upload public dir as artifact
         uses: actions/upload-artifact@v2
         with:
