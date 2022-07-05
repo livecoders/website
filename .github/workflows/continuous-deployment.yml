@@ -1,4 +1,4 @@
-name: Gen Members Pages
+name: Continuous Deployment
 on:
   schedule:
     - cron: "1 0 * * *"
@@ -18,12 +18,7 @@ jobs:
           cd scripts/genMembers
           npm install
           node index.js
-      - name: Recreate mission statement collage
-        run: |
-          cd scripts/genMissionStatementImage
-          npm install
-          node index.js
-      - name: Commit changes & build site
+      - name: Commit changes if any
         id: commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -43,6 +38,11 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: master
+      - name: Recreate mission statement collage
+        run: |
+          cd scripts/genMissionStatementImage
+          npm install
+          node index.js
       - name: Removing locks
         run: rm package-lock.json
       - name: Install dependencies
