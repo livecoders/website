@@ -27,7 +27,7 @@ getTwitchAccessToken({ client_id: clientId, client_secret: clientSecret }).then(
       .then((data) => {
         // grab just username and logo for each member
         let users = data.data[0].users.map((user) => {
-          return { name: user.user_name, id: user.user_id }
+          return { name: user.user_name.toLowerCase(), id: user.user_id }
         })
 
         let promises = []
