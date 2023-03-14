@@ -42,11 +42,15 @@ jobs:
   build-site:
     runs-on: ubuntu-latest
     if: contains(needs.run-gen-members.outputs.members_updated, true)
-    needs: [run-gen-members]
+    #needs: [run-gen-members]
     steps:
       - uses: actions/checkout@v2
         with:
           ref: master
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
       - name: Removing locks
         run: rm package-lock.json
       - name: Install dependencies
@@ -69,6 +73,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: master
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
       - name: Build files
         run: |
           cd scripts/genOGImages
