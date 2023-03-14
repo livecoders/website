@@ -41,7 +41,7 @@ jobs:
 #          git push origin master
   build-site:
     runs-on: ubuntu-latest
-    if: contains(needs.run-gen-members.outputs.members_updated, true)
+#    if: contains(needs.run-gen-members.outputs.members_updated, true)
     #needs: [run-gen-members]
     steps:
       - uses: actions/checkout@v2
@@ -67,7 +67,7 @@ jobs:
           path: public/
   gen-og-images:
     runs-on: ubuntu-latest
-    if: contains(needs.run-gen-members.outputs.members_updated, true)
+#    if: contains(needs.run-gen-members.outputs.members_updated, true)
 #    needs: [run-gen-members]
     steps:
       - uses: actions/checkout@v2
