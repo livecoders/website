@@ -4,41 +4,41 @@ on:
     - cron: "1 0 * * *"
   workflow_dispatch:
 jobs:
-  run-gen-members:
-    runs-on: ubuntu-20.04
-    outputs:
-      members_updated: ${{ steps.commit.outputs.members_updated }}
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          cache: 'npm'
-      - name: Update member list
-        env:
-          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
-          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
-        run: |
-          cd scripts/genMembers
-          npm install
-          node index.js
-      - name: Recreate mission statement collage
-        run: |
-          cd scripts/genMissionStatementImage
-          npm install
-          node index.js
-      - name: Commit changes & build site
-        id: commit
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
+#  run-gen-members:
+#    runs-on: ubuntu-20.04
+#    outputs:
+#      members_updated: ${{ steps.commit.outputs.members_updated }}
+#    steps:
+#      - uses: actions/checkout@v2
+#      - uses: actions/setup-node@v3
+#        with:
+#          node-version: 16
+#          cache: 'npm'
+#      - name: Update member list
+#        env:
+#          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+#          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+#        run: |
+#          cd scripts/genMembers
+#          npm install
+#          node index.js
+#      - name: Recreate mission statement collage
+#        run: |
+#          cd scripts/genMissionStatementImage
+#          npm install
+#          node index.js
+#      - name: Commit changes & build site
+#        id: commit
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        run: |
+#          git config user.name "GitHub Actions Bot"
+#          git config user.email "<>"
 
-          git pull origin master
-          git add .
-          git commit -m "Updating members" && echo "::set-output name=members_updated::true" || echo "::set-output name=members_updated::false"
-          git push origin master
+#          git pull origin master
+#          git add .
+#          git commit -m "Updating members" && echo "::set-output name=members_updated::true" || echo "::set-output name=members_updated::false"
+#          git push origin master
   build-site:
     runs-on: ubuntu-latest
     if: contains(needs.run-gen-members.outputs.members_updated, true)
@@ -68,7 +68,7 @@ jobs:
   gen-og-images:
     runs-on: ubuntu-latest
     if: contains(needs.run-gen-members.outputs.members_updated, true)
-    needs: [run-gen-members]
+#    needs: [run-gen-members]
     steps:
       - uses: actions/checkout@v2
         with:
