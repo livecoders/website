@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   gatsby-build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - name: Removing locks
@@ -23,7 +23,7 @@ jobs:
           name: public-dir
           path: public/
   gen-og-images:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - name: Build files
@@ -39,7 +39,7 @@ jobs:
           path: scripts/genOGImages/dist/members/
   deploy-build:
     needs: [gen-og-images, gatsby-build]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - name: get public dir
