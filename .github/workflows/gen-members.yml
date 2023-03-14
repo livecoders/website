@@ -10,6 +10,10 @@ jobs:
       members_updated: ${{ steps.commit.outputs.members_updated }}
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
       - name: Update member list
         env:
           TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
