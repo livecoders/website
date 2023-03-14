@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   run-gen-members:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     outputs:
       members_updated: ${{ steps.commit.outputs.members_updated }}
     steps:
