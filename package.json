@@ -31,7 +31,7 @@
     "gatsby-plugin-google-analytics": "^5.8.0",
     "gatsby-plugin-mdx": "^5.8.0",
     "gatsby-plugin-react-helmet": "^3.3.10",
-    "gatsby-plugin-sharp": "^5.8.0",
+    "gatsby-plugin-sharp": "^5.8.1",
     "gatsby-source-filesystem": "^5.8.0",
     "gatsby-transformer-sharp": "^2.5.11",
     "react": "^16.13.1",
