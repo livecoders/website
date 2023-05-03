@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { differenceInSeconds, parse, startOfWeek } from "date-fns"
 
-export default () => {
+const renderHook = () => {
   const [stats, setStats] = useState({
     streamersLive: 0,
     totalDays: 0,
@@ -13,7 +13,7 @@ export default () => {
     fetch("https://livecoders-heatmap.netlify.app/data.json")
       .then((resp) => resp.json())
       .then((data) => {
-        /* 
+        /*
         The structure of the json is an object where keys are the usernames and
         the values are stream objects. By writing Object.entries, I can reduce so
         it is just an array of all of the values.
@@ -54,4 +54,5 @@ export default () => {
   }, [])
 
   return stats
-}
+};
+export default renderHook;

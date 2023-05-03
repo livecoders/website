@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import "../css/nav.css"
 
-export default ({ isFooter }) => (
+const Nav = ({ isFooter }) => (
   <nav>
     <ul>
       <li>
@@ -37,4 +37,5 @@ export default ({ isFooter }) => (
       )}
     </ul>
   </nav>
-)
+);
+export default Nav;

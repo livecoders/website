@@ -2,16 +2,16 @@ import React from "react"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Olive from "../img/olive_transparent.png"
 import Cody from "../img/cody_transparent.png"
 import OliveCody from "../img/olive_and_cody_transparent.png"
 
 import "../css/olivecody.css"
 
-export default () => (
+const renderPage = () => (
   <React.Fragment>
-    <SEO title="Olive and Cody" />
+    <Seo title="Olive and Cody" />
     <Header />
     <div className="head">
       <div>
@@ -30,8 +30,8 @@ export default () => (
     </section>
 
     <section id="mascots">
-      <div class="row">
-        <div class="column">
+      <div className="row">
+        <div className="column">
           <img src={Olive} alt="" className="mascotSingle" />
           <h2>Hello World!, my name is Olive..</h2>
           <h3>
@@ -39,12 +39,12 @@ export default () => (
           </h3>
         </div>
 
-        <div class="column">
+        <div className="column">
           <img src={Cody} alt="" className="mascotSingle" />
           <h2>Hey, I'm Cody..</h2>
           <h3>I love to build apps.</h3>
         </div>
-        <div class="column">
+        <div className="column">
           <img src={OliveCody} alt="" className="mascotSingle" />
           <h2>Sometimes, we even program together.</h2>
           <h3>
@@ -57,4 +57,5 @@ export default () => (
 
     <Footer />
   </React.Fragment>
-)
+);
+export default renderPage;

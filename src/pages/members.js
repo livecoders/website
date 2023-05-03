@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../css/members.css"
 
@@ -42,9 +42,7 @@ const MembersPage = (props) => {
             bitbucket
             profile {
               childImageSharp {
-                fluid(maxWidth: 400) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }
@@ -89,7 +87,7 @@ const MembersPage = (props) => {
 
   return (
     <React.Fragment>
-      <SEO title="Team Members | The Live Coders" />
+      <Seo title="Team Members | The Live Coders" />
       <Header />
       <div id="membersHeader">
         <div>
@@ -179,7 +177,7 @@ const MembersPage = (props) => {
                   className="member-image"
                   to={`/members/${username.toLowerCase()}`}
                 >
-                  <Img fluid={profile.childImageSharp.fluid} />
+                  <GatsbyImage image={profile.childImageSharp.gatsbyImageData} alt={person.frontmatter.username} />
                   <div className="inner-glow"></div>
                   <div className="inner-glow-top"></div>
                 </Link>

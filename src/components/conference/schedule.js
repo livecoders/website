@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import cardBackground from "../../img/card-background.jpg";
 let data = require("./lcc4-schedule.json")
 const { format } = require("date-fns")
 
@@ -21,7 +22,7 @@ const EventGrid = styled.section`
 const EventWrapper = styled.article`
   border: 5px solid white;
   border-radius: 8px;
-  background-image: url("../img/card-background.jpg");
+  background-image: url(${cardBackground});
   background-size: cover;
   overflow-x: hidden;
 
@@ -54,7 +55,7 @@ const EventWrapper = styled.article`
     width: 200px;
     position: relative;
     left: calc((100% - 200px)/2);
-    
+
   }
   .sessionSpeaker {
     font-weight: bold;
@@ -96,7 +97,7 @@ const events = data
   .filter((item) => item.confirmed).sort((a, b) => {
     let at = a.dateObj,
       bt = b.dateObj
-  
+
     if (at < bt) {
       return -1
     }
@@ -107,25 +108,28 @@ const events = data
   })
 
 const Event = ({ event }) => (
-  <>
-    <EventWrapper className="scheduleItem">
-        <span className="sessionTitle">{event.title}</span>
-        <br />
-        {Array.isArray(event.description) ? event.description.map((txtLine, i) => (
-          <p key={`desc-${i}`}>{txtLine}</p>
-        )) : (<p>{event.description}</p>)}
-        <br />
-        <p className="low-margin">Hosted by:</p>
-        {event.speakers.map((speaker, i) => (
-          <><a href={"#"+speaker.name.replace(/\W/g,'_')} key={i}><span className="sessionSpeaker">{speaker.name}</span></a><br /></>
-        ))}
-        <br />
-        <span className="scheduleTime">{event.localized}</span>
-    </EventWrapper>
-  </>
+  <EventWrapper className="scheduleItem">
+      <span className="sessionTitle">{event.title}</span>
+      <br />
+      {Array.isArray(event.description) ? event.description.map((txtLine, i) => (
+        <p key={`desc-${i}`}>{txtLine}</p>
+      )) : (<p>{event.description}</p>)}
+      <br />
+      <p className="low-margin">Hosted by:</p>
+      {event.speakers.map((speaker, i) => (
+        <span key={i}>
+          <a href={"#"+speaker.name.replace(/\W/g,'_')} key={i}>
+            <span className="sessionSpeaker">{speaker.name}</span>
+          </a>
+          <br />
+        </span>
+      ))}
+      <br />
+      <span className="scheduleTime">{event.localized}</span>
+  </EventWrapper>
 )
 
-export default () => (
+const Schedule = () => (
   <>
     <br />
     <EventGrid>
@@ -134,4 +138,5 @@ export default () => (
       ))}
     </EventGrid>
   </>
-)
+);
+export default Schedule;

@@ -27,14 +27,14 @@ const Divider = styled.div`
 `;
 
 const SpeakerWrapper = styled.article`
-  margin: 5vh 15vw; 
+  margin: 5vh 15vw;
 
   @media screen and (max-width: 600px) {
-    margin: 5vh 5vw; 
+    margin: 5vh 5vw;
   }
 
   @media screen and (min-width: 2000px) {
-    margin: 5vh 25vw; 
+    margin: 5vh 25vw;
   }
 
   a {
@@ -66,7 +66,7 @@ const SpeakerWrapper = styled.article`
   .speakerSocial {
     display: flex;
     justify-content: center;
-    
+
     margin: 0;
     padding: 0;
   }
@@ -76,7 +76,7 @@ const SpeakerWrapper = styled.article`
     height: 30px;
     width: 30px;
   }
-  
+
   @media screen and (max-width: 600px) {
     .sessionSpeakerPhotoBody {
       position: relative;
@@ -140,7 +140,7 @@ const Speaker = ({ event, speaker, sindex, divide }) => (
   </React.Fragment>
 )
 
-export default () => (
+const Speakers = () => (
   <>
     <br />
     {events.map((event, i, arr) => (
@@ -149,4 +149,5 @@ export default () => (
       ))
     ))}
   </>
-)
+);
+export default Speakers;

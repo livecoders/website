@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import { GatsbyImage } from "gatsby-plugin-image"
+import { MDXProvider } from "@mdx-js/react"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../css/memberPage.css"
 
@@ -20,11 +20,12 @@ import LinkedInLogo from "../img/icons/linkedin-in-brands.svg"
 import StackOverflowLogo from "../img/icons/stack-overflow-brands.svg"
 
 const MemberPageTemplate = (props) => {
-  let { frontmatter, body, wordCount } = props.data.mdx
+  let { frontmatter } = props.data.mdx
+  const body = (props.data.mdx.body || "").trim();
 
   return (
     <div>
-      <SEO
+      <Seo
         title={`${frontmatter.username} | The Live Coders`}
         ogImage={`${frontmatter.username.toLowerCase()}.jpg`}
       />
@@ -33,7 +34,7 @@ const MemberPageTemplate = (props) => {
         <div>
           <h1>{frontmatter.username}</h1>
           <ul id="memberSocials">
-            <li>
+            <li key="twitch">
               <a
                 href={`https://twitch.tv/${frontmatter.username}`}
                 target="_blank"
@@ -43,7 +44,7 @@ const MemberPageTemplate = (props) => {
               </a>
             </li>
             {frontmatter.twitter && (
-              <li>
+              <li key="twitter">
                 <a
                   href={`https://twitter.com/${frontmatter.twitter}`}
                   target="_blank"
@@ -54,7 +55,7 @@ const MemberPageTemplate = (props) => {
               </li>
             )}
             {frontmatter.github && (
-              <li>
+              <li key="github">
                 <a
                   href={`https://github.com/${frontmatter.github}`}
                   target="_blank"
@@ -65,7 +66,7 @@ const MemberPageTemplate = (props) => {
               </li>
             )}
             {frontmatter.bitbucket && (
-              <li>
+              <li key="bitbucket">
                 <a
                   href={`https://bitbucket.com/${frontmatter.bitbucket}`}
                   target="_blank"
@@ -76,7 +77,7 @@ const MemberPageTemplate = (props) => {
               </li>
             )}
             {frontmatter.devto && (
-              <li>
+              <li key="devto">
                 <a
                   href={`https://dev.to/${frontmatter.devto}`}
                   target="_blank"
@@ -87,7 +88,7 @@ const MemberPageTemplate = (props) => {
               </li>
             )}
             {frontmatter.instagram && (
-              <li>
+              <li key="instagram">
                 <a
                   href={`https://instagram.com/${frontmatter.instagram}`}
                   target="_blank"
@@ -98,7 +99,7 @@ const MemberPageTemplate = (props) => {
               </li>
             )}
             {frontmatter.youtube && (
-              <li>
+              <li key="youtube">
                 <a
                   href={frontmatter.youtube}
                   target="_blank"
@@ -109,7 +110,7 @@ const MemberPageTemplate = (props) => {
               </li>
             )}
             {frontmatter.linkedin && (
-              <li>
+              <li key="linkedin">
                 <a
                   href={`https://linkedin.com/in/${frontmatter.linkedin}`}
                   target="_blank"
@@ -120,7 +121,7 @@ const MemberPageTemplate = (props) => {
               </li>
             )}
             {frontmatter.stackoverflow && (
-              <li>
+              <li key="stackoverflow">
                 <a
                   href={`https://stackoverflow.com/users/${frontmatter.stackoverflow}`}
                   target="_blank"
@@ -135,29 +136,28 @@ const MemberPageTemplate = (props) => {
       </div>
       <section id="memberIntro">
         <div className="shadowWrapper">
-          <Img
-            fluid={props.data.mdx.frontmatter.profile.childImageSharp.fluid}
-          />
+          <GatsbyImage image={props.data.mdx.frontmatter.profile.childImageSharp.gatsbyImageData} alt={frontmatter.username} />
         </div>
         <div id="memberIntroContent">
-          {wordCount.words ? (
-            <MDXRenderer>{body}</MDXRenderer>
-          ) : (
-            <React.Fragment>
-              <p>
-                Hi There! The team member you are interested in has not (yet)
-                provided their full profile information. Don't cry though! You
-                can simply click on the Twitch logo below their name (look above
-                their photo) and it will take you straight to the Twitch
-                profile!
-              </p>
-              <p>
-                If you come across one of these, feel free to remind the team
-                member to fill out their page here. They may have just
-                forgotten!
-              </p>
-            </React.Fragment>
-          )}
+          { body ?
+            <MDXProvider>
+              {props.children}
+            </MDXProvider>
+          :<React.Fragment>
+            <p>
+              Hi There! The team member you are interested in has not (yet)
+              provided their full profile information. Don't cry though! You
+              can simply click on the Twitch logo below their name (look above
+              their photo) and it will take you straight to the Twitch
+              profile!
+            </p>
+            <p>
+              If you come across one of these, feel free to remind the team
+              member to fill out their page here. They may have just
+              forgotten!
+            </p>
+          </React.Fragment>
+          }
         </div>
       </section>
       {(frontmatter.tags || frontmatter.schedule || frontmatter.sites) && (
@@ -168,7 +168,7 @@ const MemberPageTemplate = (props) => {
               <hr />
               <ul>
                 {frontmatter.tags.map((tag) => (
-                  <li>{tag}</li>
+                  <li key={tag}>{tag}</li>
                 ))}
               </ul>
             </div>
@@ -180,7 +180,7 @@ const MemberPageTemplate = (props) => {
               <hr />
               <ul>
                 {frontmatter.schedule.map((entry) => (
-                  <li>{entry}</li>
+                  <li key={entry}>{entry}</li>
                 ))}
               </ul>
             </div>
@@ -192,7 +192,7 @@ const MemberPageTemplate = (props) => {
               <hr />
               <ul>
                 {frontmatter.sites.map((site) => (
-                  <li>
+                  <li key={site}>
                     <a href={site}>{site}</a>
                   </li>
                 ))}
@@ -206,16 +206,13 @@ const MemberPageTemplate = (props) => {
   )
 }
 
-export default MemberPageTemplate
+export default MemberPageTemplate;
 
 export const query = graphql`
   query MemberPageQuery($id: String) {
     mdx(id: { eq: $id }) {
       id
       body
-      wordCount {
-        words
-      }
       frontmatter {
         username
         twitter
@@ -231,12 +228,10 @@ export const query = graphql`
         sites
         profile {
           childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
     }
   }
-`
+`;

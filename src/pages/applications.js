@@ -2,12 +2,12 @@ import React from "react"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import "../css/applications.css"
 
-export default () => (
+const renderPage = () => (
   <React.Fragment>
-    <SEO title="Applications | The Live Coders" />
+    <Seo title="Applications | The Live Coders" />
     <Header />
     <div className="head">
       <div>
@@ -49,42 +49,40 @@ export default () => (
     <section id="process">
       <div>
         <h2>The Process</h2>
-        <p>
-          <ul className="listings">
-            <li>Hit the Apply Now button at the top of this page</li>
-            <li>Fill in the GitHub issue to the best of your ability</li>
-            <li>The Live Coders get alerted of your application</li>
-            <li>
-              Any team member can give their opinions on your stream and
-              community.
-            </li>
-            <li>
-              Taking all member opinions, the minimum criteria and looking
-              closely at your VoDs or live streams, we review your application.
-            </li>
-            <li>
-              A decision is made and confirmed by at least one other Live Coder
-            </li>
-            <li>
-              You the applicant are told if you are successful at becoming a
-              Full team member, an "Intern" in the Nurture Program or rejected.
-            </li>
-            <li>
-              REJECTION: There have only ever been 3 Rejections in the past if
-              the broadcaster meets the minimum criteria.
-            </li>
-            <li>
-              FULL TEAM MEMBERSHIP: Invited to the Twitch Team, Full Access to
-              the discord server, access to all the perks of being in the
-              community
-            </li>
-            <li>
-              NURTURE PROGRAM MEMBERSHIP: You didn't quite make the minimum
-              criteria, however we saw something we could nurture into moving
-              into a Full Team position.
-            </li>
-          </ul>
-        </p>
+        <ul className="listings">
+          <li>Hit the Apply Now button at the top of this page</li>
+          <li>Fill in the GitHub issue to the best of your ability</li>
+          <li>The Live Coders get alerted of your application</li>
+          <li>
+            Any team member can give their opinions on your stream and
+            community.
+          </li>
+          <li>
+            Taking all member opinions, the minimum criteria and looking
+            closely at your VoDs or live streams, we review your application.
+          </li>
+          <li>
+            A decision is made and confirmed by at least one other Live Coder
+          </li>
+          <li>
+            You the applicant are told if you are successful at becoming a
+            Full team member, an "Intern" in the Nurture Program or rejected.
+          </li>
+          <li>
+            REJECTION: There have only ever been 3 Rejections in the past if
+            the broadcaster meets the minimum criteria.
+          </li>
+          <li>
+            FULL TEAM MEMBERSHIP: Invited to the Twitch Team, Full Access to
+            the discord server, access to all the perks of being in the
+            community
+          </li>
+          <li>
+            NURTURE PROGRAM MEMBERSHIP: You didn't quite make the minimum
+            criteria, however we saw something we could nurture into moving
+            into a Full Team position.
+          </li>
+        </ul>
       </div>
     </section>
     <section id="why">
@@ -134,4 +132,5 @@ export default () => (
     </section>
     <Footer />
   </React.Fragment>
-)
+);
+export default renderPage;

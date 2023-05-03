@@ -17,7 +17,7 @@ data = data.sort((a, b) => {
   return 0
 });
 
-data.map(v => {
+data.forEach(v => {
   let team = teams.get(v.level);
   if(team) {
     team.push(v);
@@ -37,7 +37,7 @@ teams = [...teams.entries()].sort((a, b) => {
   }
   return 0
 });
-  
+
 
 const SponsorGrid = styled.section`
   display: grid;
@@ -102,18 +102,19 @@ const Sponsor = ({ item }) => (
   </SponsorWrapper>
 )
 
-export default () => (
+const Sponsors = () => (
   <>
     <br />
-    {teams.map((sponsors) => (
-      <>
+    {teams.map((sponsors, i) => (
+      <span key={i}>
         <h3>{sponsors[0]} Sponsors</h3>
         <SponsorGrid>
           {sponsors[1].map((sponsor, index) => (
             <Sponsor item={sponsor} key={index} />
           ))}
         </SponsorGrid>
-      </>
+      </span>
     ))}
   </>
-)
+);
+export default Sponsors;

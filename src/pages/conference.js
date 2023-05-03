@@ -2,7 +2,7 @@
 
 import React from "react"
 import { Helmet } from "react-helmet"
-import styled from "styled-components" 
+import styled from "styled-components"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -19,8 +19,6 @@ import "../css/index.css"
 const title = `Conference | The Live Coders` // Imported from original LCC4 conference page
 const description = `The Live Coders presents International Women's Day Challenge`
 
-console.log(process.env.NODE_ENV)
-
 const siteUrl =
   process.env.NODE_ENV === "development"
     ? "http://localhost:8000"
@@ -34,7 +32,7 @@ if (typeof window !== "undefined") {
 const MainSection = styled.div`
   background: rgb(2,0,36);
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,8,56,1) 40%, rgba(60,9,121,1) 70%, rgba(88,0,129,1) 100%);
-  
+
   text-align: center;
   padding-bottom: 2vh;
 
@@ -65,8 +63,8 @@ const MainSection = styled.div`
 `
 
 // Helmet replaces the old SEO component, added new image banner and updated appropriate info.
-export default () => (
-  <React.Fragment> 
+const renderPage =  () => (
+  <React.Fragment>
     <Header />
     <Helmet
       title={title}
@@ -118,4 +116,5 @@ export default () => (
     <Footer />
     <div id="modal"></div>
   </React.Fragment>
-)
+);
+export default renderPage;

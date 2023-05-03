@@ -51,22 +51,19 @@ Nice to meet you. I'm a long-time gamer who has a passion for learning 3d modeli
 
 ### 🎥 Latest YouTube videos
 
-<!-- YOUTUBE:START -->
 - [🌈 Daily ☕️ Coffee + chat](https://www.youtube.com/watch?v=JIOQAeKVhjk)
 - [☕️ Coffee n chat](https://www.youtube.com/watch?v=BJRtrF9PfaY)
 - [☕️ Coffee n chat](https://www.youtube.com/watch?v=Q34DiperNG0)
 - [BICYCLE in BLOCKBENCH Let's make a Minecraft mod](https://www.youtube.com/watch?v=-ntscMP42OQ)
 - [DAVINCI RESOLVE for NOOBS ( the basics)](https://www.youtube.com/watch?v=-1HFuFAuy2w)
-<!-- YOUTUBE:END -->
+
 
 ---
 
 ### ✏️ Latest Blog posts
 
-<!-- BLOG-POST-LIST:START -->
 - [Tank Off](https://dev.to/jenninexus/tank-off-1pib)
 - [Holiday madness](https://dev.to/jenninexus/holiday-madness-b46)
-<!-- BLOG-POST-LIST:END -->
 
 <br />
 Thx for stopping by :)

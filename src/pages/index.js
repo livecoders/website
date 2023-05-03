@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import SEO from "../components/seo"
-import useLiveCoderStats from "../hooks/useLiveCoderStats"
+import Seo from "../components/seo"
+//import useLiveCoderStats from "../hooks/useLiveCoderStats"
 import ChatBubbleIcon from "../img/icons/comments-regular.svg"
 import HeartIcon from "../img/icons/heart-regular.svg"
 import KeyboardIcon from "../img/icons/keyboard-regular.svg"
@@ -15,12 +15,12 @@ import ManningLogo from "../img/manning-logo.png"
 
 import "../css/index.css"
 
-export default () => {
-  const stats = useLiveCoderStats()
+const renderPage = () => {
+  //const stats = useLiveCoderStats()
 
   return (
     <React.Fragment>
-      <SEO title="The Live Coders" />
+      <Seo title="The Live Coders" />
       <div id="hero">
         <Header />
         <h1>Learn to Code by Watching Us</h1>
@@ -139,6 +139,7 @@ export default () => {
             </div>
           </div>
         </section>
+        { "" /*
         <section id="stats">
           <h2>This week's stats</h2>
           <div className="flex" id="statsFlex">
@@ -169,6 +170,7 @@ export default () => {
             </a>
           </p>
         </section>
+        */ }
         <section id="sponsors">
           <h2>Our Sponsors</h2>
           <div id="sponsorsGrid">
@@ -208,4 +210,5 @@ export default () => {
       <Footer />
     </React.Fragment>
   )
-}
+};
+export default renderPage;
