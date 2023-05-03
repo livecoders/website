@@ -1,7 +1,10 @@
-const { firefox } = require("playwright-firefox")
-const fs = require("fs")
-const path = require("path")
+import { firefox } from "playwright-firefox";
+import fs from "fs";
+import { fileURLToPath } from 'url';
+import path from "path";
 const ogReactComponentScript = fs.readFileSync("./dist/image.js", "utf-8")
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const background = Buffer.from(
   fs.readFileSync(

@@ -20,13 +20,13 @@ jobs:
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
         run: |
           cd scripts/genMembers
-          npm install
-          node index.js
+          npm ci
+          npm start
       - name: Recreate mission statement collage
         run: |
           cd scripts/genMissionStatementImage
-          npm install
-          node index.js
+          npm ci
+          npm start
       - name: Commit changes & build site
         id: commit
         env:
@@ -79,9 +79,8 @@ jobs:
       - name: Build files
         run: |
           cd scripts/genOGImages
-          npm install
-          npm run build
-          node gen-opengraph-images.js
+          npm ci
+          npm start
       - name: Upload files
         uses: actions/upload-artifact@v2
         with:

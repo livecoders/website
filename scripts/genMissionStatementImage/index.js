@@ -1,7 +1,10 @@
-const fs = require('fs')
-const path = require("path")
-const { createCanvas, loadImage } = require('canvas')
-const c = require('ansi-colors')
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from 'url';
+import { createCanvas, loadImage } from 'canvas';
+import c from 'ansi-colors';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // get all member images
 let memberImages = fs.readdirSync(path.join(__dirname, "..", "..", "src", "img", "members"))
