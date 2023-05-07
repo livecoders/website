@@ -30,7 +30,7 @@ const EventWrapper = styled.div`
   }
 `
 
-export default ({ date, title, link = "lcc3" }) => {
+const EventBanner = ({ date, title, link = "lcc3" }) => {
   return (
     <>
       {date && (
@@ -40,4 +40,5 @@ export default ({ date, title, link = "lcc3" }) => {
       )}
     </>
   )
-}
+};
+export default EventBanner;

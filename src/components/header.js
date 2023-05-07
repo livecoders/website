@@ -6,7 +6,7 @@ import LogoImg from "../img/live-coder-transparent.png"
 
 import "../css/header.css"
 
-export default () => {
+const Header = () => {
   return (
     <React.Fragment>
       <header>
@@ -17,4 +17,5 @@ export default () => {
       </header>
     </React.Fragment>
   )
-}
+};
+export default Header;

@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-const SEO = (props) => {
+const Seo = (props) => {
   const imageIncluded = []
 
   if (props.ogImage) {
@@ -35,6 +35,5 @@ const SEO = (props) => {
       ]}
     />
   )
-}
-
-export default SEO
+};
+export default Seo;

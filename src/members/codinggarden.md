@@ -21,6 +21,6 @@ sites:
 
 _Grow your coding skills one day at a time!_
 
-{ 🌱} Coding Garden is an open, interactive and engaging community where _any_ developer, from complete beginner to seasoned veteran, can learn and grow together. Whether it's a planned lesson / tutorial, open Q&A session, on the spot algorithmic problem solving or full application design and build, there's always something new to learn!
+&#123; 🌱	&#125; Coding Garden is an open, interactive and engaging community where _any_ developer, from complete beginner to seasoned veteran, can learn and grow together. Whether it's a planned lesson / tutorial, open Q&A session, on the spot algorithmic problem solving or full application design and build, there's always something new to learn!
 
 Coding Garden is hosted by CJ - an Educator 🏫, Full Stack Developer 🥞, and Maker 🛠 based in the Denver 🏔 area.

@@ -1,6 +1,8 @@
-const path = require("path")
+import path from "path";
+import { fileURLToPath } from 'url';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-module.exports = {
+export default {
   entry: "./src/image.js",
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -17,4 +19,4 @@ module.exports = {
       },
     ],
   },
-}
+};

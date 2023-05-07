@@ -2,7 +2,7 @@ import React from "react"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import LiveCodersImg from "../img/livecoders-2.jpg"
 import ChatBubbleIcon from "../img/icons/comments-regular.svg"
@@ -13,9 +13,9 @@ import TwitchIcon from "../img/icons/twitch-brands.svg"
 
 import "../css/about.css"
 
-export default () => (
+const renderPage = () => (
   <React.Fragment>
-    <SEO title="About | The Live Coders" />
+    <Seo title="About | The Live Coders" />
     <Header />
     <div className="head">
       <div>
@@ -128,4 +128,5 @@ export default () => (
     </section>
     <Footer />
   </React.Fragment>
-)
+);
+export default renderPage;
