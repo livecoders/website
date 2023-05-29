@@ -9,7 +9,7 @@ jobs:
     outputs:
       members_updated: ${{ steps.commit.outputs.members_updated }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -43,7 +43,7 @@ jobs:
     if: contains(needs.run-gen-members.outputs.members_updated, true)
     needs: [run-gen-members]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: master
       - uses: actions/setup-node@v3
@@ -60,7 +60,7 @@ jobs:
           CXXFLAGS="--std=c++14" npm install
           npm run build
       - name: Upload public dir as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: public-dir
           path: public/
@@ -69,7 +69,7 @@ jobs:
     if: contains(needs.run-gen-members.outputs.members_updated, true)
     needs: [run-gen-members]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: master
       - uses: actions/setup-node@v3
@@ -82,7 +82,7 @@ jobs:
           npm ci
           npm start
       - name: Upload files
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: og-images
           path: scripts/genOGImages/dist/members/
@@ -90,16 +90,16 @@ jobs:
     needs: [gen-og-images, build-site]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: master
       - name: get public dir
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: public-dir
           path: public
       - name: get og-images dir
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: og-images
           path: public/og/members/
