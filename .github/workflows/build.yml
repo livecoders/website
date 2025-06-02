@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   gatsby-build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -25,7 +25,7 @@ jobs:
           name: public-dir
           path: public
   gen-og-images:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -46,7 +46,7 @@ jobs:
   deploy-build:
     needs: [gen-og-images, gatsby-build]
     if: ${{ success() && github.ref == 'refs/heads/master' }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
