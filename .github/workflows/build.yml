@@ -20,7 +20,7 @@ jobs:
           CXXFLAGS="--std=c++14" npm install
           npm run build
       - name: Upload public dir as artifact
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@v2
         with:
           name: public-dir
           path: public
@@ -39,7 +39,7 @@ jobs:
           npm run build
           node gen-opengraph-images.js
       - name: Upload files
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@v2
         with:
           name: og-images
           path: scripts/genOGImages/dist/members/
