@@ -36,6 +36,7 @@ jobs:
         run: |
           cd scripts/genOGImages
           npm install
+          npx playwright install --with-deps
           npm run build
           node gen-opengraph-images.js
       - name: Upload files
