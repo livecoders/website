@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   gatsby-build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -20,12 +20,12 @@ jobs:
           CXXFLAGS="--std=c++14" npm install
           npm run build
       - name: Upload public dir as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: public-dir
           path: public
   gen-og-images:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -39,14 +39,14 @@ jobs:
           npm run build
           node gen-opengraph-images.js
       - name: Upload files
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: og-images
           path: scripts/genOGImages/dist/members/
   deploy-build:
     needs: [gen-og-images, gatsby-build]
     if: ${{ success() && github.ref == 'refs/heads/master' }}
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
