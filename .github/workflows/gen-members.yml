@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   run-gen-members:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     outputs:
       members_updated: ${{ steps.commit.outputs.members_updated }}
     steps:
@@ -39,7 +39,7 @@ jobs:
           git commit -m "Updating members" && echo "members_updated=true" >> $GITHUB_OUTPUT || echo "members_updated=false" >> $GITHUB_OUTPUT
           git push origin master
   build-site:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: contains(needs.run-gen-members.outputs.members_updated, true)
     needs: [run-gen-members]
     steps:
@@ -65,7 +65,7 @@ jobs:
           name: public-dir
           path: public/
   gen-og-images:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: contains(needs.run-gen-members.outputs.members_updated, true)
     needs: [run-gen-members]
     steps:
@@ -88,7 +88,7 @@ jobs:
           path: scripts/genOGImages/dist/members/
   deploy-site:
     needs: [gen-og-images, build-site]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
         with:
