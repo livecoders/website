@@ -5,8 +5,8 @@ jobs:
   gatsby-build:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'npm'
@@ -27,8 +27,8 @@ jobs:
   gen-og-images:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'npm'
@@ -53,18 +53,18 @@ jobs:
     if: ${{ success() && github.ref == 'refs/heads/master' }}
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'npm'
       - name: get public dir
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: public-dir
           path: public
       - name: get og-images dir
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: og-images
           path: public/og/members/
