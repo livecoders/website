@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: public-dir
-          path: public/
+          path: public
   gen-og-images:
     runs-on: ubuntu-latest
     steps:
