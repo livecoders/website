@@ -35,8 +35,7 @@ jobs:
       - name: Install Playwright system dependencies (Ubuntu 24.04)
         run: |
           sudo apt-get update
-          sudo apt-get install -y libasound2t64 libffi8 libx264-164 || true
-          sudo apt-get install -y libasound2 libffi7 || true
+          sudo apt-get install -y libasound2t64 libffi8 libx264-164
       - name: Build files
         run: |
           cd scripts/genOGImages
