@@ -5,12 +5,12 @@ on:
   workflow_dispatch:
 jobs:
   run-gen-members:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     outputs:
       members_updated: ${{ steps.commit.outputs.members_updated }}
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 16
           cache: 'npm'
@@ -36,17 +36,17 @@ jobs:
           git config user.email "<>"
           git pull origin master
           git add .
-          git commit -m "Updating members" && echo "::set-output name=members_updated::true" || echo "::set-output name=members_updated::false"
+          git commit -m "Updating members" && echo "members_updated=true" >> $GITHUB_OUTPUT || echo "members_updated=false" >> $GITHUB_OUTPUT
           git push origin master
   build-site:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: contains(needs.run-gen-members.outputs.members_updated, true)
     needs: [run-gen-members]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: master
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 16
           cache: 'npm'
@@ -60,19 +60,19 @@ jobs:
           CXXFLAGS="--std=c++14" npm install
           npm run build
       - name: Upload public dir as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: public-dir
           path: public/
   gen-og-images:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: contains(needs.run-gen-members.outputs.members_updated, true)
     needs: [run-gen-members]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: master
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 16
           cache: 'npm'
@@ -82,24 +82,24 @@ jobs:
           npm ci
           npm start
       - name: Upload files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: og-images
           path: scripts/genOGImages/dist/members/
   deploy-site:
     needs: [gen-og-images, build-site]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: master
       - name: get public dir
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: public-dir
           path: public
       - name: get og-images dir
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: og-images
           path: public/og/members/
