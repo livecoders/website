@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
           cache: 'npm'
       - name: Update member list
         env:
@@ -48,7 +48,7 @@ jobs:
           ref: master
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
           cache: 'npm'
       - name: Removing locks
         run: rm package-lock.json
@@ -74,7 +74,7 @@ jobs:
           ref: master
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
           cache: 'npm'
       - name: Build files
         run: |
