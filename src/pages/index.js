@@ -21,26 +21,26 @@ const renderPage = () => {
   return (
     <React.Fragment>
       <Seo title="The Live Coders" />
-      <div id="hero">
-        <Header />
-        <h1>Learn to Code by Watching Us</h1>
-        <p>
-          Be a part of a growing community of coders, developers, and
-          technologists who love to stream their passions on Twitch.
-        </p>
-        <Link className="btn" to={"/applications"}>
-          Join Us
-        </Link>
-        <a
-          className="btn"
-          href="https://www.twitch.tv/team/livecoders"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Watch Us
-        </a>
-      </div>
+      <Header />
       <main>
+        <div id="hero">
+          <h1>Learn to Code by Watching Us</h1>
+          <p>
+            Be a part of a growing community of coders, developers, and
+            technologists who love to stream their passions on Twitch.
+          </p>
+          <Link className="btn" to={"/applications"}>
+            Join Us
+          </Link>
+          <a
+            className="btn"
+            href="https://www.twitch.tv/team/livecoders"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch Us
+          </a>
+        </div>
         <section id="missionStatement">
           <div className="missionStatement__overlay"></div>
           <div className="missionStatement__container">
@@ -178,7 +178,7 @@ const renderPage = () => {
               <a href="https://fauna.com/" style={{ height: 90 }}>
                 <img
                   src={FaunaLogo}
-                  alt=""
+                  alt="Fauna"
                   style={{ width: 200, height: 90 }}
                 />
               </a>
@@ -192,7 +192,7 @@ const renderPage = () => {
               <a href="https://manning.com" style={{ height: 90 }}>
                 <img
                   src={ManningLogo}
-                  alt=""
+                  alt="Manning Publications"
                   style={{ width: 200, marginTop: 30, marginBottom: 30 }}
                 />
               </a>
