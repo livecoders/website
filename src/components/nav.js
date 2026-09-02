@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import "../css/nav.css"
 
 const Nav = ({ isFooter }) => (
-  <nav>
+  <nav aria-label={isFooter ? "Footer" : "Main"}>
     <ul>
       <li>
         <Link to={"/"}>Home</Link>
